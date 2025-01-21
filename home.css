@@ -738,3 +738,29 @@ align-items: center;
 margin: auto;
 z-index: -192;
 }
+
+footer {
+    
+    width: fit-content;
+    position: relative;
+    height: auto;
+    display: flex;
+    margin: auto;
+    
+}
+.footer-icons {
+    width: 25px;
+    position: relative;
+    
+}
+.footer-social-icons {
+    width: fit-content;
+    position: relative;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+    margin: auto;
+
+}
