@@ -146,6 +146,7 @@ body {
 }
 
 .pf {
+    min-width: 300px;
     width: 25%;
     height: 300PX;
     display: flex;
@@ -166,6 +167,7 @@ body {
     line-height: 2rem;
     letter-spacing: 0.1rem;
     color:#96A1B2;
+    min-width: 550px;
     width: 55%;
     height: 400;
     margin-top: 0;
@@ -310,7 +312,7 @@ body {
 }
 
 .home-drawer-txt {
-    
+    min-width: 200px;
     width: 90%;
     height: 80%;
     font-family: Arial, Helvetica, sans-serif;
