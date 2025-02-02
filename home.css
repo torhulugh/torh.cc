@@ -12,10 +12,11 @@ spblugy-menu element*/
     background-color: #0d0c0d8a;
     border-radius: 60px;
     width: 98%;
-    height: 95px;
+    height: 90px;
     display: flex;
     position: fixed;
     top: 15px;
+    margin: auto;
     align-content: center;
     align-self: center;
     align-items: center;
@@ -58,21 +59,25 @@ holding the spblugy-icons-shell/ all nav icons and text*/
     align-content: center;
     align-items: center;
     justify-content: center;
+    margin: auto;
     gap: 7%;
     z-index: 204;
 }
 
-/*spblugy-icons-shell this is the container(div) holding
+/*spblugy-icons-shell this is the container(li) holding
 the <ul> holding all nav icons*/
 .spblugy-icons-shell {
     color: #979292;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     position: relative;
     align-content: center;
     align-items: center;
     justify-content: center;
+    align-self: center;
     z-index: 203;
+    transform: translateY(-7%);
+    gap: 2px;
 }
 
 /*spblugy-icons-txt this is the container(div) holding
@@ -82,20 +87,23 @@ label text for all nav icons*/
     font-size: 0.9rem;
     letter-spacing: 0.07rem;
     margin: 0%;
-    margin-top: 10px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /*class created to target spblugy menu icons*/
 .spgy-icon {
-    width: 90%;
+    width: 20px;
     height: 20px;
     filter: drop-shadow(#000);
+    filter: opacity(90%);
 }
 
 /*oc-buttion, this is the open & close button on spblugy menu*/
 .oc-button {
     background-color: #2C2B2E;
-    width: 5.2%;
+    width: 4.4%;
     height: 70%;
     margin-left: 90.7%;
     border-radius: 100%;
@@ -135,6 +143,9 @@ label text for all nav icons*/
 }
 /*class created to target visted link behavour on nav menu*/
 .nav-link {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     color: #96A1B2;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
@@ -143,6 +154,11 @@ label text for all nav icons*/
     margin-top: 10px;
     text-decoration: none;
     text-align: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
 }
 .first-section {
@@ -150,28 +166,30 @@ label text for all nav icons*/
     width: fit-content;
     height:295px;
     margin-top: 145px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: ;
+    margin-right: ;
     display: flex;
     position: relative;
     flex-direction: row;
+    align-items: center;
     align-content: center;
     justify-content: center;
     gap: 55px;
     z-index: -1;
+    ;
 }
 
 .pf {
-    min-width: 300px;
+    max-width: 300px;
     width: 25%;
-    height: 300PX;
+    height: 80%;
     display: flex;
-    margin-top: auto;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: auto;
+    margin-bottom: 0;
     position: relative;
-    flex-direction: row;
+    align-items: center;
     align-content: center;
     justify-content: center;
     z-index: 11;
@@ -183,8 +201,8 @@ label text for all nav icons*/
     line-height: 2rem;
     letter-spacing: 0.1rem;
     color:#96A1B2;
-    min-width: 550px;
-    width: 55%;
+    max-width: 650px;
+    width: 70%;
     height: 400;
     margin-top: 0;
     margin-left: 0;
@@ -192,7 +210,7 @@ label text for all nav icons*/
     padding: 0;
     display: flex;
     position: relative;
-    flex-wrap: wrap;
+    align-items: center;
     align-content: center;
     justify-content: center;
     z-index: 12;
@@ -201,12 +219,8 @@ label text for all nav icons*/
     width: 20%;
     height: 295px;
     display: flex;
-    margin: auto;
+    margin: ;
     position: absolute;
-    flex-direction: row;
-    align-self: self-end;
-    align-content: center;
-    justify-content: center;
     z-index: 10;
 }
 
@@ -214,7 +228,7 @@ label text for all nav icons*/
 .second-section {
     
     width: fit-content;
-    height:100px;
+    height: fit-content;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -227,7 +241,7 @@ label text for all nav icons*/
     z-index: -11;
 }
 .home-category-icons {
-    width: fit-content;
+    width: 10%;
     height:100%;
     margin:;
     display: flex;
@@ -355,7 +369,7 @@ label text for all nav icons*/
 }
 .iyidoo-card {
     border-radius: 20px;
-    border: 0.5px solid #32343848;
+    border: -0.5px solid #32343848;
     background-color: #1c1c1ca9;
     width: 300px;
     height: 450px;
