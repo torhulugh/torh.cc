@@ -1,6 +1,9 @@
 
 body {
     background-color: #161616;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
 }
 
 /*SPBLUGY menu this is the  manin container(nav) holding
@@ -178,9 +181,9 @@ label text for all nav icons*/
 }
 
 .pf {
-    max-width: 20%;
-    width: auto;
-    height: 80%;
+    max-width: 30%;
+    width: 290px;
+    height: 300px;
     display: flex;
     margin-top: 0;
     margin-left: 0;
@@ -281,8 +284,10 @@ label text for all nav icons*/
 }
 
 .third-section {
-    height: 100%;
-    width: 103.1vw;
+    /*margin: 0.05rem;
+    padding: 10px;*/
+    width: fit-content;
+    height: fit-content;
     background-color: transparent;
     background-image: linear-gradient( to bottom right,
         #45434380,
@@ -295,8 +300,11 @@ label text for all nav icons*/
     display: flex;
     align-items: center;
     align-content: center;
-    justify-content: center;
-    
+    justify-content: space-around;
+    flex-basis: ;
+    left: 5.5vw;
+    gap: 10px;
+    padding: 16px;
 }
 
 .home-drawer-header {
@@ -304,11 +312,11 @@ label text for all nav icons*/
    display: flex; 
    position: absolute;
    top: -35px;
-   width: 100;
+   width: fit-content;
    height: 35px;
    border-top-left-radius: 15px;
    border-top-right-radius: 15px;
-   margin: auto;
+   margin: 0;
    align-items: center;
    align-content: center;
    justify-content: center;
@@ -333,13 +341,45 @@ label text for all nav icons*/
     
 }
 
+.duo-drawer-case {
+    
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: ;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+
+}
+
+.sct3-backdrop {
+    
+    border-radius: 20px;
+    background-color: #161616; 
+    display: flex;
+    position: absolute;
+    width: 99.9%;
+    height: 99%;
+    
+ }
+.drawer-grid-shell {
+    margin: 0%;
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    
+ }
+
 .home-drawers {
-    background-image: linear-gradient(176deg,
-    #313131 0%,
-    #1E1D1D20 28%,
-    #25242465 75%,
-    #171717 95%);
-    background-color: black
+    background-color: transparent;
     width: 400px;
     height: 110px;
     display: flex;
@@ -347,93 +387,102 @@ label text for all nav icons*/
     border-radius: 25px;
     align-items: center;
     align-content: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    z-index: 1
-
-
+    justify-content: space-around;
+    
+    gap: 10px;
 }
+
+.drawer-foreground-grad {
+    background-image: linear-gradient(176deg,
+    #313131 0%,
+    #2e2c2c20 28%,
+    #25242465 75%,
+    #171717 95%);
+    height: 117px;
+    width:  398px;
+    display: flex;
+    position: absolute;
+    border-radius: 15px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    z-index: 3;
+}
+.drawer-background{
+    margin: 0.05rem;
+    height: 116px;
+    width:  396px;
+    position: absolute;
+    background: #161616;
+    border-radius: 20px;
+    padding: 1px;
+    z-index: 2;
+}
+  
+.drawer-backdrop-grad{
+    
+    height: 120px;
+    width:  400px;
+    position: absolute;
+    background: linear-gradient(  to bottom right,
+    #45434380,
+    #4D4C4C10,
+    #3C3A3A40
+    );
+    border-radius: 20px;
+    z-index: 1;
+    
+}
+
 .home-drawer-img {
     
-    width: 110px;
-    height: 85%;
+    width: 120px;
+    height: 110px;
     border-radius: 20px;
-    margin-left: 8px;
+    
     display: flex;
     position: relative;
     align-content: end;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 4;
 
 }
 
-.home-drawers::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    bottom: -1px;
-    border: 1px solid transparent;
-    background: linear-gradient( 130deg,
-    #191919 0%,
-    #1B1B20 16%,
-    #6C73BB 19%,
-    #1F2133 23%,
-    #1D1F2B 38%,
-    #242A60 50%,
-    #6C73BB 55%,
-    #3B4075 58%,
-    #262735 73%,
-    #252954 83%,
-    #585F9F 86%,
-    #373A54 86%,
-    #222222 100% );
-    border-radius: 30px;
-    z-index: -1
-}
+
+
 
 .home-drawer-txt {
     min-width: 200px;
-    width: 90%;
+    width: 240px;
     height: 80%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 0.1rem;
-    color: #666;
-    margin-right: 13px;
-    margin-left: 20px;
-    align-content: top;
+    flex-direction: column;
+    margin: 0;
+    
+    align-content: center;
     align-items: center;
     justify-content: center;
+    z-index: 4;
 }
-.drawer-grid-shell {
-   margin: 0.05rem;
-   padding: 10px;
-   border-radius: 20px;
-   background-color: #161616; 
-   display: grid;
-   grid-template-rows: 1fr, 1fr, 1fr;
-   grid-template-columns: 1fr 1fr 1fr;
-   width: fit-content;
-   height: fit-content;
-   gap: 10px;
-   align-items: center;
-   align-content: center;
-   justify-content: center;
-   
+.home-drawers p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    color: #999;
+    margin: 0;
+    
 }
-.drawer-grid-shell::backdrop {
-   border: 2px solid red;
-   border-radius: 20px;
-   background: #b10d0d; 
-   width: 100%;
-   height: 100%;
-   position;
-   
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    color: #e2dfdf;
+    margin: 0;
 }
+
+
 .iyidoo-card {
     border-radius: 20px;
     border: -0.5px solid #32343848;
