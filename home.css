@@ -25,6 +25,7 @@ spblugy-menu element*/
     align-items: center;
     justify-content: center;
     z-index: 900,
+    
 }
 
 /*spblug-shell is the container(<nav>) holding all menu icons and text
@@ -481,6 +482,195 @@ h4{
     color: #e2dfdf;
     margin: 0;
 }
+
+
+
+
+
+/*from here starts styles for MYworks page*/
+.section2 {
+    /*margin: 0.05rem;
+    padding: 10px;*/
+    width: fit-content;
+    height: auto;
+    background-color: transparent;
+    background-image: linear-gradient( to bottom right,
+        #45434380,
+        #4D4C4C10,
+        #3C3A3A40
+        );
+    border-radius: 20px;
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-basis: ;
+    left: 5.5vw;
+    gap: 0px;
+    padding: 16px;
+}
+
+.mywork-drawer-header {
+    background-color: #222222;
+   display: flex; 
+   position: absolute;
+   top: -35px;
+   width: fit-content;
+   height: 35px;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   margin: 0;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+}
+.mywork-drawer-header-icn {
+    display: flex;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.mywork-drawer-header-txt {
+    display: flex;
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
+    color: #979292;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.mywork-duo-drawer-case {
+    
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column ;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+
+}
+
+.sct2-backdrop {
+    
+    border-radius: 20px;
+    background-color: #161616; 
+    display: flex;
+    position: absolute;
+    width: 99.9%;
+    height: 99%;
+    
+ }
+.mywork-drawer-grid-shell {
+    margin: 0%;
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    
+ }
+
+.mywork-drawers {
+    background-color: transparent;
+    width: fit-content;
+    height: 110px;
+    display: flex;
+    position: relative;
+    border-radius: 25px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    gap: 1px;
+    margin: 0;
+}
+
+.mywork-drawer-foreground-grad {
+    background-image: linear-gradient(176deg,
+    #313131 0%,
+    #2e2c2c20 28%,
+    #25242465 75%,
+    #171717 95%);
+    height: 55px;
+    width:  245px;
+    display: flex;
+    position: absolute;
+    border-radius: 6px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    z-index: 3;
+}
+.mywork-drawer-background{
+    margin: 0.05rem;
+    height: 55px;
+    width:  245px;
+    position: absolute;
+    background: #161616;
+    border-radius: 20px;
+    padding: 1px;
+    z-index: 2;
+}
+  
+.mywork-drawer-backdrop-grad{
+    
+    height: 60px;
+    width:  250px;
+    position: absolute;
+    background: linear-gradient(  to bottom right,
+    #45434380,
+    #4D4C4C10,
+    #3C3A3A40
+    );
+    border-radius: 20px;
+    z-index: 1;
+    
+}
+
+.mywork-drawer-img {
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    
+    display: flex;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    margin-left: 10px;
+
+}
+.mywork-drawer-txt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    color: #ddd;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+
+
+
+
 
 
 .iyidoo-card {
