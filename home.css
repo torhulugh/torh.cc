@@ -485,7 +485,7 @@ h4{
 
 
 
-
+/*------------------------------My works--------------------------------*/
 
 /*from here starts styles for MYworks page*/
 .section2 {
@@ -507,7 +507,7 @@ h4{
     align-content: center;
     justify-content: space-around;
     flex-basis: ;
-    left: 5.5vw;
+;
     gap: 0px;
     padding: 16px;
 }
@@ -551,7 +551,7 @@ h4{
     width: fit-content;
     height: fit-content;
     display: flex;
-    flex-direction: column ;
+    flex-direction: ;
     position: relative;
     align-items: center;
     align-content: center;
@@ -573,13 +573,13 @@ h4{
     margin: 0%;
     border-radius: 20px; 
     display: flex;
-    flex-direction: column;
+    flex-direction: ;
     width: fit-content;
     height: fit-content;
     align-items: center;
     align-content: center;
     justify-content: center;
-    gap: 10px;
+    gap: 1px;
     
  }
 
