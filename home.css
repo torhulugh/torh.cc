@@ -508,7 +508,7 @@ h4{
     justify-content: space-around;
     flex-basis: ;
 ;
-    gap: 0px;
+    gap: px;
     padding: 16px;
 }
 
@@ -543,6 +543,8 @@ h4{
     height: fit-content;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
     
 }
 
@@ -551,11 +553,11 @@ h4{
     width: fit-content;
     height: fit-content;
     display: flex;
-    flex-direction: ;
+    flex-direction: column;
     position: relative;
-    align-items: center;
     align-content: center;
     margin: 0;
+    gap: 0px;
 
 }
 
@@ -579,21 +581,21 @@ h4{
     align-items: center;
     align-content: center;
     justify-content: center;
-    gap: 1px;
+    gap: px;
     
  }
 
 .mywork-drawers {
     background-color: transparent;
-    width: fit-content;
-    height: 110px;
+    width: 350px;
+    height: 70px;
     display: flex;
     position: relative;
     border-radius: 25px;
     align-items: center;
     align-content: center;
     justify-content: space-around;
-    gap: 1px;
+    gap: px;
     margin: 0;
 }
 
@@ -655,16 +657,7 @@ h4{
     margin-left: 10px;
 
 }
-.mywork-drawer-txt{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
-    letter-spacing: 0.1rem;
-    color: #ddd;
-    margin: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 0px;
-    padding-top: 0px;
+
 }
 
 
