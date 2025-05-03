@@ -1,139 +1,244 @@
+
+<!-- 
+======================= TABLE OFCONTENT =====================
+
+ >>>>>>>>>>>>>>>>>>> !!!NOTE!! >>>>>>>>>>>>>>>>>>>>>>                                                 
+      Using command/ctrl F to navigate to search ,   
+      you can add "." to a number to take you directly to   
+      the section, for example typing .6. in the search bar
+      take you directly to the footer section of this page.
+      Also typing .c. in the search bar return you to the 
+      table of content.
+   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ * ========================= .c.====================================
+ * 1. GENERAL
+ * 2. LAYOUT
+ * 3. MENU
+ * -- 3a. Greneral styles  menu
+ * -- 3b. mobile menu
+ * 4. MAIN
+ * -- 4a. Profile section
+ * -- 4b. My works section
+ * 5. CONTACT FOAM
+ * 6. FOOTER
+ * 7. MEDIA QUERIES
+ * -- 7a. Tablet
+ * -------- 7a1. menu @media Tablet
+ * -------- 7a2. profile section @media Tablet
+ * -------- 7a3. my works container @media Tablet
+ 
+ * -- 4b. Phone
+ * -------- 7b1. menu @media phone
+ * -------- 7b2. profile section @media phone
+ * -------- .7b3. my works section @media phone
+ * -------- .7b4. contact foam @media phone
+ * -------- .7b5. footer @media phone
+ ==================================================================  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tor Hulugh</title>
-    <link href="home.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
     
 </head>
 <body> 
-<nav class="spblugy-menu">
-        <div class="site-logo">
-          <img src="img/fav-icon.svg" alt="">
-        </div>
-        <div class="oc-button">
-          <img class="spgy-close-icon" src="img/spgy-close-icon.svg" alt="menu close Icon">
-        </div>
-        <div class="spblugy-shell">
+  <!-- ================================== Header ==================================== -->
 
-          <ul class="spblugy-icons">
+  <header>
+    <div class="site-logo">
+      <img class="site-logo-img" src="img/site-logo-TH.png" alt="site logo the words TorHulugh written in signature form with a crown on the T" />
+    </div>
+    <div class="menu-collapse-button">
+      <img
+        class="menu-collapese-btn-icon"
+        src="img/spgy-close-icon.svg"
+        alt="menu close Icon"
+      />
+    </div>
+    <nav class="spblugy-menu">
+      <div class="menu-background-color">
+        <ul class="menu-icon-tray">
+          
+          <li class="menu-icon-nd-name-container">
+            <a class="nav-link" href="index.html">
+              <img class="menu-icons" src="icn/home-icon.svg" />
+              <p class="menu-icons-txt">Home</p>
+              <div class="nav-hover-effect">
+                <div class="green-blur"></div>
+                <div class="purple-blur"></div>
+                <div class="pink-blur"></div>
+              </div>
+            </a>
+          
+          </li>
+          <li class="menu-icon-nd-name-container">
+            <a class="nav-link" href="myworks.html">
+              <img class="menu-icons" src="icn/myworks-icon.svg" />
+              <p class="menu-icons-txt">My Work</p>
+            </a>
+          </li>
 
-            <li class="spblugy-icons-shell">
-              <a class="nav-link" href="index.html">
-                <img class="spgy-icon" src="icn/home-icon.svg">
-                <p class="spgy-icon-txt">
-                  Home 
-                </p>
-              </a>
-            </li>
-            <li class="spblugy-icons-shell">
+          <li class="menu-icon-nd-name-container">
+            <a class="nav-link" href="gallery.html">
+              <img class="menu-icons" src="icn/gallery-icon.svg" />
+              <p class="menu-icons-txt">Gallery</p>
+            </a>
+          </li>
 
-              <a class="nav-link" href="myworks.html">
-                <img class="spgy-icon" src="icn/myworks-icon.svg">
-                <p class="spgy-icon-txt">
-                  My Work
-                </p>
-              </a>
-            </li>
-            
-            <li class="spblugy-icons-shell">
-              <a class="nav-link" href="gallery.html">
-                <img class="spgy-icon" src="icn/gallery-icon.svg">
-                <p class="spgy-icon-txt">
-                  Gallery
-                </p>
-              </a>
-            </li>
+          <li class="menu-icon-nd-name-container">
+            <a class="nav-link" class="nav-link" href="contactme.html">
+              <img class="menu-icons" src="icn/contact-icon.svg" />
+              <p class="menu-icons-txt">Contact Me</p>
+            </a>
+          </li>
 
-            <li class="spblugy-icons-shell">
-              <a class="nav-link" class="nav-link" href="contactme.html">
-                <img class="spgy-icon" src="icn/contact-icon.svg">
-                <p class="spgy-icon-txt">
-                  Contact Me
-                </p>
-              </a>
-            </li>
+          <li class="menu-icon-nd-name-container">
+            <a class="nav-link" href="aboutme.html">
+              <img class="menu-icons" src="icn/aboutme-icon.svg" />
+              <p class="menu-icons-txt">About Me</p>
+            </a>
+          </li>
 
-            <li class="spblugy-icons-shell">
-              <a class="nav-link" href="aboutme.html">
-                <img class="spgy-icon" src="icn/aboutme-icon.svg">
-                <p class="spgy-icon-txt">
-                  About Me
-                </p>
-              </a>
-            </li>
+          <li class="menu-icon-nd-name-container">
+            <a class="nav-link" href="portfolio.html">
+              <img class="menu-icons" src="icn/portfolio-icon.svg" />
+              <p class="menu-icons-txt">Portfolio</p>
+            </a>
+          </li>
 
-            <li class="spblugy-icons-shell">
-              <a class="nav-link" href="portfolio.html">
-                <img class="spgy-icon" src="icn/portfolio-icon.svg">
-                <p class="spgy-icon-txt">
-                  Portfolio
-                </p>
-              </a>
-            </li>
+          <li class="menu-icon-nd-name-container">
+            <a class="nav-link" href="freebies.html">
+              <img class="menu-icons" src="icn/Freebies-icon.svg" />
+              <p class="menu-icons-txt">Freebies</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+<
+    <!------------- .2.| Tablet & Mobile menu ---------------------------->
 
-            <li class="spblugy-icons-shell">
-              <a class="nav-link" href="freebies.html">
-                <img class="spgy-icon" src="icn/Freebies-icon.svg">
-                <p class="spgy-icon-txt">
-                  Freebies
-                </p>
-              </a>
-            </li>
-          </ul>
-       </div>
-</nav>
+    <nav class="spblugy-mobile-menu">
+      <div class="menu-background-color-mb">
+        <ul class="menu-icon-tray1-mb">
+         
+          <li class="menu-icon-nd-name-container-mb">
+            <a class="nav-link" href="index.html">
+              <img class="menu-icons-mb" src="icn/home-icon.svg" />
+              <p class="menu-icons-txt-mb">Home</p>
+            </a>
+          </li>
+          
+          <li class="menu-icon-nd-name-container-mb">
+            <a class="nav-link" href="myworks.html">
+              <img class="menu-icons-mb" src="icn/myworks-icon.svg" />
+              <p class="menu-icons-txt-mb">craft</p>
+            </a>
+          </li>
+
+          <li class="menu-icon-nd-name-container-mb">
+            <a class="nav-link" href="gallery.html">
+              <img class="menu-icons-mb" src="icn/gallery-icon.svg" />
+              <p class="menu-icons-txt-mb">Gallery</p>
+            </a>
+          </li>
+
+          <li class="menu-icon-nd-name-container-mb">
+            <a class="nav-link" class="nav-link" href="contactme.html">
+              <img class="menu-icons-mb" src="icn/contact-icon.svg" />
+              <p class="menu-icons-txt-mb">Contact</p>
+            </a>
+          </li>
+
+          <li class="menu-icon-nd-name-container-mb">
+            <a class="nav-link" class="nav-link" href="contactme.html">
+              <img class="menu-icons-mb" src="icn/more-icn.svg" />
+              <p class="menu-icons-txt-mb">More</p>
+            </a>
+          </li>
+
+          
+        </ul>
+        
+        <ul class="menu-icon-tray2-mb">
+           
+
+          <li class="menu-icon-nd-name-container-mb">
+            <a class="nav-link" href="portfolio.html">
+              <img class="menu-icons-mb" src="icn/portfolio-icon.svg" />
+              <p class="menu-icons-txt-mb">Portfolio</p>
+            </a>
+          </li>
+
+          <li class="menu-icon-nd-name-container-mb">
+            <a class="nav-link" href="freebies.html">
+              <img class="menu-icons-mb" src="icn/Freebies-icon.svg" />
+              <p class="menu-icons-txt-mb">Freebies</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ================================ main ======================================== -->
     
+    <!-- ============================ intro profile section ===========================-->
 <section class="first-section">
   
-        <img class="pf" src="img/pf img.png" alt="designers picture">
+        <img class="pf" src="img/home pf imag.png" alt="designers picture">
         <p class="hpx">
-          Hello! I am  Tor Hulugh, a multidisciplinary Designer, 
-            with experience and skills that cut across, graphic, motion, 
-            UI/UX, AR, Brand Identity, packaging and fashion design. 
-            Feel free to explore my works, what inspirers me, and my 
-            design prowess. 
+          Hello! and welcome, I am Tor Hulugh, a Web Developer, with a background in design, 
+          welcome to my web space  where I show case documented, previews of my works, passion 
+          projects, what inspires them, my design and development processes,  
           </p> 
           <img class="o1-backdrop" src="img/o1-backdrop.svg" alt="/">
    
 </section>
 
+ <!-- ============================ my work category section ===========================-->
 <section class="second-section">
+
+ <!-- ----------------------------- my work category section header ------------------------------>
   <div class="home-drawer-header">
     <p class="home-drawer-header-txt">
-      My work featured categories
+      My work categories
     </p>
   </div>
   
   <div class="divider"></div>
-
+ <!-- ----------------------------- my work category icons ------------------------------>
   <div class="sct2-iconsishell">
     <img class="home-category-icons" src="icn/graphicdesign-icon.svg" alt="">
     <img class="home-category-icons" src="icn/illustration-icon.svg" alt="">
     <img class="home-category-icons" src="icn/uxdesigner-icon.svg" alt="">
     <img class="home-category-icons" src="icn/motiongraphic-icon.svg" alt="">
     <img class="home-category-icons" src="icn/fashiondesign-icon.svg" alt="">   
-    <img class="home-category-icons" src="icn/fashiondesign-icon.svg" alt=""></div>   
+    <img class="home-category-icons" src="icn/code craft.svg" alt="">
+  </div>   
 </section>
-
+ <!-- ============================ Recent activities section ===========================-->
 <section class="third-section">
+
   <div class="sct3-backdrop"></div>
-    
+ <!-- ----------------------------- Recent activities section header ------------------------------>   
         <div class="home-drawer-header">
           <img class="home-drawer-header-icn" src="icn/favourite-icon.svg" alt="">
           <p class="home-drawer-header-txt">
             Recent Activities
           </p>
         </div>
-      
+ <!-- ----------------------------- Recent activities drawers ------------------------------>       
         <div class="drawer-grid-shell" >
-<!--thisis the inner conainter of the card like drawer-->
-          
+
+<!-- ----------------------------- Recent activities drawers container ------------------------------>           
         <div class="duo-drawer-case">
-          <!--Duo-drawer-case are flex boxes with a colum flow direction holding two of the drawer cards -->
+<!-- ----------------------------- Recent activities drawer 1 ------------------------------>         
             <div class="home-drawers" > 
-              <!--home-drawers are the cards contained in section 3 that hold the recent activities clickable work links -->
+            
               <div class="drawer-foreground-grad"> </div>
               <div class="drawer-background"></div>
               <div class="drawer-backdrop-grad"></div>
@@ -147,9 +252,9 @@
               </div>
             </div>
           </div>
-          
+<!-- ----------------------------- Recent activities drawer 2 ------------------------------>           
             <div class="home-drawers" > 
-              <!--home-drawers are the cards contained in section 3 that hold the recent activities clickable work links -->
+              
               <div class="drawer-foreground-grad"> </div>
               <div class="drawer-background"></div>
               <div class="drawer-backdrop-grad"></div>
@@ -168,12 +273,12 @@
             
         </div>
         <div class="drawer-grid-shell" >
-<!--thisis the inner conainter of the card like drawer-->
+
           
         <div class="duo-drawer-case">
-          <!--Duo-drawer-case are flex boxes with a colum flow direction holding two of the drawer cards -->
+<!-- ----------------------------- Recent activities drawer 3 ------------------------------>           
             <div class="home-drawers" > 
-              <!--home-drawers are the cards contained in section 3 that hold the recent activities clickable work links -->
+              
               <div class="drawer-foreground-grad"> </div>
               <div class="drawer-background"></div>
               <div class="drawer-backdrop-grad"></div>
@@ -187,9 +292,9 @@
               </div>
             </div>
           </div>
-          
+<!-- ----------------------------- Recent activities drawer 4 ------------------------------>           
             <div class="home-drawers" > 
-              <!--home-drawers are the cards contained in section 3 that hold the recent activities clickable work links -->
+              
               <div class="drawer-foreground-grad"> </div>
               <div class="drawer-background"></div>
               <div class="drawer-backdrop-grad"></div>
@@ -208,12 +313,11 @@
             
         </div>
         <div class="drawer-grid-shell" >
-<!--thisis the inner conainter of the card like drawer-->
           
         <div class="duo-drawer-case">
-          <!--Duo-drawer-case are flex boxes with a colum flow direction holding two of the drawer cards -->
+<!-- ----------------------------- Recent activities drawer 5 ------------------------------> 
             <div class="home-drawers" > 
-              <!--home-drawers are the cards contained in section 3 that hold the recent activities clickable work links -->
+              
               <div class="drawer-foreground-grad"> </div>
               <div class="drawer-background"></div>
               <div class="drawer-backdrop-grad"></div>
@@ -227,9 +331,9 @@
               </div>
             </div>
           </div>
-          
+<!-- ----------------------------- Recent activities drawer 6 ------------------------------>           
             <div class="home-drawers" > 
-              <!--home-drawers are the cards contained in section 3 that hold the recent activities clickable work links -->
+            
               <div class="drawer-foreground-grad"> </div>
               <div class="drawer-background"></div>
               <div class="drawer-backdrop-grad"></div>

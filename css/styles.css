@@ -6,35 +6,93 @@ body {
     justify-content: center;
 }
 
-/*SPBLUGY menu this is the  manin container(nav) holding
-all menu elements
-Note: to further tint and control the see through effect 
-of the spblugy-shell, i added a transperant to the 
-spblugy-menu element*/
-.spblugy-menu {
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 900;
+  }
+  
+  .site-logo {
+    background-color: #000;
+    width: 110px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    position: absolute;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 9000;
+    left: 2.5%;
+    bottom: -85.7px;
+  }
+  .site-logo-img {
+    z-index: 9000;
+    width: 80px;
+  }
+  /*oc-buttion, this is the open & close button on spblugy menu*/
+  
+  /*class created to target the site-logo on the nav menu*/
+  .menu-collapse-button {
+    background-color: #2c2b2e;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    position: absolute;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 9000;
+    right: 3%;
+    bottom: -85.9px;
+    box-shadow: 0px 2px 5px 2px #00000050;
+  }
+  
+  .menu-collapese-btn-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .menu-collapse-button:hover {
+    background-image: linear-gradient(
+      50deg,
+      #1b1a1a7a,
+      #0f0f0f92,
+      #1b1a1a94,
+      #0f0f0f94,
+      #2726266b
+    );
+  }
+  
+  /*SPBLUGY menu this is the  manin container(nav) holding
+  all menu elements
+  Note: to further tint and control the see through effect 
+  of the spblugy-shell, i added a transperant to the 
+  spblugy-menu element*/
+  .spblugy-menu {
     background-color: #0d0c0d8a;
     border-radius: 60px;
     width: 98%;
     height: 90px;
     display: flex;
     position: fixed;
-    top: 15px;
-    margin: auto;
-    align-content: center;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
-    z-index: 900,
-    
-}
-
-/*spblug-shell is the container(<nav>) holding all menu icons and text
-Note:this layer also hold the transperent glass effect*/
-.spblugy-shell {
+    top: 10px;
+    margin: 0;
+    z-index: 900;
+  }
+  
+  /*menu-icons-container is the container(<nav>) holding all menu icons and text
+  Note:this layer also hold the transperent glass effect*/
+  .menu-background-color {
     width: 100%;
     height: 100%;
     border: 0.5px solid #55555505;
-    background-color: #0f0f0f
+    background-color: #0f0f0f;
     display: flex;
     position: relative;
     align-content: center;
@@ -45,33 +103,34 @@ Note:this layer also hold the transperent glass effect*/
     border-radius: 60px;
     backdrop-filter: blur(8px);
     background-image: linear-gradient(
-        50deg,
-        #1b1a1a7a,
-        #0f0f0f92,
-        #1b1a1a94,
-        #0f0f0f94,
-        #2726266b);
-}
-
-/*spblugy-icon, this container(<ul>)   
-holding the spblugy-icons-shell/ all nav icons and text*/
-.spblugy-icons {
+      50deg,
+      #1b1a1a7a,
+      #0f0f0f92,
+      #1b1a1a94,
+      #0f0f0f94,
+      #2726266b
+    );
+  }
+  
+  /*spblugy-icon, this container(<ul>)   
+  holding the spblugy-icons-shell/ all nav icons and text*/
+  .menu-icon-tray {
     width: auto;
-    height:auto;
+    height: auto;
     display: flex;
     position: relative;
     align-content: center;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    gap: 7%;
+    gap: 10%;
     z-index: 204;
-}
-
-/*spblugy-icons-shell this is the container(li) holding
-the <ul> holding all nav icons*/
-.spblugy-icons-shell {
-    color: #979292;
+  }
+  
+  /*spblugy-icons-shell this is the container(li) holding
+  the <ul> holding all nav icons*/
+  .menu-icon-nd-name-container {
+    width: 100%;
+    height: 20px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -81,72 +140,98 @@ the <ul> holding all nav icons*/
     align-self: center;
     z-index: 203;
     transform: translateY(-7%);
-    gap: 2px;
-}
-
-/*spblugy-icons-txt this is the container(div) holding
-label text for all nav icons*/
-.spgy-icon-txt {
+    gap: 1px;
+  }
+  
+  /*spblugy-icons-txt this is the container(div) holding
+  label text for all nav icons*/
+  .menu-icons-txt {
+    width: 85px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     letter-spacing: 0.07rem;
     margin: 0%;
     align-content: center;
     align-items: center;
     justify-content: center;
-}
-
-/*class created to target spblugy menu icons*/
-.spgy-icon {
-    width: 20px;
-    height: 20px;
+  }
+  
+  /*class created to target spblugy menu icons*/
+  .menu-icons {
+    width: 137.5%;
+    height: 15.5%;
     filter: drop-shadow(#000);
-    filter: opacity(90%);
-}
-
-/*oc-buttion, this is the open & close button on spblugy menu*/
-.oc-button {
-    background-color: #2C2B2E;
-    width: 4.4%;
-    height: 70%;
-    margin-left: 90.7%;
-    border-radius: 100%;
-    display: flex;
-    z-index: 205;
+    filter: opacity(80.8%);
+  }
+  
+  .nav-hover-effect {
+    display: none;
     position: absolute;
-    align-items: center;
-    align-content: center;
-    justify-content:center;
-}
-
-/*class created to target the site-logo on the nav menu*/
-.site-logo {
-    
-    width:10% ;
-    height: 50%;
-    margin-right: 86%;
-    border-radius: 100px;
-    display: flex;
-    z-index: 206;
-    position: absolute;
-    align-content: center;
-    justify-content:flex-start;
-
-}
-
-.spgy-close-icon {
-    width: 50%;
-    height: 50%;
-    margin: 0px;
-    display: flex;
-    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 60px;
     align-content: center;
     align-items: center;
     justify-content: center;
-    z-index: 207;
-}
-/*class created to target visted link behavour on nav menu*/
-.nav-link {
+    transform: translate(0px, -10px);
+    visibility: visible;
+    filter: blur(15px);
+    z-index: -199;
+  }
+  
+  header a:hover,
+  header ul img p :hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.07);
+    color: #fff;
+    display: flex;
+  }
+  
+  .nav-hover-effect :hover {
+    transform: scale(none);
+  }
+  
+  .green-blur {
+    background: linear-gradient(#35c656, #32c1ed);
+    display: flex;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 60px;
+    filter: opacity(50%);
+    transform: translate(-14px, -0px);
+    align-content: center;
+  }
+  
+  .purple-blur {
+    content: ".";
+    background: linear-gradient(#ca69ea, #ad8af8, #7719ab);
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 60px;
+    filter: opacity(50%);
+    transform: translate(14px, 0px);
+    align-content: center;
+  }
+  
+  .pink-blur {
+    background: linear-gradient(#7863e6, #e29eb2);
+    content: ".";
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 60px;
+    filter: opacity(50%);
+    transform: translate(0px, 24px);
+    align-content: center;
+    /* filter: blur(8px); */
+  }
+  
+  /*class created to target visted link behavour on nav menu*/
+  .nav-link {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -163,15 +248,151 @@ label text for all nav icons*/
     align-items: center;
     justify-content: center;
     gap: 10px;
+  }
+  
+  /*------------------- .3b. mobile menu ----------------------------------*/
+  
+  /*SPBLUGY menu this is the  manin container(nav) holding
+  all menu elements
+  Note: to further tint and control the see through effect 
+  of the spblugy-shell, i added a transperant to the 
+  spblugy-menu element*/
+  .spblugy-mobile-menu {
+    background-color: #0d0c0d8a;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 100%;
+    /*height: fit-conten;* full menu size/*/
+    height: 90px;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    z-index: 900;
+  }
+  
+  /*menu-icons-container is the container(<nav>) holding all menu icons and text
+  Note:this layer also hold the transperent glass effect*/
+  .menu-background-color-mb {
+    width: 100%;
+    height: 100%;
+    border: 0.5px solid #55555505;
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    z-index: 200;
+    box-shadow: 0px 3px 10px #0000006a;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    backdrop-filter: blur(8px);
+    background-image: linear-gradient(
+      50deg,
+      #1b1a1a7a,
+      #0f0f0f92,
+      #1b1a1a94,
+      #0f0f0f94,
+      #2726266b
+    );
+  }
+  
+  /*spblugy-icon, this container(<ul>)   
+  holding the spblugy-icons-shell/ all nav icons and text*/
+  .menu-icon-tray1-mb {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px 0px 20px;
+    padding: 0;
+    gap: 4%;
+    z-index: 204;
+  }
+  .menu-icon-tray2-mb {
+    width: auto;
+    height: auto;
+    display: none;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 12%;
+    z-index: 204;
+  }
+  
+  /*spblugy-icons-shell this is the container(li) holding
+  the <ul> holding all nav icons*/
+  .menu-icon-nd-name-container-mb {
+    width: auto;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    z-index: 203;
+    transform: translateY(-7%);
+    gap: 1px;
+  }
+  
+  /*spblugy-icons-txt this is the container(div) holding
+  label text for all nav icons*/
+  .menu-icons-txt-mb {
+    width: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 0.07rem;
+    margin: 0%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*class created to target spblugy menu icons*/
+  .menu-icons-mb {
+    width: 22px;
+    height: 22px;
+    filter: drop-shadow(#000);
+    filter: opacity(80.8%);
+  }
+  
+  /*class created to target visted link behavour on nav menu*/
+  .nav-link-mb {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #979292;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.07rem;
+    margin: 0%;
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 
-}
 .first-section {
     
     width: auto;
     height:255px;
     margin-top: 145px;
-    margin-left: ;
-    margin-right: ;
     display: flex;
     position: relative;
     align-items: center;
@@ -274,7 +495,6 @@ label text for all nav icons*/
 .home-category-icons {
     width: 9%;
     height:100%;
-    margin:;
     display: flex;
     position: relative;
     flex-direction: row;
@@ -302,7 +522,6 @@ label text for all nav icons*/
     align-items: center;
     align-content: center;
     justify-content: space-around;
-    flex-basis: ;
     left: 5.5vw;
     gap: 10px;
     padding: 16px;
@@ -347,7 +566,6 @@ label text for all nav icons*/
     width: fit-content;
     height: fit-content;
     display: flex;
-    flex-direction: ;
     position: relative;
     align-items: center;
     align-content: center;
@@ -506,7 +724,6 @@ h4{
     align-items: center;
     align-content: center;
     justify-content: space-around;
-    flex-basis: ;
 ;
     gap: px;
     padding: 16px;
@@ -575,7 +792,6 @@ h4{
     margin: 0%;
     border-radius: 20px; 
     display: flex;
-    flex-direction: ;
     width: fit-content;
     height: fit-content;
     align-items: center;
@@ -655,8 +871,6 @@ h4{
     justify-content: center;
     z-index: 4;
     margin-left: 10px;
-
-}
 
 }
 
@@ -766,7 +980,7 @@ width: auto;
     margin: 0px;
     padding: 0px; 
     filter: blur(0.3rem);
-    position: relativea;
+    position: relative;
     z-index: 101;
     display: flex;
     align-content: center;
@@ -827,13 +1041,13 @@ width: auto;
     width: 100%;
     height: 60%;
     display: flex;
-    background-image: linear-gradient(#8EA2B410,#A0A7AD10, #E0EAF210);;
+    background-image: linear-gradient(#8EA2B410,#A0A7AD10, #E0EAF210);
     position: absolute;
     bottom: 0px;
     filter: blur(50px);
     border-top-left-radius: 600px;
     border-top-right-radius: 600px;
-    align-content: center
+    align-content: center;
     justify-content: center;
     align-items: center;
 
@@ -879,7 +1093,6 @@ width: auto;
     position: relative;
     left: 0px;
     align-content: flex-start;
-    justify-content: ;
     align-items: center;
     gap: 50px;
     margin-top: 25px;
@@ -994,7 +1207,6 @@ width: auto;
     width: fit-content;
     height: auto;
     display: flex;
-    flex-direction;
 
 }
 
@@ -1021,7 +1233,7 @@ width: auto;
     flex-direction:column;
     width: 90%;
     height: 2px;
-    align-content: center
+    align-content: center;
     justify-content: center;
     align-items: center;
 }
@@ -1045,13 +1257,13 @@ width: auto;
     width: 100%;
     height: 70%;
     display: flex;
-    background-image: linear-gradient(#8EA2B410,#A0A7AD10, #E0EAF210);;
+    background-image: linear-gradient(#8EA2B410,#A0A7AD10, #E0EAF210);
     position: absolute;
     bottom: 0px;
     filter: blur(60px);
     border-top-left-radius: 600px;
     border-top-right-radius: 600px;
-    align-content: center
+    align-content: center;
     justify-content: center;
     align-items: center;
 }
@@ -1060,10 +1272,9 @@ width: auto;
 margin-top: 50px;
 position: relative;
 border: 2px solid black;
-background-color: 
 width: 300px;
 height: 500px;
-align-content: center
+align-content: center;
 justify-content: center;
 align-items: center;
 margin: auto;
