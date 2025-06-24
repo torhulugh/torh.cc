@@ -154,7 +154,7 @@ header {
   z-index: 200;
   box-shadow: 0px 3px 10px #0000006a;
   border-radius: 60px;
-  backdrop-filter: blur(8px);
+  backdrop-filter: brightness() opacity(70%) blur(8px);
   background-image: linear-gradient(
     50deg,
     #1b1a1a7a,
@@ -444,7 +444,7 @@ header ul img p :hover {
 
 
 #intro-profile-continer {
-  width: auto;
+  width: 90%;
   height: 255px;
   display: flex;
   position: relative;
@@ -457,7 +457,7 @@ header ul img p :hover {
 .profile-photo {
   max-width: 30%;
   width: 290px;
-  height: 300px;
+  height: auto;
   display: flex;
   position: relative;
   align-items: center;
@@ -1158,6 +1158,45 @@ footer {
   .category-icons-container {
     max-width: 462px;
   }
+  .home-drawers {
+    background-color: transparent;
+    width: 320px;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .drawer-foreground-grad {
+    width: 318px;
+  }
+  .drawer-background {
+    width: 316px;
+  }
+  
+  .drawer-backdrop-grad {
+    width: 320px;
+    
+  }
+  
+  .home-drawer-img {
+    width: 116px;
+    transform: translatex(6px)
+  }
+  
+  .home-drawer-txt {
+    min-width: 100px;
+    width: fit-content;
+    height: auto;
+    transform: translatex(5px);
+  }
+  .home-drawers p {
+    margin: 0;
+
+  }
+  h4 {
+    margin-bottom: 8px;
+  }
+  
+
 }
 
 /*--------------- .7b.Phone---------------------- */
@@ -1190,7 +1229,19 @@ footer {
     width: 100px;
     height: 50px;
     left: 5px;
-    bottom: -54px;
+    bottom: -24px;
+    z-index: 1000;
+    border: 0.5px solid #55555505;
+/* box-shadow: 0px 3px 10px #0000006a; */
+backdrop-filter: blur(3px);
+  background-image: linear-gradient(
+    50deg,
+    #1b1a1a4b,
+    #0f0f0f92,
+    #1b1a1a5d,
+    #0f0f0f94,
+    #27262640
+  );
   }
 
   .site-logo-img {
