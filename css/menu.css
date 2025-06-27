@@ -1,0 +1,564 @@
+/*
+
+======================= TABLE OFCONTENT =====================
+
+ >>>>>>>>>>>>>>>>>>> !!!NOTE!! >>>>>>>>>>>>>>>>>>>>>>                                                 
+      Using command/ctrl F to navigate to search ,   
+      you can add "." to a number to take you directly to   
+      the section, for example typing .6. in the search bar
+      take you directly to the footer section of this page.
+      Also typing .c. in the search bar return you to the 
+      table of content.
+   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ * ========================= .c.====================================
+ * 1. Desktop menu
+ * -- 3a. Greneral styles  menu
+ * -- 3b. mobile menu
+ * 2. Mobile menu
+ * -- 4a. Profile section
+ * -- 4b. My works section
+ 
+ * 3. MEDIA QUERIES
+ * -- 3a. Desktop 2
+ * -------- 3a1. menu @media Desktop 2
+ * -------- 3a2. profile section @media Desktop 2
+ * -------- 3a3. my works container @media Desktop 2
+ * -- 3a. Tablet
+ * -------- 3a1. menu @media Tablet
+ * -------- 3a2. profile section @media Tablet
+ * -------- 3a3. my works container @media Tablet
+ * -- 3a. Tablet
+ * -------- 3a1. menu @media Tablet
+ * -------- 3a2. profile section @media Tablet
+ * -------- 3a3. my works container @media Tablet
+ * -- 4b. Phone
+ * -------- 3b1. menu @media phone
+ * -------- 3b2. profile section @media phone
+ * -------- .3b3. my works section @media phone
+ * -------- .3b4. contact foam @media phone
+ * -------- .3b5. footer @media phone
+ ==================================================================*/
+
+
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 900;
+}
+
+#header-site-logo {
+  background-color: #000;
+  width: 110px;
+  height: 60px;
+  border-radius: 30px;
+  display: flex;
+  position: absolute;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 9000;
+  left: 2.4%;
+  bottom: 24px;
+}
+#screen-mode {
+  display: none;
+}
+#light-mode-icn {
+  display: none;
+}
+#dark-mode-icn {
+  display: none;
+}
+#header-site-logo-img {
+  z-index: 9000;
+  width: 80px;
+}
+#desktopMenu-collapse-button {
+  background-color: #2c2b2e;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  display: flex;
+  position: absolute;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 9000;
+  right: 2.5%;
+  bottom: 25px;
+  box-shadow: 0px 2px 5px 2px #00000050;
+}
+#desktopMenu-collapese-btn-icon {
+  width: 30px;
+  height: 30px;
+}
+#desktopMenu-collapse-button:hover {
+  background-image: linear-gradient(
+    50deg,
+    #1b1a1a7a,
+    #0f0f0f92,
+    #1b1a1a94,
+    #0f0f0f94,
+    #2726266b
+  );
+}
+#desktop-menu {
+  background-color: #0d0c0d8a;
+  border-radius: 60px;
+  width: 98%;
+  height: 90px;
+  display: flex;
+  position: fixed;
+  top: 10px;
+  margin: 0;
+  z-index: 900;
+}
+
+#desktopMenu-background-color {
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid #55555505;
+  background-color: #0f0f0f55;
+  display: flex;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  box-shadow: 0px 3px 10px #0000006a;
+  border-radius: 60px;
+  backdrop-filter: brightness() opacity(70%) blur(8px);
+  background-image: linear-gradient(
+    50deg,
+    #1b1a1a7a,
+    #0f0f0f92,
+    #1b1a1a94,
+    #0f0f0f94,
+    #2726266b
+  );
+}
+
+#desktopMenu-icon-tray {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  z-index: 204;
+}
+.desktopMenuIconContainer {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  z-index: 203;
+  transform: translateY(-7%);
+  gap: 1px;
+}
+
+.desktopMenuIconsName {
+  width: 85px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 0.07rem;
+  margin: 0%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.desktopMenuIcon {
+  width: 137.5%;
+  height: 15.5%;
+  filter: drop-shadow(#000);
+  filter: opacity(80.8%);
+}
+#light-mode {
+  width: 137.5%;
+  height: 15.5%;
+  filter: drop-shadow(#000);
+  filter: opacity(80.8%);
+}
+#dark-mode {
+  display: none;
+  width: 137.5%;
+  height: 15.5%;
+  filter: drop-shadow(#000);
+  filter: opacity(80.8%);
+}
+.desktopMenuIconHoverEffect {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  border-radius: 60px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0px, -10px);
+  visibility: visible;
+  filter: blur(15px);
+  transform: 0.3s ease-in-out;
+  z-index: -199;
+}
+.desktopMenuIconContainer:hover {
+  scale: 115%;
+  transition: 0.5s;
+}
+.greenBlur {
+  background: linear-gradient(#35c656, #32c1ed);
+  display: flex;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 60px;
+  filter: opacity(50%);
+  transform: translate(-14px, -0px);
+  align-content: center;
+}
+.purpleBlur {
+  content: ".";
+  background: linear-gradient(#ca69ea, #ad8af8, #7719ab);
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 60px;
+  filter: opacity(50%);
+  transform: translate(14px, 0px);
+  align-content: center;
+}
+.pinkBlur {
+  background: linear-gradient(#7863e6, #e29eb2);
+  content: ".";
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 60px;
+  filter: opacity(50%);
+  transform: translate(0px, 24px);
+  align-content: center;
+}
+.desktopMenuIconLink {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #979292;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.07rem;
+  margin: 0%;
+  margin-top: 10px;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/*------------------- .3b. mobile menu ----------------------------------*/
+#mobile-menu {
+  background-color: #0d0c0d8a;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  width: 100%;
+  height: 90px;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  z-index: 900;
+}
+#mobileMenu-background-color {
+  width: 100%;
+  height: 100%;
+  border: 0.5px solid #55555505;
+  background-color: #0f0f0f1e;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  z-index: 200;
+  box-shadow: 3px 3px 10px #20202015;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  backdrop-filter: blur(8px);
+  backdrop-filter: brightness() opacity(85%) blur(8px);
+  background-image: linear-gradient(
+    50deg,
+    #1b1a1a7a,
+    #0f0f0f92,
+    #1b1a1a94,
+    #0f0f0f94,
+    #2726266b
+  );
+}
+#mobileMenu-icon-tray1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 20px 0px 20px;
+  padding: 0;
+  gap: 4%;
+  z-index: 204;
+}
+#mobileMenu-icon-tray2 {
+  width: auto;
+  height: auto;
+  display: none;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 12%;
+  z-index: 204;
+}
+.mobileMenuIconContainer {
+  width: auto;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  z-index: 203;
+  transform: translateY(-7%);
+  gap: 1px;
+}
+
+/*spblugy-icons-txt this is the container(div) holding
+label text for all nav icons*/
+.mobilMenuIconsName {
+  width: 65px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 0.07rem;
+  margin: 0%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.mobileMenuIcon {
+  width: 22px;
+  height: 22px;
+  filter: drop-shadow(#000);
+  filter: opacity(80.8%);
+}
+
+.mobileMenulink {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #979292;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.07rem;
+  margin: 0%;
+  margin-top: 10px;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+/*=========  .7. MEDIA QUERIES ================= */
+
+/* <<<<<<<<>>>>>>>>  desktop2 <<<<<<<<>>>>>>>> */
+
+@media screen and (max-width: 1358px) {
+  #desktopMenu-icon-tray {
+    gap: 5%;
+  }
+}
+/* <<<<<<<<>>>>>>>>  desktop 3 <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 1112px) {
+  #desktopMenu-icon-tray {
+    gap: 5px;
+  }
+}
+/* <<<<<<<<>>>>>>>>  desktop mini <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 909px) {
+  /* ---- menu ------ */
+  #desktop-menu {
+    display: none;
+  }
+  #mobile-menu {
+    display: flex;
+  }
+  #mobileMenu-icon-tray1 {
+    justify-content: center;
+    gap: 80px;
+  }
+  #desktopMenu-collapse-button {
+    display: none;
+  }
+  #desktopMenu-icon-tray {
+    gap: 10px;
+  }
+  /* ---- floating icons ----- */
+  #header-site-logo {
+    width: 100px;
+    height: 50px;
+    left: 20px;
+    top: -70px;
+    border: 0.5px solid #55555502;
+    background-color: #0f0f0f7e;
+    box-shadow: 0px 3px 10px #000000bb;
+    backdrop-filter: opacity(70%) blur(8px);
+    background-image: linear-gradient(
+      50deg,
+      #1b1a1a7a,
+      #0f0f0f92,
+      #1b1a1a94,
+      #0f0f0f94,
+      #2726266b
+    );
+  }
+
+  #header-site-logo-img {
+    width: 80px;
+  }
+
+  #screen-mode {
+    display: flex;
+    position: absolute;
+    z-index: 9000;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: -70px;
+    border: 0.5px solid #5555551f;
+    border-radius: 60px;
+    background-color: #0f0f0f07;
+    box-shadow: 0px 3px 10px #000000bb;
+    backdrop-filter: opacity(70%) blur(8px);
+    background-image: linear-gradient(
+      50deg,
+      #1b1a1a7a,
+      #0f0f0f92,
+      #1b1a1a94,
+      #0f0f0f94,
+      #2726266b
+    );
+  }
+  #light-mode-icn {
+    display: flex;
+  }
+  #dark-mode-icn {
+    display: none;
+  }
+}
+/* <<<<<<<<>>>>>>>> .7b. Tablet <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 768px) {
+  #desktop-menu {
+    display: none;
+  }
+  #mobile-menu {
+    display: flex;
+  }
+  #mobileMenu-icon-tray1 {
+    justify-content: center;
+    gap: 80px;
+  }
+  #desktopMenu-collapse-button {
+    display: none;
+  }
+  #desktopMenu-icon-tray {
+    gap: 10px;
+  }
+  #header-site-logo {
+    left: 20px;
+    top: 1px;
+  }
+
+  #header-site-logo-img {
+    width: 80px;
+  }
+
+  #screen-mode {
+    height: 50px;
+    right: 20px;
+    top: 1px;
+  }
+  #light-mode-icn {
+    display: flex;
+  }
+  #dark-mode-icn {
+    display: none;
+  }
+}
+/* <<<<<<<>>>>>>>> the inbetween mobile and tablet <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 644px) {
+  #mobileMenu-icon-tray1 {
+    gap: 6%;
+  }
+}
+/* <<<<<<<<>>>>>>>> .7b. Mobile <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 480px) {
+
+  #desktop-menu {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: flex;
+  }
+
+  #desktopMenu-collapse-button {
+    display: none;
+  }
+  nav {
+    padding: 0;
+  }
+  #header-site-logo {
+    left: 10px;
+    top: 15px;
+  }
+  #header-site-logo-img {
+    width: 80px;
+  }
+
+  #screen-mode {
+    right: 15px;
+    top: 15px;
+  }
+  #light-mode-icn {
+    display: flex;
+  }
+  #dark-mode-icn {
+    display: none;
+  }
+}

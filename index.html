@@ -1,4 +1,3 @@
-
 <!-- 
 ======================= TABLE OFCONTENT =====================
 
@@ -37,302 +36,212 @@
  ==================================================================  -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tor Hulugh</title>
-    <link href="css/styles.css" rel="stylesheet"/>
-    
-</head>
-<body> 
-  <!-- ================================== Header ==================================== -->
-  <header>
-    <div class="site-logo">
-      <img class="site-logo-img" src="img/site-logo-TH.png" alt="site logo the words TorHulugh written in signature form with a crown on the T" />
-    </div>
-    <div class="menu-collapse-button">
-      <img
-        class="menu-collapese-btn-icon"
-        src="img/spgy-close-icon.svg"
-        alt="menu close Icon"
-      />
-    </div>
-    <nav class="spblugy-menu">
-      <div class="menu-background-color">
-        <ul class="menu-icon-tray">
-          
-          <li class="menu-icon-nd-name-container">
-            <a class="nav-link" href="index.html">
-              <img class="menu-icons" src="icn/home-icon.svg" />
-              <p class="menu-icons-txt">Home</p>
-              <div class="nav-hover-effect">
-                <div class="green-blur"></div>
-                <div class="purple-blur"></div>
-                <div class="pink-blur"></div>
-              </div>
-            </a>
-          
-          </li>
-          <li class="menu-icon-nd-name-container">
-            <a class="nav-link" href="myworks.html">
-              <img class="menu-icons" src="icn/myworks-icon.svg" />
-              <p class="menu-icons-txt">My Work</p>
-            </a>
-          </li>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <script src="javascript/menu.js"></script>
+  </head>
+  <body>
+    <!-- <<<<>>>> |.1.| desktop menu <<<<>>>> -->
+    <header>
+      <!-- site logo -->
+      <div id="header-site-logo">
+        <a href="">
+          <img
+            id="header-site-logo-img"
+            src="img/site-logo-TH.png"
+            alt="site logo the words TorHulugh written in signature form with a crown on the T"
+          />
+        </a>
+      </div>
+      <!-- oc button -->
+      <div id="desktopMenu-collapse-button">
+        <img
+          id="desktopMenu-collapese-btn-icon"
+          src="img/spgy-close-icon.svg"
+          alt="desktopMenu close Icon"
+        />
+      </div>
+      <!-- screen mode -->
+      <div id="screen-mode">
+        <img id="light-mode-icn" src="icn/light-mode.svg" alt="" />
+        <img id="dark-mode-icn" src="icn/DARK.svg" alt="" />
+      </div>
+      <nav id="desktop-menu">
+        <div id="desktopMenu-background-color">
+          <!-- menu icons -->
+          <ul id="desktopMenu-icon-tray">
+            <li class="desktopMenuIconContainer">
+              <a class="desktopMenuIconLink" href="index.html">
+                <img class="desktopMenuIcon" src="icn/home-icon.svg" />
+                <p class="desktopMenuIconsName">Home</p>
+                <!-- hover effect -->
+                <div class="desktopMenuIconHoverEffect">
+                  <div class="greenBlur"></div>
+                  <div class="purpleBlur"></div>
+                  <div class="pinkBlur"></div>
+                </div>
+              </a>
+            </li>
+            <li class="desktopMenuIconContainer">
+              <a class="desktopMenuIconLink" href="pages/my-works.html">
+                <img class="desktopMenuIcon" src="icn/myworks-icon.svg" />
+                <p class="desktopMenuIconsName">My Work</p>
+                <!-- hover effect -->
+                <div class="desktopMenuIconHoverEffect">
+                  <div class="greenBlur"></div>
+                  <div class="purpleBlur"></div>
+                  <div class="pinkBlur"></div>
+                </div>
+              </a>
+            </li>
+            <li class="desktopMenuIconContainer">
+              <a class="desktopMenuIconLink" href="pages/gallery.html">
+                <img class="desktopMenuIcon" src="icn/gallery-icon.svg" />
+                <p class="desktopMenuIconsName">Gallery</p>
+                <!-- hover effect -->
+                <div class="desktopMenuIconHoverEffect">
+                  <div class="greenBlur"></div>
+                  <div class="purpleBlur"></div>
+                  <div class="pinkBlur"></div>
+                </div>
+              </a>
+            </li>
+            <li class="desktopMenuIconContainer">
+              <a class="desktopMenuIconLink" href="pages/contact-me.html">
+                <img class="desktopMenuIcon" src="icn/contact-icon.svg" />
+                <p class="desktopMenuIconsName">Contact Me</p>
+                <!-- hover effect -->
+                <div class="desktopMenuIconHoverEffect">
+                  <div class="greenBlur"></div>
+                  <div class="purpleBlur"></div>
+                  <div class="pinkBlur"></div>
+                </div>
+              </a>
+            </li>
+            <li class="desktopMenuIconContainer">
+              <a class="desktopMenuIconLink" href="pages/about-me.html">
+                <img class="desktopMenuIcon" src="icn/aboutme-icon.svg" />
+                <p class="desktopMenuIconsName">About Me</p>
+                <!-- hover effect -->
+                <div class="desktopMenuIconHoverEffect">
+                  <div class="greenBlur"></div>
+                  <div class="purpleBlur"></div>
+                  <div class="pinkBlur"></div>
+                </div>
+              </a>
+            </li>
 
-          <li class="menu-icon-nd-name-container">
-            <a class="nav-link" href="gallery.html">
-              <img class="menu-icons" src="icn/gallery-icon.svg" />
-              <p class="menu-icons-txt">Gallery</p>
+            <li class="desktopMenuIconContainer">
+              <a class="desktopMenuIconLink" href="pages/profile.html">
+                <img class="desktopMenuIcon" src="icn/portfolio-icon.svg" />
+                <p class="desktopMenuIconsName">Portfolio</p>
+                <!-- hover effect -->
+                <div class="desktopMenuIconHoverEffect">
+                  <div class="greenBlur"></div>
+                  <div class="purpleBlur"></div>
+                  <div class="pinkBlur"></div>
+                </div>
+              </a>
+            </li>
+
+            <li class="desktopMenuIconContainer">
+              <a class="desktopMenuIconLink" href="pages/freebies.html">
+                <img class="desktopMenuIcon" src="icn/Freebies-icon.svg" />
+                <p class="desktopMenuIconsName">Freebies</p>
+                <!-- hover effect -->
+                <div class="desktopMenuIconHoverEffect">
+                  <div class="greenBlur"></div>
+                  <div class="purpleBlur"></div>
+                  <div class="pinkBlur"></div>
+                </div>
+              </a>
+            </li>
+            <li class="desktopMenuIconContainer">
+              <a class="desktopMenuIconLink" href="">
+                <img id="light-mode" src="icn/light-mode.svg" />
+                <img id="dark-mode" src="icn/DARK.svg" />
+                <p class="desktopMenuIconsName">light</p>
+                <!-- hover effect -->
+                <div class="desktopMenuIconHoverEffect">
+                  <div class="greenBlur"></div>
+                  <div class="purpleBlur"></div>
+                  <div class="pinkBlur"></div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--<<<<>>>> .2.| Mobile menu <<<<>>>>-->
+    <nav id="mobile-menu">
+      <div id="mobileMenu-background-color">
+        <!-- tray1 -->
+        <ul id="mobileMenu-icon-tray1">
+          <li class="mobileMenuIconContainer">
+            <a class="mobileMenulink" href="index.html">
+              <img class="mobileMenuIcon" src="icn/home-icon.svg" />
+              <p class="mobilMenuIconsName">Home</p>
             </a>
           </li>
-
-          <li class="menu-icon-nd-name-container">
-            <a class="nav-link" class="nav-link" href="contactme.html">
-              <img class="menu-icons" src="icn/contact-icon.svg" />
-              <p class="menu-icons-txt">Contact Me</p>
+          <li class="mobileMenuIconContainer">
+            <a class="mobileMenulink" href="pages/my-works.html">
+              <img class="mobileMenuIcon" src="icn/myworks-icon.svg" />
+              <p class="mobilMenuIconsName">craft</p>
             </a>
           </li>
-
-          <li class="menu-icon-nd-name-container">
-            <a class="nav-link" href="aboutme.html">
-              <img class="menu-icons" src="icn/aboutme-icon.svg" />
-              <p class="menu-icons-txt">About Me</p>
+          <li class="mobileMenuIconContainer">
+            <a class="mobileMenulink" href="pages/gallery.html">
+              <img class="mobileMenuIcon" src="icn/gallery-icon.svg" />
+              <p class="mobilMenuIconsName">Gallery</p>
             </a>
           </li>
-
-          <li class="menu-icon-nd-name-container">
-            <a class="nav-link" href="portfolio.html">
-              <img class="menu-icons" src="icn/portfolio-icon.svg" />
-              <p class="menu-icons-txt">Portfolio</p>
+          <li class="mobileMenuIconContainer">
+            <a class="mobileMenulink" href="pages/contact-me.html">
+              <img class="mobileMenuIcon" src="icn/contact-icon.svg" />
+              <p class="mobilMenuIconsName">Contact</p>
             </a>
           </li>
-
-          <li class="menu-icon-nd-name-container">
-            <a class="nav-link" href="freebies.html">
-              <img class="menu-icons" src="icn/Freebies-icon.svg" />
-              <p class="menu-icons-txt">Freebies</p>
+          <li class="mobileMenuIconContainer">
+            <a class="mobileMenulink" href="">
+              <img class="mobileMenuIcon" src="icn/more-icn.svg" />
+              <p class="mobilMenuIconsName">More</p>
+            </a>
+          </li>
+        </ul>
+        <!-- tray2 -->
+        <ul id="mobileMenu-icon-tray2">
+          <li class="mobileMenuIconContainer">
+            <a class="mobileMenulink" href="pages/profile.html">
+              <img class="mobileMenuIcon" src="icn/portfolio-icon.svg" />
+              <p class="mobilMenuIconsName">Portfolio</p>
+            </a>
+          </li>
+          <li class="mobileMenuIconContainer">
+            <a class="mobileMenulink" href="pages/freebies.html">
+              <img class="mobileMenuIcon" src="icn/Freebies-icon.svg" />
+              <p class="mobilMenuIconsName">Freebies</p>
             </a>
           </li>
         </ul>
       </div>
     </nav>
-  </header>
-  
-    <!------------- .2.| Tablet & Mobile menu ---------------------------->
-
-    <nav class="spblugy-mobile-menu">
-      <div class="menu-background-color-mb">
-        <ul class="menu-icon-tray1-mb">
-         
-          <li class="menu-icon-nd-name-container-mb">
-            <a class="nav-link" href="index.html">
-              <img class="menu-icons-mb" src="icn/home-icon.svg" />
-              <p class="menu-icons-txt-mb">Home</p>
-            </a>
-          </li>
-          
-          <li class="menu-icon-nd-name-container-mb">
-            <a class="nav-link" href="pages/myworks.html">
-              <img class="menu-icons-mb" src="icn/myworks-icon.svg" />
-              <p class="menu-icons-txt-mb">craft</p>
-            </a>
-          </li>
-
-          <li class="menu-icon-nd-name-container-mb">
-            <a class="nav-link" href="gallery.html">
-              <img class="menu-icons-mb" src="icn/gallery-icon.svg" />
-              <p class="menu-icons-txt-mb">Gallery</p>
-            </a>
-          </li>
-
-          <li class="menu-icon-nd-name-container-mb">
-            <a class="nav-link" class="nav-link" href="contactme.html">
-              <img class="menu-icons-mb" src="icn/contact-icon.svg" />
-              <p class="menu-icons-txt-mb">Contact</p>
-            </a>
-          </li>
-
-          <li class="menu-icon-nd-name-container-mb">
-            <a class="nav-link" class="nav-link" href="contactme.html">
-              <img class="menu-icons-mb" src="icn/more-icn.svg" />
-              <p class="menu-icons-txt-mb">More</p>
-            </a>
-          </li>
-
-          
-        </ul>
-        
-        <ul class="menu-icon-tray2-mb">
-           
-
-          <li class="menu-icon-nd-name-container-mb">
-            <a class="nav-link" href="portfolio.html">
-              <img class="menu-icons-mb" src="icn/portfolio-icon.svg" />
-              <p class="menu-icons-txt-mb">Portfolio</p>
-            </a>
-          </li>
-
-          <li class="menu-icon-nd-name-container-mb">
-            <a class="nav-link" href="freebies.html">
-              <img class="menu-icons-mb" src="icn/Freebies-icon.svg" />
-              <p class="menu-icons-txt-mb">Freebies</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- ================================ main ======================================== -->
+    <!-- ****** main ****** -->
     <main>
-    <!-- ============================ intro profile section ===========================-->
-
-    <div id="intro-profile-continer">
-  
-        <img class="profile-photo" src="img/home pf imag.png" alt="designers picture">
-        <p class="intro-txt">
-          Hi, I'm Tor Hulugh welcome!
-I'm a web developer with a background in design. 
-This is where I share my work, passion projects, 
-and the stories and ideas that inspire them. 
-Feel free to explore and enjoy the journey with me!  
-          </p> 
-    </div>
-
- <!-- ============================ my work category section ===========================-->
-<div id="my-work-category-container">
-
- <!-- ----------------------------- my work category section header ------------------------------>
-  <div class="capsule-header">
-    <p class="capsule-header-txt">
-      My work categories
-    </p>
-  </div>
-  
-  <div class="divider"></div>
- <!-- ----------------------------- my work category icons ------------------------------>
-  <div class="category-icons-container">
-    <img class="category-icons" src="icn/graphicdesign-icon.svg" alt="">
-    <img class="category-icons" src="icn/illustration-icon.svg" alt="">
-    <img class="category-icons" src="icn/uxdesigner-icon.svg" alt="">
-    <img class="category-icons" src="icn/motiongraphic-icon.svg" alt="">
-    <img class="category-icons" src="icn/fashiondesign-icon.svg" alt="">   
-    <img class="category-icons" src="icn/code craft.svg" alt="">
-  </div>   
-</div>
-
- <!-- ============================ Recent activities section =========================== -->
-<section id="drawer-cards-section">
-
-
- <!-- ----------------------------- Recent activities section header ------------------------------>   
-        <div class="capsule-header">
-          <img class="capsule-header-icn" src="icn/favourite-icon.svg" alt="">
-          <p class="capsule-header-txt">
-            Recent Activities
-          </p>
-        </div>       
- <!-- ----------------------------- Recent activities drawers container ---------------------------- -->        
- <div class="drawer-Cards-Container" >
-<!-- ----------------------------- Recent activities drawer 1 ---------------------------- -->         
-            <div class="home-drawers" > 
-              <div class="drawer-foreground-grad"> </div>
-              <div class="drawer-background"></div>
-              <div class="drawer-backdrop-grad"></div>
-              <img  class="home-drawer-img" src="img/demo1.svg" alt=""> 
-              <div class="home-drawer-txt"> 
-                <h4>Project 365 Website:</h4>
-                <p class="home-drawer-txt">
-                 Re-imaginging music streaming camping's 
-                  and new musical talent discovery.
-                </p> 
-              </div>
-            </div>
-<!-- ----------------------------- Recent activities drawer 2 ---------------------------- -->         
-            <div class="home-drawers" > 
-              <div class="drawer-foreground-grad"> </div>
-              <div class="drawer-background"></div>
-              <div class="drawer-backdrop-grad"></div>
-              <img  class="home-drawer-img" src="img/demo1.svg" alt=""> 
-              <div class="home-drawer-txt"> 
-                <h4>Project 365 Website:</h4>
-                <p class="home-drawer-txt">
-                 Re-imaginging music streaming camping's 
-                  and new musical talent discovery.
-                </p> 
-              </div>
-            </div>
-<!-- ----------------------------- Recent activities drawer 3 ---------------------------- -->         
-            <div class="home-drawers" > 
-              <div class="drawer-foreground-grad"> </div>
-              <div class="drawer-background"></div>
-              <div class="drawer-backdrop-grad"></div>
-              <img  class="home-drawer-img" src="img/demo1.svg" alt=""> 
-              <div class="home-drawer-txt"> 
-                <h4>Project 365 Website:</h4>
-                <p class="home-drawer-txt">
-                 Re-imaginging music streaming camping's 
-                  and new musical talent discovery.
-                </p> 
-              </div>
-            </div>
-<!-- ----------------------------- Recent activities drawer 4 ---------------------------- -->         
-            <div class="home-drawers" > 
-              <div class="drawer-foreground-grad"> </div>
-              <div class="drawer-background"></div>
-              <div class="drawer-backdrop-grad"></div>
-              <img  class="home-drawer-img" src="img/demo1.svg" alt=""> 
-              <div class="home-drawer-txt"> 
-                <h4>Project 365 Website:</h4>
-                <p class="home-drawer-txt">
-                 Re-imaginging music streaming camping's 
-                  and new musical talent discovery.
-                </p> 
-              </div>
-            </div>
-<!-- ----------------------------- Recent activities drawer 5 ---------------------------- -->         
-            <div class="home-drawers" > 
-              <div class="drawer-foreground-grad"> </div>
-              <div class="drawer-background"></div>
-              <div class="drawer-backdrop-grad"></div>
-              <img  class="home-drawer-img" src="img/demo1.svg" alt=""> 
-              <div class="home-drawer-txt"> 
-                <h4>Project 365 Website:</h4>
-                <p class="home-drawer-txt">
-                 Re-imaginging music streaming camping's 
-                  and new musical talent discovery.
-                </p> 
-              </div>
-            </div>
-<!-- ----------------------------- Recent activities drawer 6 ---------------------------- -->         
-            <div class="home-drawers" > 
-              <div class="drawer-foreground-grad"> </div>
-              <div class="drawer-background"></div>
-              <div class="drawer-backdrop-grad"></div>
-              <img  class="home-drawer-img" src="img/demo1.svg" alt=""> 
-              <div class="home-drawer-txt"> 
-                <h4>Project 365 Website:</h4>
-                <p class="home-drawer-txt">
-                 Re-imaginging music streaming camping's 
-                  and new musical talent discovery.
-                </p> 
-              </div>
-            </div>
-           
-        
-</div>
-   
-</section>
-</main>
-
-<section class="Fourth-section"></section>
-<footer class="buttom-footer"> 
-    <div class="footer-social-icons">
-        <img class="footer-icons" src="icn/instagram-icn.svg" alt="">
-        <img class="footer-icons" src="icn/linkedin-icn.svg" alt="">
-        <img class="footer-icons" src="icn/dribbble-icn.svg" alt="">
-        <img class="footer-icons" src="icn/behance-icn.svg" alt="">
-        <img class="footer-icons" src="icn/github-icn.svg" alt="">
-    </div>
-</footer>
-</body>
+      
+    </main>
+    <footer">
+      <div class="footer-social-icons">
+        <img class="footer-icons" src="icn/instagram-icn.svg" alt="" />
+        <img class="footer-icons" src="icn/linkedin-icn.svg" alt="" />
+        <img class="footer-icons" src="icn/dribbble-icn.svg" alt="" />
+        <img class="footer-icons" src="icn/behance-icn.svg" alt="" />
+        <img class="footer-icons" src="icn/github-icn.svg" alt="" />
+      </div>
+    </footer>
+  </body>
 </html>

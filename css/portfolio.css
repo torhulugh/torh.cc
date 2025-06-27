@@ -1,0 +1,1076 @@
+/*
+
+======================= TABLE OFCONTENT =====================
+
+ >>>>>>>>>>>>>>>>>>> !!!NOTE!! >>>>>>>>>>>>>>>>>>>>>>                                                 
+      Using command/ctrl F to navigate to search ,   
+      you can add "." to a number to take you directly to   
+      the section, for example typing .6. in the search bar
+      take you directly to the footer section of this page.
+      Also typing .c. in the search bar return you to the 
+      table of content.
+   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ * ========================= .c.====================================
+ * 1. GENERAL
+ * 2. LAYOUT
+ * 3. MENU
+ * -- 3a. Greneral styles  menu
+ * -- 3b. mobile menu
+ * 4. MAIN
+ * -- 4a. Profile section
+ * -- 4b. My works section
+ * 5. CONTACT FOAM
+ * 6. FOOTER
+ * 7. MEDIA QUERIES
+ * -- 7a. Tablet
+ * -------- 7a1. menu @media Tablet
+ * -------- 7a2. profile section @media Tablet
+ * -------- 7a3. my works container @media Tablet
+ 
+ * -- 4b. Phone
+ * -------- 7b1. menu @media phone
+ * -------- 7b2. profile section @media phone
+ * -------- .7b3. my works section @media phone
+ * -------- .7b4. contact foam @media phone
+ * -------- .7b5. footer @media phone
+ ==================================================================*/
+
+/*============= .1. GENERAL ===================*/
+/*============= .2. LAYOUT ===================*/
+main {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 110px 15% 100px 15%;
+}
+
+/*----------- .4a.bio------------- */
+
+#bio-section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#bio-photo-mobile {
+  display: none;
+}
+#bio-job-title-mobile {
+  display: none;
+}
+#bio-authorName--mobile {
+  display: none;
+}
+
+#bio-container-desktop {
+  position: relative;
+  background-color: #1f2023;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 15px;
+  padding: 40px 25px 40px 25px;
+  border-radius: 25px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+  gap: 40px;
+}
+#bio-container-desktop::before {
+  content: "";
+  width: 100%;
+  height: 40%;
+  bottom: 60px;
+  display: flex;
+  background-image: linear-gradient(#8ea2b410, #a0a7ad10, #e0eaf210);
+  position: absolute;
+  filter: blur(50px);
+  border-top-left-radius: 600px;
+  border-top-right-radius: 600px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#bio-photo-desktop {
+  margin-left: 20px;
+  width: 18%;
+  height: 80%;
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+}
+#bio {
+  position: relative;
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#bio-txt {
+  display: flex;
+  position: relative;
+  color: #a7a9b1;
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  margin: 0px;
+}
+#bio-buttons-container {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  margin-top: 25px;
+  padding: 0px;
+}
+#download-resume-btn,
+#email-btn,
+#linkedIn-btn {
+  color: #a7a9b1;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background-color: #0d0c0d;
+  width: 200px;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+#download-resume-btn-icn,
+#email-btn-icn,
+#linkedIn-btn-icn {
+  width: 1.2rem;
+}
+
+/*---------------- .4b. my works section-------------------------- */
+
+#myWorks-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 0.01px solid #252525;
+  border-radius: 20px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#myWorks-Cards-container {
+  display: flex;
+  width: fit-content;
+  height: auto;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 1039px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 50px;
+}
+#myWorks-header-container {
+  background-color: #222222;
+  display: flex;
+  position: absolute;
+  top: -35px;
+  width: 200px;
+  height: 35px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+}
+#myWorks-header-icn {
+  display: flex;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+#myWorks-header-txt {
+  display: flex;
+  position: relative;
+  letter-spacing: 0.1rem;
+  color: #979292;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#myWorks-veiwMoreBtn-container {
+  background-color: #222222;
+  display: flex;
+  position: absolute;
+  bottom: -84px;
+  right: 40px;
+  width: fit-content;
+  height: 35px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 0;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#myWorks-veiwMoreBtn-icn {
+  display: flex;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+#myWorks-veiwMoreBtn-txt {
+  display: flex;
+  position: relative;
+  letter-spacing: 0.1rem;
+  color: #979292;
+  width: fit-content;
+  height: fit-content;
+}
+#myWorks-container a {
+  display: flex;
+  position: relative;
+  color: #979292;
+  text-decoration: none;
+  font-weight: 100;
+  margin: 0;
+}
+
+.my-works-card {
+  border-radius: 30px;
+  border: -0.5px solid #32343848;
+  background-color: #1a1a1aa9;
+  width: 290px;
+  height: 440px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0px 15px 20px #00000097;
+  margin: auto;
+  position: relative;
+}
+.my-works-card-more {
+  display: none;
+}
+.card-content-container {
+  color: #5c5d62;
+  width: 93%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: 0;
+  z-index: 2;
+}
+.card-edge-blur-effect {
+  border: 0.5rem solid #484849be;
+  border-radius: 30px;
+  width: 98%;
+  height: 98%;
+  margin: 0%;
+  padding: 0%;
+  filter: blur(0.5rem);
+  position: relative;
+  z-index: 1;
+}
+.card-edge-blur-effect:hover {
+  border: 0.5rem solid #7d7beebe;
+}
+.card-img {
+  width: auto;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  border-radius: 20px;
+  transform: translateY(-6px);
+  align-content: flex-start;
+}
+.card-header-txt {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #b9c4d3;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.card-description-txt {
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.3rem;
+  color: #96a1b2;
+  display: flex;
+  padding: 8px;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+}
+.explore-button {
+  margin: 0;
+  background-color: #0d0c0d;
+  border: 2px solid #3032357e;
+  width: 95%;
+  height: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 1px px #00000097;
+  padding: 0;
+  margin-top: 30px;
+}
+.explore-button:hover {
+  background-color: #242324;
+}
+
+.card-btn-edge-blur-effect {
+  container-type: size;
+  border: 0.001rem solid #696c7564;
+  border-radius: 40px;
+  width: 100%;
+  height: 88%;
+  margin: 0px;
+  padding: 0px;
+  filter: blur(0.3rem);
+  z-index: 3;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.border-effect {
+  border: 0.2px solid #fcfdff84;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+.explore-txt {
+  color: #a7a9b1;
+  text-align: center;
+  position: absolute;
+  z-index: 102;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  margin: auto;
+}
+
+.buttom-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+
+/*============= .5. CONTACT FOAM ===================*/
+
+#contact-foam-container {
+  background-color: #111111;
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  position: relative;
+  position: relative;
+  color: #96a1b2;
+  width: fit-content;
+  height: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 50px 0px 50px 0px;
+  gap: 40px;
+}
+
+#contact-form-content-container {
+  position: relative;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+#contact-foam-header {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+input {
+  color: #eee;
+  font-size: 1rem;
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #161616e0;
+  border: 0.001px solid #111;
+  background-image: linear-gradient(
+    178deg,
+    #242424 0%,
+    #25242420 18%,
+    #22222430 75%,
+    #242424 100%
+  );
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+input::placeholder {
+  align-content: flex-start;
+  color: #555;
+  padding: 10px;
+}
+input:focus {
+  padding: 10px;
+  color: #aaa;
+  outline: none;
+  border-color: #353535;
+}
+
+label {
+  position: relative;
+  display: flex;
+  margin: 15px 0px 20px 0px;
+  padding: 0px 0px 0px 0px;
+  color: #96a1b2;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+#contact-form-submit-button {
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #9da2bc;
+  border: 0.001px solid #111;
+  background-image: linear-gradient(
+    178deg,
+    #f7f7f7 0%,
+    #d1d0d020 18%,
+    #b3b3b320 75%,
+    #ffffff 100%
+  );
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  margin-top: 40px;
+}
+#userMessage {
+  height: 150px;
+}
+/*============= .6. FOOTER ===================*/
+
+footer {
+  background-color: #111111;
+  display: flex;
+  position: relative;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.footer-icons {
+  width: 25px;
+  position: relative;
+}
+.footer-social-icons {
+  width: fit-content;
+  position: relative;
+  height: auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 100px 0px 200px 0px;
+}
+
+/*=========  .7. MEDIA QUERIES ================= */
+
+/* -------------  desktop2 --------------------------*/
+
+@media screen and (max-width: 1358px) {
+  #desktopMenu-icon-tray {
+    gap: 5%;
+  }
+  #bio-container-desktop {
+    background-color: transparent;
+    flex-direction: column;
+  }
+  #my-works-card-more {
+    border-radius: 30px;
+    border: -0.5px solid #32343848;
+    background-color: #181818;
+    width: 290px;
+    height: 440px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* box-shadow: 0px 15px 20px #00000097; */
+    position: relative;
+  }
+  #view-more-text-container {
+    background-color: #201f1f;
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    color: #979292;
+    font-size: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+  }
+  /* ----- bio section -------- */
+  #bio-photo-desktop {
+    display: none;
+  }
+  #bio-header-container-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  #bio-photo-mobile {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    margin: 0%;
+    margin-bottom: 15px;
+    border: 1px dashed #333333;
+    border-radius: 600px;
+    padding: 5px;
+  }
+  #bio-job-title-mobile {
+    color: #a7abbe;
+    display: flex;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 100;
+    justify-content: center;
+    margin: 0%;
+    padding: 0;
+  }
+  #bio-authorName--mobile {
+    margin-bottom: 20px;
+    color: #ccc;
+    text-align: center;
+    display: flex;
+    width: fit-content;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin: 0%;
+    padding: 0;
+  }
+
+  /* ----- my works section -------- */
+  #myWorks-veiwMoreBtn-container {
+    display: none;
+  }
+  #veiw-more-icon {
+    width: 30px;
+  }
+}
+/* -------------  desktop 3 --------------------------*/
+@media screen and (max-width: 1112px) {
+  #desktopMenu-icon-tray {
+    gap: 5px;
+  }
+  #bio-container-desktop {
+    background-color: rgb(17, 17, 17);
+  }
+  #bio {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  #bio-buttons-container {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+/* -------------  desktop mini --------------------------*/
+@media screen and (max-width: 909px) {
+  /* ---- menu ------ */
+  #desktop-menu {
+    display: none;
+  }
+  #mobile-menu {
+    display: flex;
+  }
+  #mobileMenu-icon-tray1 {
+    justify-content: center;
+    gap: 80px;
+  }
+  #desktopMenu-collapse-button {
+    display: none;
+  }
+  #desktopMenu-icon-tray {
+    gap: 10px;
+  }
+  /* ---- floating icons ----- */
+  #header-site-logo {
+    width: 100px;
+    height: 50px;
+    left: 20px;
+    top: -70px;
+    border: 0.5px solid #55555502;
+    background-color: #0f0f0f7e;
+    box-shadow: 0px 3px 10px #000000bb;
+    backdrop-filter: opacity(70%) blur(8px);
+    background-image: linear-gradient(
+      50deg,
+      #1b1a1a7a,
+      #0f0f0f92,
+      #1b1a1a94,
+      #0f0f0f94,
+      #2726266b
+    );
+  }
+
+  #header-site-logo-img {
+    width: 80px;
+  }
+
+  #screen-mode {
+    display: flex;
+    position: absolute;
+    z-index: 9000;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: -70px;
+    border: 0.5px solid #5555551f;
+    border-radius: 60px;
+    background-color: #0f0f0f07;
+    box-shadow: 0px 3px 10px #000000bb;
+    backdrop-filter: opacity(70%) blur(8px);
+    background-image: linear-gradient(
+      50deg,
+      #1b1a1a7a,
+      #0f0f0f92,
+      #1b1a1a94,
+      #0f0f0f94,
+      #2726266b
+    );
+  }
+  #light-mode-icn {
+    display: flex;
+  }
+  #dark-mode-icn {
+    display: none;
+  }
+}
+/* --------------- .7b. Tablet---------------- */
+@media screen and (max-width: 768px) {
+  main {
+    margin: 30px;
+  }
+
+  #desktop-menu {
+    display: none;
+  }
+  #mobile-menu {
+    display: flex;
+  }
+  #mobileMenu-icon-tray1 {
+    justify-content: center;
+    gap: 80px;
+  }
+  #desktopMenu-collapse-button {
+    display: none;
+  }
+  #desktopMenu-icon-tray {
+    gap: 10px;
+  }
+  #header-site-logo {
+    left: 20px;
+    top: 1px;
+  }
+
+  #header-site-logo-img {
+    width: 80px;
+  }
+
+  #screen-mode {
+    height: 50px;
+    right: 20px;
+    top: 1px;
+  }
+  #light-mode-icn {
+    display: flex;
+  }
+  #dark-mode-icn {
+    display: none;
+  }
+  .my-works-card-more {
+    border-radius: 30px;
+    border: -0.5px solid #32343848;
+    background-color: #181818;
+    width: 290px;
+    height: 440px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* box-shadow: 0px 15px 20px #00000097; */
+    position: relative;
+  }
+
+  /* --------------- .7a2. bio section (Tablet)---------------- */
+
+  #bio-section {
+    background-color: #0f0f0f;
+    border-radius: 20px;
+    padding: 40px 20px 0px 20px;
+    text-align: center;
+    font-size: 1.7rem;
+    height: fit-content;
+    margin: 20px 0px 0px 0px;
+  }
+  #bio-container-desktop {
+    background-color: transparent;
+    margin: 20px;
+    height: fit-content;
+  }
+
+  #bio-photo-desktop {
+    display: none;
+  }
+  #bio-photo-mobile {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    margin: 0%;
+    margin-bottom: 15px;
+    border: 1px dashed #333333;
+    border-radius: 600px;
+    padding: 5px;
+  }
+  #bio-job-title-mobile {
+    color: #ddd;
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    margin: 0%;
+    padding: 0;
+  }
+  #bio-authorName--mobile {
+    margin-bottom: 20px;
+
+    color: #ccc;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    margin: 0%;
+    padding: 0;
+  }
+
+  /* --------------- .7a3. my works container (Tablet)---------------- */
+  #myWorks-container {
+    flex-direction: column;
+  }
+
+  #my-works-card-more {
+    border-radius: 30px;
+    border: -0.5px solid #32343848;
+    background-color: #181818;
+    width: 290px;
+    height: 440px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* box-shadow: 0px 15px 20px #00000097; */
+    position: relative;
+  }
+  #view-more-text-container {
+    background-color: #201f1f;
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    color: #979292;
+    font-size: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+  }
+  #myWorks-veiwMoreBtn-container {
+    display: none;
+  }
+  #veiw-more-icon {
+    width: 30px;
+  }
+}
+/* <<<<<<<<<<<<<<<<the inbetween mobile and tablet>>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width: 644px) {
+  #mobileMenu-icon-tray1 {
+    gap: 6%;
+  }
+  /*  */
+}
+/*--------------- .7b. Phone---------------------- */
+
+@media screen and (max-width: 480px) {
+  main {
+    margin: 0px 20px 0px 20px;
+  }
+
+  /* --------------- .7b1. menu  (phone)---------------- */
+  #desktop-menu {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: flex;
+  }
+
+  #desktopMenu-collapse-button {
+    display: none;
+  }
+  nav {
+    padding: 0;
+  }
+  #header-site-logo {
+    left: 10px;
+    top: 15px;
+  }
+  #header-site-logo-img {
+    width: 80px;
+  }
+
+  #screen-mode {
+    right: 15px;
+    top: 15px;
+  }
+  #light-mode-icn {
+    display: flex;
+  }
+  #dark-mode-icn {
+    display: none;
+  }
+
+  /* --------------- .7b2. bio section (phone) --------------- */
+  #bio-container-desktop {
+    flex-direction: column;
+    width: fit-content;
+    height: auto;
+    padding: 20px;
+    margin-top: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  #bio-txt {
+    font-size: 1.1rem;
+    padding: 5px;
+    line-height: 1.6rem;
+  }
+  .bio-btn-txt {
+    display: none;
+  }
+
+  #bio-txt {
+    width: fit-content;
+    align-content: center;
+    justify-content: center;
+  }
+  #bio-buttons-container {
+    width: fit-content;
+
+    gap: 15px;
+  }
+  #email-btn,
+  #linkedIn-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 20px;
+  }
+  #bio-photo-desktop {
+    display: none;
+  }
+  #bio-header-container-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  #bio-photo-mobile {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    margin: 0%;
+    margin-bottom: 15px;
+    border: 1px dashed #333333;
+    border-radius: 600px;
+    padding: 5px;
+  }
+  #bio-job-title-mobile {
+    color: #a7abbe;
+    display: flex;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 100;
+    justify-content: center;
+    margin: 0%;
+    padding: 0;
+  }
+  #bio-authorName--mobile {
+    margin-bottom: 20px;
+    color: #ccc;
+    text-align: center;
+    display: flex;
+    width: fit-content;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin: 0%;
+    padding: 0;
+  }
+
+  /* -------------- .7b3. my works section (phone)---------------- */
+
+  #myWorks-container {
+    flex-direction: column;
+    margin: 100px 0px 100px 0px;
+  }
+  .my-works-inner-container {
+    flex-direction: column;
+    gap: 40px;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .my-works-card {
+    flex-direction: column;
+  }
+  .my-works-card-more {
+    display: none;
+  }
+
+  #myWorks-header-container {
+    background-color: #222222;
+    display: flex;
+    position: absolute;
+    top: -35px;
+    width: fit-content;
+    height: 35px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #myWorks-Cards-container {
+    flex-direction: column;
+  }
+  #mobileMenu-icon-tray1 {
+    gap: 4%;
+  }
+  #myWorks-veiwMoreBtn-container {
+    display: flex;
+    bottom: -37px;
+    left: 220px;
+  }
+}
+
+/* --------------- .7b4. contact foam (phone)---------------- */
+#contact-form-submit-button,
+input {
+  width: 300px;
+}
+form {
+  margin: 20px;
+}
+
+/* ---------------- .7b5. footer (phone) ---------------- */
+.footer-social-icons {
+  gap: 40px;
+}

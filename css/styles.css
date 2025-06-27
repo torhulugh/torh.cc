@@ -53,396 +53,73 @@ main {
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin: 145px 0px 100px 0px;
+  /* margin: 145px 0px 100px 0px; */
+  margin: 110px 0px 100px 0px;
 }
 /*============= .3. MENU ===================*/
 
 /* ---------------- .3a. Greneral styles  menu--------------- */
 
-header {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  height: auto;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-  z-index: 900;
-}
 
-.site-logo {
-  background-color: #00000046;
-  width: 110px;
-  height: 60px;
-  border-radius: 30px;
-  display: flex;
-  position: absolute;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  z-index: 9000;
-  left: 2.5%;
-  bottom: -85.7px;
-}
-.site-logo-img {
-  z-index: 9000;
-  width: 80px;
-}
-/*oc-buttion, this is the open & close button on spblugy menu*/
-
-/*class created to target the site-logo on the nav menu*/
-.menu-collapse-button {
-  background-color: #2c2b2e;
-  width: 60px;
-  height: 60px;
-  border-radius: 100px;
-  display: flex;
-  position: absolute;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  z-index: 9000;
-  right: 3%;
-  bottom: -85.9px;
-  box-shadow: 0px 2px 5px 2px #00000050;
-}
-
-.menu-collapese-btn-icon {
-  width: 30px;
-  height: 30px;
-}
-.menu-collapse-button:hover {
-  background-image: linear-gradient(
-    50deg,
-    #1b1a1a7a,
-    #0f0f0f92,
-    #1b1a1a94,
-    #0f0f0f94,
-    #2726266b
-  );
-}
-
-/*SPBLUGY menu this is the  manin container(nav) holding
-  all menu elements
-  Note: to further tint and control the see through effect 
-  of the spblugy-shell, i added a transperant to the 
-  spblugy-menu element*/
-.spblugy-menu {
-  background-color: #0d0c0d33;
-  border-radius: 60px;
-  width: 98%;
-  height: 90px;
-  display: flex;
-  position: fixed;
-  top: 10px;
-  margin: 0;
-  z-index: 900;
-}
-
-/*menu-icons-container is the container(<nav>) holding all menu icons and text
-  Note:this layer also hold the transperent glass effect*/
-.menu-background-color {
-  width: 100%;
-  height: 100%;
-  border: 0.5px solid #55555505;
-  background-color: #0f0f0f55;
-  display: flex;
-  position: relative;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  z-index: 200;
-  box-shadow: 0px 3px 10px #0000006a;
-  border-radius: 60px;
-  backdrop-filter: brightness() opacity(70%) blur(8px);
-  background-image: linear-gradient(
-    50deg,
-    #1b1a1a7a,
-    #0f0f0f92,
-    #1b1a1a94,
-    #0f0f0f94,
-    #2726266b
-  );
-}
-
-/*spblugy-icon, this container(<ul>)   
-  holding the spblugy-icons-shell/ all nav icons and text*/
-.menu-icon-tray {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  gap: 10%;
-  z-index: 204;
-}
-
-/*spblugy-icons-shell this is the container(li) holding
-  the <ul> holding all nav icons*/
-.menu-icon-nd-name-container {
-  width: 100%;
-  height: 20px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  z-index: 203;
-  transform: translateY(-7%);
-  gap: 1px;
-}
-
-/*spblugy-icons-txt this is the container(div) holding
-  label text for all nav icons*/
-.menu-icons-txt {
-  width: 85px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
-  letter-spacing: 0.07rem;
-  margin: 0%;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
-
-/*class created to target spblugy menu icons*/
-.menu-icons {
-  width: 137.5%;
-  height: 15.5%;
-  filter: drop-shadow(#000);
-  filter: opacity(80.8%);
-}
-
-.nav-hover-effect {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  border-radius: 60px;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  transform: translate(0px, -10px);
-  visibility: visible;
-  filter: blur(15px);
-  z-index: -199;
-}
-
-header a:hover,
-header ul img p :hover {
-  transition: 0.5s ease-in-out;
-  transform: scale(1.07);
-  color: #fff;
-  display: flex;
-}
-
-.nav-hover-effect :hover {
-  transform: scale(none);
-}
-
-.green-blur {
-  background: linear-gradient(#35c656, #32c1ed);
-  display: flex;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 60px;
-  filter: opacity(50%);
-  transform: translate(-14px, -0px);
-  align-content: center;
-}
-
-.purple-blur {
-  content: ".";
-  background: linear-gradient(#ca69ea, #ad8af8, #7719ab);
-  display: flex;
-  width: 30px;
-  height: 30px;
-  border-radius: 60px;
-  filter: opacity(50%);
-  transform: translate(14px, 0px);
-  align-content: center;
-}
-
-.pink-blur {
-  background: linear-gradient(#7863e6, #e29eb2);
-  content: ".";
-  z-index: 1;
-  display: flex;
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 60px;
-  filter: opacity(50%);
-  transform: translate(0px, 24px);
-  align-content: center;
-  /* filter: blur(8px); */
-}
-
-/*class created to target visted link behavour on nav menu*/
-.nav-link {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  color: #979292;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.07rem;
-  margin: 0%;
-  margin-top: 10px;
-  text-decoration: none;
-  text-align: center;
-  align-content: center;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-/*------------------- .3b. mobile menu ----------------------------------*/
-
-/*SPBLUGY menu this is the  manin container(nav) holding
-  all menu elements
-  Note: to further tint and control the see through effect 
-  of the spblugy-shell, i added a transperant to the 
-  spblugy-menu element*/
-.spblugy-mobile-menu {
-  background-color: #0d0c0d39;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-  width: 100%;
-  /*height: fit-conten;* full menu size/*/
-  height: 90px;
-  display: none;
-  position: fixed;
-  bottom: 0;
-  margin: 0;
-  z-index: 900;
-}
-
-/*menu-icons-container is the container(<nav>) holding all menu icons and text
-  Note:this layer also hold the transperent glass effect*/
-.menu-background-color-mb {
-  width: 100%;
-  height: 100%;
-  border: 0.5px solid #55555505;
-  background-color: #0f0f0f4f;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  z-index: 200;
-  box-shadow: 0px 3px 10px #0000006a;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-  backdrop-filter: blur(8px);
-  background-image: linear-gradient(
-    50deg,
-    #1b1a1a7a,
-    #0f0f0f92,
-    #1b1a1a94,
-    #0f0f0f94,
-    #2726266b
-  );
-}
-
-/*spblugy-icon, this container(<ul>)   
-  holding the spblugy-icons-shell/ all nav icons and text*/
-.menu-icon-tray1-mb {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  align-content: center;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0px 20px 0px 20px;
-  padding: 0;
-  gap: 4%;
-  z-index: 204;
-}
-.menu-icon-tray2-mb {
-  width: auto;
-  height: auto;
-  display: none;
-  position: relative;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  gap: 12%;
-  z-index: 204;
-}
-
-/*spblugy-icons-shell this is the container(li) holding
-  the <ul> holding all nav icons*/
-.menu-icon-nd-name-container-mb {
-  width: auto;
-  height: 20px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
-  z-index: 203;
-  transform: translateY(-7%);
-  gap: 1px;
-}
-
-/*spblugy-icons-txt this is the container(div) holding
-  label text for all nav icons*/
-.menu-icons-txt-mb {
-  width: 65px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
-  letter-spacing: 0.07rem;
-  margin: 0%;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
-
-/*class created to target spblugy menu icons*/
-.menu-icons-mb {
-  width: 22px;
-  height: 22px;
-  filter: drop-shadow(#000);
-  filter: opacity(80.8%);
-}
-
-/*class created to target visted link behavour on nav menu*/
-.nav-link-mb {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  color: #979292;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.07rem;
-  margin: 0%;
-  margin-top: 10px;
-  text-decoration: none;
-  text-align: center;
-  align-content: center;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
 /* -------------- .4. intro profile an d category container---------------- */
 
-
+#intro--nd--myWorksCategories{
+  background-color: #0f0f0f55;
+  width: 85%;
+  height: fit-content;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 15px #0c0c0caf;
+  border-radius: 60px;
+  border: 0.5px solid #5555550e;
+  backdrop-filter: brightness() opacity(50%) blur(8px);
+  background-image: linear-gradient(
+    200deg,
+    rgba(8, 8, 8, 0.185) 0%,
+    #22222220 40%,
+    #25252520 95%
+  );
+  border-radius: 30px;
+  gap: 20px;
+  padding: 50px 0px 50px 0px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+em{
+  display: inline-flex;
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+  color: #e2dfdf;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin-left: 10px;
+}
+#grid--bacground--img{
+    /* width: 100%; */
+    /* height: 295px; */
+    width: 1000px;
+    height: aut0;
+    display: flex;
+    position: absolute;
+    transform: translate(0px,-150px);
+    opacity: 30%;
+  
+}
+#starBacklight--bacground--img{
+    /* width: 100%; */
+    /* height: 295px; */
+    width: 1000px;
+    height: aut0;
+    display: flex;
+    position: absolute;
+    transform: translate(0px,200px);
+  
+}
 #intro-profile-continer {
   width: 90%;
   height: 255px;
@@ -454,7 +131,7 @@ header ul img p :hover {
   gap: 55px;
 }
 
-.profile-photo {
+#intro--profile--img{
   max-width: 30%;
   width: 290px;
   height: auto;
@@ -466,7 +143,9 @@ header ul img p :hover {
   margin: 0px 0px 0px 0px;
 }
 
-.intro-txt {
+#intro--txt {
+  display: inline;
+  position: relative;
   font-size: 1.3rem;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2rem;
@@ -479,15 +158,14 @@ header ul img p :hover {
   margin-left: 0;
   margin-right: 0;
   padding: 0;
-  display: flex;
-  position: relative;
+  
   align-items: center;
   align-content: center;
   justify-content: center;
 }
 
 
-#my-work-category-container {
+/* #myWork--category--container {
   width: 100%;
   height: 100%;
   margin-top: 50px;
@@ -500,11 +178,11 @@ header ul img p :hover {
   align-items: center;
   justify-content: center;
   gap: 20px;
-}
-.category-icons-container {
+} */
+#myWork--category--container {
   width: fit-content;
   height: fit-content;
-  margin-top: 10px;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -525,7 +203,7 @@ header ul img p :hover {
   align-content: center;
   justify-content: center;
 }
-.category-icons {
+.myworkCategoryIcon {
   width: 100px;
   height: 100%;
   display: flex;
@@ -535,25 +213,45 @@ header ul img p :hover {
   align-items: center;
   justify-content: center;
 }
+/* .myWork--mywork--category--link {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+} */
 
-/* -------------- .6. drawer cards section ------------ */
-#drawer-cards-section {
+/* -------------- .6. capsuleCard cards section ------------ */
+#capsuleCards--container {
+  background-color: #161616;
+backdrop-filter: brightness() opacity(70%) blur(8px);
+  display: flex;
+  position: relative;
   width: fit-content;
   height: auto;
   border-radius: 20px;
-  border: 1px solid #252525;
-  margin-top: 100px;
-  position: relative;
-  display: flex;
+  border: 1px solid #25252575;
   align-items: center;
   align-content: center;
   justify-content: center;
+  box-shadow: 0px 3px 15px #0c0c0caf;
+  backdrop-filter: brightness() opacity(50%) blur(8px);
+  background-image: linear-gradient(
+    200deg,
+    rgba(8, 8, 8, 0) 0%,
+    #14141420 40%,
+    #1d1c1c20 95%
+  );
   gap: 10px;
   padding: 16px;
+  margin-top: 100px;
 }
 
 /* ----- -----------drawe card header-------------------- */
-.capsule-header {
+.squircleStyle--header {
   background-color: #222222;
   display: flex;
   position: absolute;
@@ -562,19 +260,20 @@ header ul img p :hover {
   height: 35px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  box-shadow: 0px 3px 15px #0c0c0c;
   margin: 0;
   align-items: center;
   align-content: center;
   justify-content: center;
 }
-.capsule-header-icn {
+.squircleStyle--header--icn {
   display: flex;
   position: relative;
   width: 20px;
   height: 20px;
   margin-left: 10px;
 }
-.capsule-header-txt {
+.squircleStyle--header--title {
   display: flex;
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
@@ -586,7 +285,7 @@ header ul img p :hover {
   margin-right: 10px;
 }
 
-.drawer-Cards-Container {
+.capsuleCards--Container {
   display: flex;
   position: relative;
   border-radius: 20px;
@@ -602,7 +301,7 @@ header ul img p :hover {
   padding: 0;
 }
 
-.home-drawers {
+.capsule--card {
   background-color: transparent;
   width: 400px;
   height: 110px;
@@ -615,7 +314,7 @@ header ul img p :hover {
   gap: 10px;
 }
 
-.drawer-foreground-grad {
+.capsuleCard-foreground-grad {
   background-image: linear-gradient(
     176deg,
     #313131 0%,
@@ -634,7 +333,7 @@ header ul img p :hover {
   margin: 0;
   z-index: 3;
 }
-.drawer-background {
+.capsuleCard-background {
   margin: 0.05rem;
   height: 116px;
   width: 396px;
@@ -645,7 +344,7 @@ header ul img p :hover {
   border: 1px solid #252525;
 }
 
-.drawer-backdrop-grad {
+.capsuleCard-backdrop-grad {
   height: 120px;
   width: 400px;
   position: absolute;
@@ -654,10 +353,11 @@ header ul img p :hover {
   z-index: 1;
 }
 
-.home-drawer-img {
+.capsuleCard-img {
   width: 120px;
   height: 110px;
   border-radius: 20px;
+  opacity: 50%;
 
   display: flex;
   position: relative;
@@ -667,7 +367,7 @@ header ul img p :hover {
   z-index: 4;
 }
 
-.home-drawer-txt {
+.capsuleCard-txt {
   min-width: 200px;
   width: 240px;
   height: 80%;
@@ -679,7 +379,7 @@ header ul img p :hover {
   justify-content: center;
   z-index: 4;
 }
-.home-drawers p {
+.capsuleCard-txt p {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.2rem;
   font-size: 0.8rem;
@@ -694,113 +394,20 @@ h4 {
   color: #e2dfdf;
   margin: 0;
 }
-
-/*>>>>>>>>>>>>>>>>>>>>> My works page <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-/*from here starts styles for MYworks page*/
-.section2 {
-  /*margin: 0.05rem;
-    padding: 10px;*/
-  width: fit-content;
-  height: auto;
+/* favourites section */
+.imgGlassDune {
   background-color: transparent;
-  background-image: linear-gradient(
-    to bottom right,
-    #45434380,
-    #4d4c4c10,
-    #3c3a3a40
-  );
-  border-radius: 20px;
-  margin-top: 100px;
-  position: relative;
+  width: 220px;
   display: flex;
+  position: relative;
+  border-radius: 30px;
   align-items: center;
   align-content: center;
   justify-content: space-around;
-  gap: px;
-  padding: 16px;
+  gap: 10px;
 }
 
-.mywork-drawer-header {
-  background-color: #222222;
-  display: flex;
-  position: absolute;
-  top: -35px;
-  width: fit-content;
-  height: 35px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  margin: 0;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-.mywork-drawer-header-icn {
-  display: flex;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
-}
-.mywork-drawer-header-txt {
-  display: flex;
-  position: relative;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0.1rem;
-  color: #979292;
-  width: fit-content;
-  height: fit-content;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.mywork-duo-drawer-case {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-content: center;
-  margin: 0;
-  gap: 0px;
-}
-
-.sct2-backdrop {
-  border-radius: 20px;
-  background-color: #161616;
-  display: flex;
-  position: absolute;
-  width: 99.9%;
-  height: 99%;
-}
-.mywork-drawer-grid-shell {
-  margin: 0%;
-  border-radius: 20px;
-  display: flex;
-  width: fit-content;
-  height: fit-content;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-
-.mywork-drawers {
-  background-color: transparent;
-  width: 350px;
-  height: 70px;
-  display: flex;
-  position: relative;
-  border-radius: 25px;
-  align-items: center;
-  align-content: center;
-  justify-content: space-around;
-  gap: px;
-  margin: 0;
-}
-
-.mywork-drawer-foreground-grad {
+.imgGlassDune-foreground-grad {
   background-image: linear-gradient(
     176deg,
     #313131 0%,
@@ -808,295 +415,51 @@ h4 {
     #25242465 75%,
     #171717 95%
   );
-  height: 55px;
-  width: 245px;
+  height: 204px;
+  width: 220px;
   display: flex;
   position: absolute;
-  border-radius: 6px;
+  border-radius: 15px;
   align-items: center;
   align-content: center;
   justify-content: center;
   margin: 0;
   z-index: 3;
 }
-.mywork-drawer-background {
+.imgGlassDune-background {
   margin: 0.05rem;
-  height: 55px;
-  width: 245px;
+  height: 200px;
+  width: 215px;
   position: absolute;
-  background: #161616;
   border-radius: 20px;
-  padding: 1px;
+  padding: 2px;
   z-index: 2;
+  border: 1px solid #252525;
 }
 
-.mywork-drawer-backdrop-grad {
-  height: 60px;
-  width: 250px;
+.imgGlassDune-backdrop-grad {
+  height: 200px;
+  width: 200px;
   position: absolute;
   background: linear-gradient(to bottom right, #45434380, #4d4c4c10, #3c3a3a40);
-  border-radius: 20px;
+  border-radius: 25px;
   z-index: 1;
 }
 
-.mywork-drawer-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 6px;
-
-  display: flex;
-  position: relative;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  z-index: 4;
-  margin-left: 10px;
-}
-
-.portfolio-header {
-  background-color: #1f2023;
-  width: auto;
-  height: 350px;
-  position: relative;
-  margin-top: 145px;
-  margin-left: 80px;
-  margin-right: 80px;
-  border-radius: 25px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  gap: 10px;
-  z-index: -190;
-}
-.portfolio-header::before {
-  content: "";
-  width: 100%;
-  height: 60%;
-  display: flex;
-  background-image: linear-gradient(#8ea2b410, #a0a7ad10, #e0eaf210);
-  position: absolute;
-  bottom: 0px;
-  filter: blur(50px);
-  border-top-left-radius: 600px;
-  border-top-right-radius: 600px;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.profile-img {
-  margin-left: 20px;
-  width: 30%;
-  height: 250px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.portfolio-header-txt-btn {
-  width: fit-content;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.portfolio-txt {
-  color: #cccccc;
-  font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 2rem;
-  letter-spacing: 0.1rem;
-  width: 95%;
-  height: fit-content;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  margin: 0px;
-}
-.profile-header-btns {
-  width: fit-content;
-  height: auto;
-  display: flex;
-  position: relative;
-  left: 0px;
-  align-content: flex-start;
-  align-items: center;
-  gap: 50px;
-  margin-top: 25px;
-  padding: 0px;
-}
-.ph-btn {
-  color: #a7a9b1;
-  font-size: small;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 100px;
-  background-color: #0d0c0d;
-  width: 200px;
-  height: auto;
-  display: flex;
-  position: relative;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-.ph-btn-icn {
-  width: 1.2rem;
-}
-.skills-tools-cards-shell {
-  margin-top: 30px;
-  position: relative;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  z-index: -191;
-}
-
-.somke-card-header {
-  border: 1px solid black;
-  width: fit-content;
-  display: flex;
-  align-content: flex-start;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  margin-left: 55px;
-  gap: 20px;
-}
-.somke-card-header-icons {
-  width: 2rem;
-  display: flex;
-}
-
-.somke-card-header-txt {
-  color: #dddddd;
-  font-size: 1.3rem;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 2rem;
-  letter-spacing: 0.1rem;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  margin: 0px;
-}
-
-.st-li {
-  color: #797979;
-  list-style: none;
-}
-.st-li::before {
-  content: url(icn/marker-tick-12.svg);
-  font-size: 1rem;
-  padding: 10px;
-}
-
-.smoke-glass-card {
-  background-color: #1f2023;
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-content: center;
-  justify-content: center;
-  align-items: flex-start;
+.imgGlassDune-img {
+  width: 190px;
+  height: 190px;
   border-radius: 20px;
-  overflow: hidden;
-}
-
-.skills-tools-cards {
-  width: fit-content;
-  height: auto;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin: 20px;
-}
-.skills-tools-grouped {
-  width: fit-content;
-  height: auto;
-  display: flex;
-}
-
-.skills-tools-list {
-  text-decoration: none;
-  color: #797979;
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 2rem;
-  letter-spacing: 0.1rem;
-  width: auto;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 0px;
-}
-
-.divider-grooved {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  height: 2px;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.d-link1 {
-  background-color: #111111;
-  width: 500px;
-  height: 2px;
-  border-radius: 10px;
-  margin: 0%;
-}
-.d-link2 {
-  background-color: #333333;
-  width: 100%;
-  height: 1px;
-  border-radius: 10px;
-  margin: 0%;
-}
-.glass-smoke {
-  width: 100%;
-  height: 70%;
-  display: flex;
-  background-image: linear-gradient(#8ea2b410, #a0a7ad10, #e0eaf210);
-  position: absolute;
-  bottom: 0px;
-  filter: blur(60px);
-  border-top-left-radius: 600px;
-  border-top-right-radius: 600px;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.experience-cards {
-  margin-top: 50px;
   position: relative;
-  border: 2px solid black;
-  width: 300px;
-  height: 500px;
-  align-content: center;
-  justify-content: center;
+  align-content: end;
   align-items: center;
-  margin: auto;
-  z-index: -192;
+  justify-content: center;
+  opacity: 50%;
+  z-index: 4;
 }
+
+
 
 footer {
   width: 100%;
@@ -1152,43 +515,43 @@ footer {
   }
 
   /* --------------- .7a3. my works container @media Tablet---------------- */
-  .drawer-Cards-Container {
+  .capsuleCard-Cards-Container {
     max-width: 840px;
   }
   .category-icons-container {
     max-width: 462px;
   }
-  .home-drawers {
+  .home-capsuleCards {
     background-color: transparent;
     width: 320px;
     justify-content: space-around;
     gap: 10px;
   }
   
-  .drawer-foreground-grad {
+  .capsuleCard-foreground-grad {
     width: 318px;
   }
-  .drawer-background {
+  .capsuleCard-background {
     width: 316px;
   }
   
-  .drawer-backdrop-grad {
+  .capsuleCard-backdrop-grad {
     width: 320px;
     
   }
   
-  .home-drawer-img {
+  .home-capsuleCard-img {
     width: 116px;
     transform: translatex(6px)
   }
   
-  .home-drawer-txt {
+  .home-capsuleCard-txt {
     min-width: 100px;
     width: fit-content;
     height: auto;
     transform: translatex(5px);
   }
-  .home-drawers p {
+  .home-capsuleCards p {
     margin: 0;
 
   }
@@ -1301,8 +664,8 @@ backdrop-filter: blur(3px);
   }
   
 
-  /* -------------- .7b3. my works drawers section @media phone---------------- */
-  .drawer-Cards-Container {
+  /* -------------- .7b3. my works capsuleCards section @media phone---------------- */
+  .capsuleCard-Cards-Container {
     max-width: 400px;
     flex-direction: column;
   }
@@ -1314,7 +677,7 @@ backdrop-filter: blur(3px);
   .menu-icon-tray1-mb {
     gap: 4%;
   }
-  #drawer-cards-section {
+  #capsuleCard-cards-section {
     width: fit-content;
     height: auto;
     border-radius: 20px;
@@ -1330,7 +693,7 @@ backdrop-filter: blur(3px);
   }
   
   /* ----- -----------drawe card header-------------------- */
-  .capsule-header {
+  .capsuleCards-header {
     background-color: #222222;
     display: flex;
     position: absolute;
@@ -1344,16 +707,16 @@ backdrop-filter: blur(3px);
     align-content: center;
     justify-content: center;
   }
-  .capsule-header-icn {
+  .capsuleCards-header-icn {
     width: 16px;
     height: autopx;
     
   }
-  .capsule-header-txt {
+  .capsuleCards-header-txt {
     font-size: 0.8rem;
   }
   
-  .drawer-Cards-Container {
+  .capsuleCard-Cards-Container {
     flex-wrap: wrap;
     max-width: 400px;
     width: fit-content;
@@ -1363,37 +726,37 @@ backdrop-filter: blur(3px);
     padding: 0;
   }
   
-  .home-drawers {
+  .home-capsuleCards {
     background-color: transparent;
     width: 320px;
     justify-content: space-around;
     gap: 10px;
   }
   
-  .drawer-foreground-grad {
+  .capsuleCard-foreground-grad {
     width: 318px;
   }
-  .drawer-background {
+  .capsuleCard-background {
     width: 316px;
   }
   
-  .drawer-backdrop-grad {
+  .capsuleCard-backdrop-grad {
     width: 320px;
     
   }
   
-  .home-drawer-img {
+  .home-capsuleCard-img {
     width: 116px;
     transform: translatex(6px)
   }
   
-  .home-drawer-txt {
+  .home-capsuleCard-txt {
     min-width: 100px;
     width: fit-content;
     height: auto;
     transform: translatex(5px);
   }
-  .home-drawers p {
+  .home-capsuleCards p {
     margin: 0;
 
   }
