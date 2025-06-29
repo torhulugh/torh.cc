@@ -10,7 +10,7 @@
       table of content.
    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
- * ========================= .c.====================================
+ * ========================= .c./////=========
  * 1. GENERAL
  * 2. LAYOUT
  * 3. MENU
@@ -33,7 +33,7 @@
  * -------- .7b3. my works section @media phone
  * -------- .7b4. contact foam @media phone
  * -------- .7b5. footer @media phone
- ==================================================================  -->
+ /////============  -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -265,14 +265,17 @@
           <div class="divider"></div>
           <!-- 🍇 -->
           <!--  my work category icons -->
-          <div id="myWork--category--container">
-            <!-- 🍇 -->
-            <!-- graphic design -->
+          <div id="myWork--categoryIcons--container">
+            <!-- three icons containers -->
+            <div class="categoryTriIcons--container">
+              <!-- graphic design -->
             <a class="myWork--categoryIcon--link" href="">
             <img
               class="myworkCategoryIcon"
               src="icn/graphicdesign-icon.svg"
               alt="graphic design icon"/>
+            <img class="myworkCategoryIcon--backdrop" 
+            src="icn/cat-icon-shadow.svg" alt="cartegory icon shadow">
             </a>
             <!-- 🍇 -->
             <!-- Illustration/Art -->
@@ -281,6 +284,8 @@
               class="myworkCategoryIcon"
               src="icn/illustration-icon.svg"
               alt="illustration icon"/>
+              <img class="myworkCategoryIcon--backdrop" 
+            src="icn/cat-icon-shadow.svg" alt="cartegory icon shadow">
             </a>
             <!-- 🍇 -->
              <!-- ui/ux design -->
@@ -288,14 +293,21 @@
             <img class="myworkCategoryIcon" 
             src="icn/uxdesigner-icon.svg" 
             alt="ui/ux design icon" />
+            <img class="myworkCategoryIcon--backdrop" 
+            src="icn/cat-icon-shadow.svg" alt="cartegory icon shadow">
             </a>
             <!-- 🍇 -->
+            </div>
+            <!-- 🍇🍇 -->
+            <div class="categoryTriIcons--container">
              <!-- motion graphics -->
             <a class="myWork--categoryIcon--link" href="">
             <img
               class="myworkCategoryIcon"
               src="icn/motiongraphic-icon.svg"
               alt="motion graphic icon"/>
+              <img class="myworkCategoryIcon--backdrop" 
+            src="icn/cat-icon-shadow.svg" alt="cartegory icon shadow">
             </a>
             <!-- 🍇 -->
              <!-- fashion design -->
@@ -304,6 +316,8 @@
               class="myworkCategoryIcon"
               src="icn/fashiondesign-icon.svg"
               alt=" fashion design icon"/>
+              <img class="myworkCategoryIcon--backdrop" 
+            src="icn/cat-icon-shadow.svg" alt="cartegory icon shadow">
             </a>
             <!-- 🍇 -->
              <!-- code craft -->
@@ -311,13 +325,17 @@
             <img class="myworkCategoryIcon" 
             src="icn/code craft.svg" 
             alt=" code craft icon" />
+            <img class="myworkCategoryIcon--backdrop" 
+            src="icn/cat-icon-shadow.svg" alt="cartegory icon shadow">
             </a>
+            </div>
+            <!-- 🍇🍇 -->
           </div>
         </div>
       </section>
-      <!-- ============================ Recent activities section =========================== -->
-      <section id="capsuleCards--container">
-        <!-- ----------------------------- Recent activities section header ------------------------------>
+      <!-- ///// Recent activities section ///// -->
+      <section id="recentAcivities--container">
+        <!--  Recent activities section header -->
         <div class="squircleStyle--header">
           <img
             class="squircleStyle--header--icn"
@@ -326,9 +344,9 @@
           />
           <p class="squircleStyle--header--title">Recent Activities</p>
         </div>
-        <!-- ----------------------------- Recent activities drawers container ---------------------------- -->
+        <!--  capsule cards container  -->
         <div class="capsuleCards--Container">
-          <!-- ----------------------------- Recent activities drawer 1 ---------------------------- -->
+          <!-- ----------------------------- capsule card 1 ---------------------------- -->
           <div class="capsule--card">
             <div class="capsuleCard-foreground-grad"></div>
             <div class="capsuleCard-background"></div>
@@ -343,7 +361,7 @@
             </div>
           </div>
           <!-- 🍇 -->
-          <!-- ----------------------------- Recent activities drawer 1 ---------------------------- -->
+          <!-- ----------------------------- capsule card 1 ---------------------------- -->
           <div class="capsule--card">
             <div class="capsuleCard-foreground-grad"></div>
             <div class="capsuleCard-background"></div>
@@ -358,7 +376,7 @@
             </div>
           </div>
           <!-- 🍇 -->
-          <!-- ----------------------------- Recent activities drawer 1 ---------------------------- -->
+          <!-- ----------------------------- capsule card 1 ---------------------------- -->
           <div class="capsule--card">
             <div class="capsuleCard-foreground-grad"></div>
             <div class="capsuleCard-background"></div>
@@ -373,7 +391,7 @@
             </div>
           </div>
           <!-- 🍇 -->
-          <!-- ----------------------------- Recent activities drawer 1 ---------------------------- -->
+          <!-- ----------------------------- capsule card 1 ---------------------------- -->
           <div class="capsule--card">
             <div class="capsuleCard-foreground-grad"></div>
             <div class="capsuleCard-background"></div>
@@ -388,7 +406,7 @@
             </div>
           </div>
           <!-- 🍇 -->
-          <!-- ----------------------------- Recent activities drawer 1 ---------------------------- -->
+          <!-- ----------------------------- capsule card 1 ---------------------------- -->
           <div class="capsule--card">
             <div class="capsuleCard-foreground-grad"></div>
             <div class="capsuleCard-background"></div>
@@ -403,7 +421,7 @@
             </div>
           </div>
           <!-- 🍇 -->
-          <!-- ----------------------------- Recent activities drawer 1 ---------------------------- -->
+          <!-- ----------------------------- capsule card 1 ---------------------------- -->
           <div class="capsule--card">
             <div class="capsuleCard-foreground-grad"></div>
             <div class="capsuleCard-background"></div>
@@ -418,11 +436,9 @@
             </div>
           </div>
           <!-- 🍇 -->
-          
       </section>
       <!-- favourites -->
-      <section id="capsuleCards--container">
-        <!-- ----------------------------- Recent activities section header ------------------------------>
+      <section id="favourites--container">
         <div class="squircleStyle--header">
           <img
             class="squircleStyle--header--icn"
@@ -431,37 +447,44 @@
           />
           <p class="squircleStyle--header--title">favourites</p>
         </div>
-        <!-- ----------------------------- Recent activities drawers container ---------------------------- -->
-        <div class="capsuleCards--Container">
-          <!-- ----------------------------- Recent activities drawer 1 ---------------------------- -->
+        <!-- ----------------------------- capsule cards container ---------------------------- -->
+        <div id="imgGlassDunes--Container">
+          <!-- ----------------------------- img 1 ---------------------------- -->
           <div class="imgGlassDune">
             <div class="imgGlassDune-foreground-grad"></div>
             <div class="imgGlassDune-background"></div>
             <div class="imgGlassDune-backdrop-grad"></div>
             <img class="imgGlassDune-img" src="img/akbe.png" alt="" />
           </div>
-          <!-- ----------------------------- Recent activities drawer 1 ---------------------------- -->
+          <!-- ----------------------------- img 2 ---------------------------- -->
           <div class="imgGlassDune">
             <div class="imgGlassDune-foreground-grad"></div>
             <div class="imgGlassDune-background"></div>
             <div class="imgGlassDune-backdrop-grad"></div>
             <img class="imgGlassDune-img" src="img/DAG2.png" alt="" />
           </div>
-          <!-- ----------------------------- Recent activities drawer 1 ---------------------------- -->
+          <!-- ----------------------------- img 3 ---------------------------- -->
           <div class="imgGlassDune">
             <div class="imgGlassDune-foreground-grad"></div>
             <div class="imgGlassDune-background"></div>
             <div class="imgGlassDune-backdrop-grad"></div>
             <img class="imgGlassDune-img" src="img/adasu.png" alt="" />
           </div>
-          <!-- ----------------------------- Recent activities drawer 1 ---------------------------- -->
+          <!-- ----------------------------- img 4 ---------------------------- -->
           <div class="imgGlassDune">
             <div class="imgGlassDune-foreground-grad"></div>
             <div class="imgGlassDune-background"></div>
             <div class="imgGlassDune-backdrop-grad"></div>
             <img class="imgGlassDune-img" src="img/ZANARIA.png" alt="" />
           </div>
-          <!-- ----------------------------- Recent activities drawer 1 ---------------------------- -->
+          <!-- ----------------------------- img 5 ---------------------------- -->
+          <div class="imgGlassDune">
+            <div class="imgGlassDune-foreground-grad"></div>
+            <div class="imgGlassDune-background"></div>
+            <div class="imgGlassDune-backdrop-grad"></div>
+            <img class="imgGlassDune-img" src="img/VG.png" alt="" />
+          </div>
+          <!-- ----------------------------- img 5 ---------------------------- -->
           <div class="imgGlassDune">
             <div class="imgGlassDune-foreground-grad"></div>
             <div class="imgGlassDune-background"></div>

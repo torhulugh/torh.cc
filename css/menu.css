@@ -353,9 +353,6 @@ header {
   transform: translateY(-7%);
   gap: 1px;
 }
-
-/*spblugy-icons-txt this is the container(div) holding
-label text for all nav icons*/
 .mobilMenuIconsName {
   width: 65px;
   font-family: Arial, Helvetica, sans-serif;
@@ -544,8 +541,7 @@ label text for all nav icons*/
     padding: 0;
   }
   #header-site-logo {
-    left: 10px;
-    top: 15px;
+    left: 15px;
   }
   #header-site-logo-img {
     width: 80px;
@@ -553,7 +549,6 @@ label text for all nav icons*/
 
   #screen-mode {
     right: 15px;
-    top: 15px;
   }
   #light-mode-icn {
     display: flex;

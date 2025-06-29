@@ -38,7 +38,6 @@
 
 /*============= .1. GENERAL ===================*/
 html {
-  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
@@ -61,11 +60,12 @@ main {
 /* ---------------- .3a. Greneral styles  menu--------------- */
 
 
-/* -------------- .4. intro profile an d category container---------------- */
+/* \\\\\ .4. intro profile an MY WORKS category //// */
 
 #intro--nd--myWorksCategories{
   background-color: #0f0f0f55;
   width: 85%;
+  max-width: 1280px;
   height: fit-content;
   display: flex;
   position: relative;
@@ -87,7 +87,6 @@ main {
   gap: 20px;
   padding: 50px 0px 50px 0px;
   margin-top: 30px;
-  overflow: hidden;
 }
 em{
   display: inline-flex;
@@ -100,9 +99,7 @@ em{
   margin-left: 10px;
 }
 #grid--bacground--img{
-    /* width: 100%; */
-    /* height: 295px; */
-    width: 1000px;
+    width: 80%;
     height: aut0;
     display: flex;
     position: absolute;
@@ -111,15 +108,14 @@ em{
   
 }
 #starBacklight--bacground--img{
-    /* width: 100%; */
-    /* height: 295px; */
-    width: 1000px;
+    width: 80%;
     height: aut0;
     display: flex;
     position: absolute;
     transform: translate(0px,200px);
   
 }
+/* ---> intro profile section <--- */
 #intro-profile-continer {
   width: 90%;
   height: 255px;
@@ -130,7 +126,6 @@ em{
   justify-content: center;
   gap: 55px;
 }
-
 #intro--profile--img{
   max-width: 30%;
   width: 290px;
@@ -142,7 +137,6 @@ em{
   justify-content: center;
   margin: 0px 0px 0px 0px;
 }
-
 #intro--txt {
   display: inline;
   position: relative;
@@ -158,45 +152,46 @@ em{
   margin-left: 0;
   margin-right: 0;
   padding: 10px;
-  
   align-items: center;
   align-content: center;
   justify-content: center;
 }
-
-
-/* #myWork--category--container {
-  width: 100%;
-  height: 100%;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+/* ---> My works category section <--- */
+#myWork--category--container {
+  width: fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   position: relative;
   align-content: center;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-} */
-#myWork--category--container {
+  margin-top: 10px;
+}
+.categoryTriIcons--container {
   width: fit-content;
   height: fit-content;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
-  flex-wrap: wrap;
-  max-width: 1240px;
   position: relative;
   align-content: center;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 50px;
 }
-
+#myWork--categoryIcons--container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  margin: auto;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 50px;
+}
 .divider {
-  width: 900px;
+  width: 95%;
   height: 0.0049rem;
   background: #222;
   align-items: center;
@@ -205,7 +200,7 @@ em{
 }
 .myworkCategoryIcon {
   width: 100px;
-  height: 100%;
+  height: 100px;
   display: flex;
   position: relative;
   flex-direction: row;
@@ -213,44 +208,37 @@ em{
   align-items: center;
   justify-content: center;
 }
-/* .myWork--mywork--category--link {
+.myworkCategoryIcon--backdrop {
   width: 100px;
   height: 100%;
   display: flex;
-  position: relative;
+  position: absolute;
+  transform: translateY(-55px);
+  opacity: 20%;
   flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: center;
-} */
+}
+.myworkCategoryIcon:hover {
+  border-radius: 30px;
+  scale: 105%;
+  z-index: 200;
+  transition: all 0.5s ease-in-out;
+  }
+  
 
-/* -------------- .6. capsuleCard cards section ------------ */
-#capsuleCards--container {
-  background-color: #161616;
-backdrop-filter: brightness() opacity(70%) blur(8px);
+/* ---> .6. recent activites section <--- */
+#recentAcivities--container {
   display: flex;
   position: relative;
-  width: fit-content;
+  width: 100%;
   height: auto;
-  border-radius: 20px;
-  border: 1px solid #25252575;
   align-items: center;
   align-content: center;
   justify-content: center;
-  box-shadow: 0px 3px 15px #0c0c0caf;
-  backdrop-filter: brightness() opacity(50%) blur(8px);
-  background-image: linear-gradient(
-    200deg,
-    rgba(8, 8, 8, 0) 0%,
-    #14141420 40%,
-    #1d1c1c20 95%
-  );
-  gap: 10px;
-  padding: 16px;
   margin-top: 100px;
 }
-
-/* ----- -----------drawe card header-------------------- */
 .squircleStyle--header {
   background-color: #222222;
   display: flex;
@@ -286,19 +274,28 @@ backdrop-filter: brightness() opacity(70%) blur(8px);
 }
 
 .capsuleCards--Container {
+  background-color: #161616;
+  backdrop-filter: brightness() opacity(70%) blur(8px);
   display: flex;
+  flex-direction: column;
   position: relative;
-  border-radius: 20px;
-  flex-wrap: wrap;
-  max-width: 1240px;
   width: fit-content;
   height: auto;
-  gap: 20px;
-  justify-content: center;
-  align-content: center;
+  border-radius: 20px;
+  border: 1px solid #25252575;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 0px 3px 15px #0c0c0caf;
+  backdrop-filter: brightness() opacity(50%) blur(8px);
+  background-image: linear-gradient(
+    200deg,
+    rgba(8, 8, 8, 0) 0%,
+    #14141420 40%,
+    #1d1c1c20 95%
+  );
+  gap: 25px;
+  padding: 20px;
 }
 
 .capsule--card {
@@ -312,6 +309,16 @@ backdrop-filter: brightness() opacity(70%) blur(8px);
   align-content: center;
   justify-content: space-around;
   gap: 10px;
+}
+.capsule--card:hover {
+  background-color: #1f1f1f;
+  scale: 105%;
+  z-index: 200;
+  transition: all 0.5s ease-in-out;
+  .capsuleCard-img {
+    opacity: 100%;
+    cursor: pointer;
+  }
 }
 
 .capsuleCard-foreground-grad {
@@ -343,7 +350,6 @@ backdrop-filter: brightness() opacity(70%) blur(8px);
   z-index: 2;
   border: 1px solid #252525;
 }
-
 .capsuleCard-backdrop-grad {
   height: 120px;
   width: 400px;
@@ -352,7 +358,6 @@ backdrop-filter: brightness() opacity(70%) blur(8px);
   border-radius: 20px;
   z-index: 1;
 }
-
 .capsuleCard-img {
   width: 120px;
   height: 110px;
@@ -366,7 +371,6 @@ backdrop-filter: brightness() opacity(70%) blur(8px);
   justify-content: center;
   z-index: 4;
 }
-
 .capsuleCard-txt {
   min-width: 200px;
   width: 240px;
@@ -395,6 +399,45 @@ h4 {
   margin: 0;
 }
 /* favourites section */
+#favourites--container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+#imgGlassDunes--Container {
+  background-color: #161616;
+  backdrop-filter: brightness() opacity(70%) blur(8px);
+  display: flex;
+  position: relative;
+  width: 1270px;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid #25252575;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 0px 3px 15px #0c0c0caf;
+  backdrop-filter: brightness() opacity(50%) blur(8px);
+  background-image: linear-gradient(
+    200deg,
+    rgba(8, 8, 8, 0) 0%,
+    #14141420 40%,
+    #1d1c1c20 95%
+  );
+  gap: 20px;
+  padding: 20px;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */  
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }    
+}
 .imgGlassDune {
   background-color: transparent;
   width: 220px;
@@ -405,6 +448,16 @@ h4 {
   align-content: center;
   justify-content: space-around;
   gap: 10px;
+}
+.imgGlassDune:hover {
+  background-color: #1f1f1f;
+  scale: 101%;
+  z-index: 200;
+  transition: all 0.2s ease-in-out;
+  .imgGlassDune-img {
+    opacity: 100%;
+    cursor: pointer;
+  }
 }
 
 .imgGlassDune-foreground-grad {
@@ -488,19 +541,80 @@ footer {
 
 /* \\\\\\\\\\ .7. MEDIA QUERIES //////*/
 
+/* <<<<<<<<>>>>>>>>  desktop2 <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 1065px) {
+  #intro--nd--myWorksCategories {
+    background-color: transparent;
+    max-width: 1280px;
+    height: fit-content;
+    padding: 20px 0px 20px 0px;
+    margin-top: 10px;
+    gap: 10px;
+    background-image: none;
+    box-shadow: none;
+    border: none;
+  }
+  #intro-profile-continer {
+    background-color: #0f0f0f55;
+  width: 100%;
+  max-width: 1280px;
+  height: fit-content;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 15px #0c0c0caf;
+  border-radius: 60px;
+  border: 0.5px solid #5555550e;
+  backdrop-filter: brightness() opacity(50%) blur(8px);
+  background-image: linear-gradient(
+    200deg,
+    rgba(8, 8, 8, 0.185) 0%,
+    #22222220 40%,
+    #25252520 95%
+  );
+  border-radius: 30px;
+  gap: 20px;
+  padding: 50px 0px 50px 0px;
+  overflow: hidden;
+  }
+  #myWork--categoryIcons--container{
+    flex-direction: column;
+    gap: 50px;
+  }
+  .categoryTriIcons--container {
+    justify-content: center;
+    gap:  150px;
+  }
+#myWork--category--container{
+  margin-top: 70px;
+}
+}
 /* <<<<<<<>>>>>>>> 7a Tablet  <<<<<<<>>>>>>>> */
 
 @media screen and (max-width: 768px) {
   main {
-    margin: 30px;
+    margin: 10px;
   }
-  /* .capsuleCard-Cards-Container {
-    max-width: 840px;
-  } */
+  #myWork--categoryIcons--container{
+    flex-direction: column;
+    gap: 50px;
+  }
+  #intro--txt {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    width: 90%;
+    height: auto;
+  }
+  .categoryTriIcons--container {
+    gap:  100px;
+  }
   .category-icons-container {
     max-width: 462px;
   }
-  .home-capsuleCards {
+  .capsuleCards {
     background-color: transparent;
     width: 320px;
     justify-content: space-around;
@@ -540,13 +654,16 @@ footer {
   
 
 }
-
+/* <<<<<<<>>>>>>>> the inbetween mobile and tablet <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 615px) {
+  .categoryTriIcons--container {
+    gap: 50px;
+  }
+}
 /* <<<<<<<<>>>>>>>> .7b. Mobile <<<<<<<<>>>>>>>> */
-
 @media screen and (max-width: 480px) {
-  body {
-    margin-left: 20px;
-    margin-right: 20px;
+  main {
+    margin: 10px;
   }
   #intro--nd--myWorksCategories{
     width: 100%;
@@ -556,10 +673,7 @@ footer {
     gap: 10px;
   }
 
-  /* --------------- .7b2. profile section @media phone --------------- */
-  main{
-    margin: 5px 5px 5px 5px;
-  }
+  /* --- .7b2. intro profile  (MOBILE)  --- */
   #intro-profile-continer {
     width: 100%;
     height: auto;
@@ -582,10 +696,18 @@ footer {
     width: 80%;
     height: auto;
   }
-
-  #myWork--category--container{
+/* ---> my works categoty section (MOBILE)  <--- */
+ #myWork--category--container {
+    gap: 10px;
+  }
+#myWork--categoryIcons--container{
+    flex-direction: column;
     margin-top: 20px;
-   gap: 30px;
+   gap: 0px;
+  }
+  .categoryTriIcons--container {
+    justify-content: center;
+    gap:  30px;
   }
   .category-icons-container {
     gap: 40px;
@@ -593,10 +715,14 @@ footer {
   .myworkCategoryIcon {
     width: 80px;
   }
-  
+  .myworkCategoryIcon--backdrop {
+    width: 80px;
+    height: 80px;
+    transform: translateY(-40px);
+  }
 
-  /* -------------- .7b3. my works capsuleCards section @media phone---------------- */
-  .capsuleCards--Container {
+  /* ---> .7b3. rectent activity section (MOBILE) <--- */
+  .capsule--card {
     max-width: 400px;
     flex-direction: column;
   }
@@ -610,7 +736,7 @@ footer {
     width: fit-content;
   }
   
-  /* ----- -----------drawe card header-------------------- */
+  
   .squircleStyle--header{
     top: -35px;
     width: fit-content;
@@ -624,16 +750,6 @@ footer {
   }
   .squircleStyle--header--title {
     font-size: 0.8rem;
-  }
-  
-  .capsuleCard-Cards-Container {
-    flex-wrap: wrap;
-    max-width: 400px;
-    width: fit-content;
-    height: auto;
-    gap: 25px;
-    
-    padding: 0;
   }
   
   .capsule--cards {
