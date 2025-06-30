@@ -1,5 +1,4 @@
 /*
-
 ======================= TABLE OFCONTENT =====================
 
  >>>>>>>>>>>>>>>>>>> !!!NOTE!! >>>>>>>>>>>>>>>>>>>>>>                                                 
@@ -39,8 +38,6 @@
  * -------- .3b4. contact foam @media phone
  * -------- .3b5. footer @media phone
  ==================================================================*/
-
-
 header {
   display: flex;
   position: fixed;
@@ -119,7 +116,6 @@ header {
   margin: 0;
   z-index: 900;
 }
-
 #desktopMenu-background-color {
   width: 100%;
   height: 100%;
@@ -143,7 +139,6 @@ header {
     #2726266b
   );
 }
-
 #desktopMenu-icon-tray {
   width: auto;
   height: auto;
@@ -169,7 +164,6 @@ header {
   transform: translateY(-7%);
   gap: 1px;
 }
-
 .desktopMenuIconsName {
   width: 85px;
   font-family: Arial, Helvetica, sans-serif;
@@ -271,7 +265,6 @@ header {
   justify-content: center;
   gap: 10px;
 }
-
 /*------------------- .3b. mobile menu ----------------------------------*/
 #mobile-menu {
   background-color: #0d0c0d8a;
@@ -369,7 +362,6 @@ header {
   filter: drop-shadow(#000);
   filter: opacity(80.8%);
 }
-
 .mobileMenulink {
   display: flex;
   flex-direction: column;
@@ -389,9 +381,7 @@ header {
   gap: 10px;
 }
 /*=========  .7. MEDIA QUERIES ================= */
-
 /* <<<<<<<<>>>>>>>>  desktop2 <<<<<<<<>>>>>>>> */
-
 @media screen and (max-width: 1358px) {
   #desktopMenu-icon-tray {
     gap: 5%;
@@ -441,11 +431,9 @@ header {
       #2726266b
     );
   }
-
   #header-site-logo-img {
     width: 80px;
   }
-
   #screen-mode {
     display: flex;
     position: absolute;
@@ -500,11 +488,9 @@ header {
     left: 20px;
     top: 1px;
   }
-
   #header-site-logo-img {
     width: 80px;
   }
-
   #screen-mode {
     height: 50px;
     right: 20px;
@@ -529,7 +515,6 @@ header {
   #desktop-menu {
     display: none;
   }
-
   #mobile-menu {
     display: flex;
   }
