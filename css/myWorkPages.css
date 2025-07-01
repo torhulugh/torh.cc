@@ -1,0 +1,77 @@
+h1, h2, h3 {
+    color: rgb(237, 243, 248);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    display: flex;
+    position: relative;
+    width: 850px;
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+#workPageMain--header--img{
+    width: 850px;
+}
+#workPage--intro--txt{
+    color: #8D9BB0;
+    width: 850px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.01rem;
+}
+/* -------> summary cards <------- */
+#summary--cards--container {
+    display: flex;
+    flex-wrap: wrap; 
+    max-width: 900px;
+    position: relative;
+    width: 100%;
+    gap: 20px;
+}
+.workPage--summaryCard{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #1F2023;
+    width: 370px;
+    height: 200px;
+    border: 0.5px solid #353a3c;
+    border-radius: 15px;
+    padding: 30px;
+}
+.summayCards--header{
+    display: flex;
+    position: relative;
+    width: fit-content;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    
+}
+.summaryCard--header--img{
+    display: flex;
+    position: relative;
+    background-color: #1F2023;
+    width: 50px;
+    height: 50px;
+    
+}
+.summaryCard--header--title{
+    display: flex;
+    position: relative;
+    background-color: #1F2023;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.workPagesMain--list{
+    color: rgb(195, 195, 196);
+    display: flex;
+    font-size: 1.rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.02rem;
+    position: relative;
+    background-color: #1F2023; 
+}
