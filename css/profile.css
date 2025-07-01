@@ -297,7 +297,7 @@
   list-style: none;
 }
 .st-li::before {
-  content: url(icn/marker-tick-12.svg);
+  content: url(/icn/marker-tick-12.svg);
   font-size: 1rem;
   padding: 10px;
 }
