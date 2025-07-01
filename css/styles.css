@@ -257,7 +257,7 @@ em{
   background-color: #161616;
   backdrop-filter: brightness() opacity(70%) blur(8px);
   display: flex;
-  /* flex-direction: column; */
+  /* ---> flex-direction: column; <--- */
   position: relative;
   flex-wrap: wrap;
   max-width: 1280px;
@@ -377,7 +377,10 @@ h4 {
   color: #e2dfdf;
   margin: 0;
 }
-/* favourites section */
+.capuslecard--link{
+  text-decoration: none;
+}
+/* ---> favourites <---section */
 #favourites--container {
   display: flex;
   position: relative;
