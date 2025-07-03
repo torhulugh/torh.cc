@@ -518,6 +518,9 @@ header {
   #mobile-menu {
     display: flex;
   }
+  #mobileMenu-icon-tray1 {
+    gap: 4%;
+  }
 
   #desktopMenu-collapse-button {
     display: none;

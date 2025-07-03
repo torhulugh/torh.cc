@@ -129,6 +129,8 @@ h1 {
 }
 hr {
   color: #353a3c;
+  width: fit-content;
+  height: 1px;
 }
 
 /*=========  .7. MEDIA QUERIES ================= */
@@ -162,25 +164,41 @@ hr {
   }
   #workPageMain--header--img {
     width: 98%;
-    height: 200px;
+    height: fit-content;
   }
   #finalDesignPreview--img--container {
-    width: 480px;
+    width: fit-content;
+    max-width: 400px;
     margin: 0px;
     padding: 0px;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  #finalDesignPreview--header{
+    h2{
+        width: 100%;
+    }
   }
   #workPage--intro--txt {
     color: #8d9bb0;
-    width: 450px;
+    width: 96%;
     padding: 0px;
     margin: 0px;
+    padding: 20px;
     font-size: 1.2rem;
   }
-  border-top-style: ; {
+  border-top-style {
     margin-left: 20px;
     margin-right: 20px;
   }
   #finalDesignPreview--container {
     width: 98%;
+    max-width: 480px;
+    width: 96%;
+    margin: 0px;
+    padding: 0px;
+    flex-basis: auto;
+    margin-top: 20px;
   }
 }

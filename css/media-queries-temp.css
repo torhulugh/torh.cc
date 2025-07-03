@@ -1,0 +1,21 @@
+/*=========  .7. MEDIA QUERIES ================= */
+/* <<<<<<<<>>>>>>>>  desktop2 <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 1358px) {
+}
+/* <<<<<<<<>>>>>>>>  desktop 3 <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 1112px) {
+}
+/* <<<<<<<<>>>>>>>>  desktop mini <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 909px) {
+}
+/* <<<<<<<<>>>>>>>> .7b. Tablet <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 768px) {
+  
+}
+/* <<<<<<<>>>>>>>> the inbetween mobile and tablet <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 644px) {
+}
+/* <<<<<<<<>>>>>>>> .7b. Mobile <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 480px) {
+  
+}
