@@ -10,29 +10,47 @@ h1 {
   width: 850px;
   text-align: right;
   margin-top: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+}
+main{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 40px;
 }
 .workPagesMain--list{
     display: flex;
     position: relative;
     flex-direction: column;
 }
+#overView--intro-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 922px;
+    gap: 40px;
+}
 #workPageMain--header--img {
-  width: 850px;
+  width: 100%;
 }
 #workPage--intro--txt {
-  color: #8d9bb0;
-  width: 850px;
+  color: #b5b7b9;
+  width: 100%;
   font-size: 1.4rem;
   line-height: 1.8rem;
   letter-spacing: 0.01rem;
+  padding: 0;
+  margin: 0%;
 }
+
 /* -------> summary cards <------- */
 #summary--cards--container {
   display: flex;
   flex-wrap: wrap;
-  max-width: 900px;
+  max-width: 950px;
   position: relative;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   gap: 20px;
 }
@@ -41,7 +59,7 @@ h1 {
   position: relative;
   flex-direction: column;
   background-color: #1f2023;
-  width: 370px;
+  width: 390px;
   height: 200px;
   border: 0.5px solid #353a3c;
   border-radius: 15px;
@@ -84,14 +102,13 @@ h1 {
   position: relative;
   flex-direction: column;
   background-color: #1f2023;
-  width: fit-content;
+  width: 860px;
   height: fit-content;
   border: 0.5px solid #353a3c;
   border-radius: 15px;
   justify-content: center;
   align-content: center;
   padding: 30px;
-  margin-top: 40px;
   gap: 20px;
 }
 #finalDesignPreview--header {
@@ -101,21 +118,19 @@ h1 {
   align-items: center;
   gap: 20px;
 }
-#finalDesignPreview--header--img {
+#finalDesignPreview--header--icn {
   display: flex;
   position: relative;
   width: 50px;
   height: 50px;
 }
-#finalDesignPreview--header {
-  display: flex;
-  position: relative;
-}
-#finalDesignPreview--img--container {
+
+.finalDesignPreview--imgs--container {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  width: 850px;
+  max-width: 950px;
+  width: 100%;
   height: fit-content;
   justify-content: center;
   align-content: center;
@@ -124,14 +139,10 @@ h1 {
 .finalDesignPreview--img {
   display: flex;
   position: relative;
-  width: 250px;
+  width: 270px;
   gap: 20px;
 }
-hr {
-  color: #353a3c;
-  width: fit-content;
-  height: 1px;
-}
+
 
 /*=========  .7. MEDIA QUERIES ================= */
 /* <<<<<<<<>>>>>>>>  desktop2 <<<<<<<<>>>>>>>> */
@@ -162,23 +173,24 @@ hr {
     margin-top: 70px;
     width: 100%;
   }
+  #overView--intro-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 96%;
+    gap: 20px;
+}
   #workPageMain--header--img {
     width: 98%;
     height: fit-content;
   }
-  #finalDesignPreview--img--container {
-    width: fit-content;
-    max-width: 400px;
-    margin: 0px;
-    padding: 0px;
-    align-items: center;
-    justify-content: center;
+  .finalDesignPreview--imgs--container {
+    margin-bottom: 10px;
     
   }
   #finalDesignPreview--header{
-    h2{
-        width: 100%;
-    }
+    margin-left: 30px;
+    margin-top: 20px;
   }
   #workPage--intro--txt {
     color: #8d9bb0;
@@ -192,8 +204,10 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
   }
+  #summarysummary--cards--container{
+    width: 96%;
+  }
   #finalDesignPreview--container {
-    width: 98%;
     max-width: 480px;
     width: 96%;
     margin: 0px;
@@ -201,4 +215,10 @@ hr {
     flex-basis: auto;
     margin-top: 20px;
   }
+  .finalDesignPreview--img {
+  display: flex;
+  position: relative;
+  width: 360px;
+  gap: 20px;
+}
 }
