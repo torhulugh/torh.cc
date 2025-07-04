@@ -28,6 +28,9 @@ main{
     position: relative;
     flex-direction: column;
     width: 922px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     gap: 40px;
 }
 #workPageMain--header--img {
@@ -177,7 +180,8 @@ main{
     display: flex;
     position: relative;
     flex-direction: column;
-    width: 96%;
+    justify-content: center;
+    width: 99%;
     gap: 20px;
 }
   #workPageMain--header--img {
@@ -185,7 +189,7 @@ main{
     height: fit-content;
   }
   .finalDesignPreview--imgs--container {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     
   }
   #finalDesignPreview--header{
@@ -193,23 +197,20 @@ main{
     margin-top: 20px;
   }
   #workPage--intro--txt {
-    color: #8d9bb0;
-    width: 96%;
+    
+    width: 98%;
     padding: 0px;
     margin: 0px;
     padding: 20px;
     font-size: 1.2rem;
-  }
-  border-top-style {
-    margin-left: 20px;
-    margin-right: 20px;
+    text-align: justify;
   }
   #summarysummary--cards--container{
     width: 96%;
   }
   #finalDesignPreview--container {
     max-width: 480px;
-    width: 96%;
+    width: 99%;
     margin: 0px;
     padding: 0px;
     flex-basis: auto;
@@ -218,7 +219,11 @@ main{
   .finalDesignPreview--img {
   display: flex;
   position: relative;
-  width: 360px;
+  width: 300px;
   gap: 20px;
+}
+#workPageMain--header--img{
+    height: 200px;
+
 }
 }
