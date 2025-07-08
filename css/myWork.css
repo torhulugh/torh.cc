@@ -108,23 +108,67 @@
     border: 0.5rem solid #7d7beebe;
   }
 }
-.my-works-card-more {
-  display: none;
-}
+
 .card-content-container {
   color: #5c5d62;
   width: fit-content;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: space-between;
-  align-content: space-between;
+  align-items: center;
+  align-content: center;
   justify-content: center;
   position: absolute;
   margin: 0;
   padding: 10px;
-  gap: 10px;
+  gap: 20px;
   z-index: 2;
+}
+.myworkCard--img--nd--textContent--container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  margin: 0%;
+  padding: 0%;
+  gap: 0px;
+}
+.card--textContent--container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  margin: 0%;
+  padding: 0%;
+  gap: 0px;
+}
+.myWorkCard--category--container{
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.myWorkCard--category--name{
+  background-color: #222;
+  display: flex;
+  position: relative;
+  width: fit-content;
+  font-size: 0.7rem;
+  margin: 0%;
+  padding: 5px 10px;
+  border-radius: 60px;
 }
 .card-edge-blur-effect {
   border: 0.2rem solid #484849be;
@@ -145,7 +189,9 @@
   height: 200px;
   margin: 0;
   border-radius: 20px;
-  align-content: flex-start;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .card-header-txt {
   font-size: 1.2rem;
