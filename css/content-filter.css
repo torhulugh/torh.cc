@@ -43,16 +43,21 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-   overflow: scroll;
+   overflow-x: scroll;
+   overflow-y: hidden;
   scroll-behavior: smooth;
   scrollbar-width: none;
   gap: 33px;
+  padding-left: 0px;
+}
+#filter--options--container::-webkit-scrollbar{
+  display: none
 }
 .filter--icon{
   width: 30px;
   height: 30px;
   display: flex;
-  position: relative;
+  position: fixed;
   border-radius: 10px;
   align-items: center;
   align-content: center;

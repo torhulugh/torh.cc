@@ -9,7 +9,7 @@ function pageReady() {
   );
   let desktopIconIndex = null;
 
-  // Desktop menu icon hover effect mouse enter
+  // mouse enter
   Array.from(desktopMenuIcon).forEach((desktopMenuIconContainer, index) => {
     desktopMenuIconContainer.onmouseover = menuIconHoverEffect;
     function menuIconHoverEffect() {
@@ -17,7 +17,7 @@ function pageReady() {
       desktopMenuIconsHover[desktopIconIndex].style.display = "flex";
     }
   });
-  // Desktop menu icon hover effect mouse leave
+  // mouse leave
   Array.from(desktopMenuIcon).forEach((desktopMenuIconContainer, index) => {
     desktopMenuIconContainer.onmouseleave = menuItemMouseLeave;
     function menuItemMouseLeave() {

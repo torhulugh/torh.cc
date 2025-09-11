@@ -1,30 +1,4 @@
-/*
 
-======================= TABLE OFCONTENT =====================
- * ========================= .c.====================================
- * 1. GENERAL
- * 2. LAYOUT
- * 3. MENU
- * -- 3a. Greneral styles  menu
- * -- 3b. mobile menu
- * 4. MAIN
- * -- 4a. Profile section
- * -- 4b. My works section
- * 5. CONTACT FOAM
- * 6. FOOTER
- * 7. MEDIA QUERIES
- * -- 7a. Tablet
- * -------- 7a1. menu @media Tablet
- * -------- 7a2. profile section @media Tablet
- * -------- 7a3. my works container @media Tablet
- 
- * -- 4b. Phone
- * -------- 7b1. menu @media phone
- * -------- 7b2. profile section @media phone
- * -------- .7b3. my works section @media phone
- * -------- .7b4. contact foam @media phone
- * -------- .7b5. footer @media phone
- */
 /*============= .1. GENERAL ===================*/
 html {
   font-family: Arial, Helvetica, sans-serif;
@@ -129,8 +103,8 @@ em{
   letter-spacing: 0.1rem;
   color: #979292;
   max-width: 700px;
-  width: 100;
-  height: 400;
+  width: 60%;
+  height: 400px;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
