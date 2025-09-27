@@ -238,18 +238,18 @@ em{
   width: fit-content;
   height: auto;
   border-radius: 20px;
-  border: 1px solid #25252575;
+  border: 1px solid #252525;
   align-items: center;
   align-content: center;
   justify-content: center;
-  box-shadow: 0px 3px 15px #0c0c0caf;
+  /* box-shadow: 0px 3px 15px #0c0c0caf;
   backdrop-filter: brightness() opacity(50%) blur(8px);
   background-image: linear-gradient(
     200deg,
     rgba(8, 8, 8, 0) 0%,
     #14141420 40%,
     #1d1c1c20 95%
-  );
+  ); */
   gap: 25px;
   padding: 20px 0px 20px 0px;
 }
@@ -358,8 +358,8 @@ h4 {
 #favourites--container {
   display: flex;
   position: relative;
-  width: 100%;
-  height: auto;
+  width: fit-content;
+  height: fit-content;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -370,8 +370,8 @@ h4 {
   backdrop-filter: brightness() opacity(70%) blur(8px);
   display: flex;
   position: relative;
-  width: 1270px;
-  height: auto;
+  width: fit-content;
+  height: fit-content;
   border-radius: 20px;
   border: 1px solid #25252575;
   align-items: center;
@@ -387,13 +387,7 @@ h4 {
   );
   gap: 20px;
   padding: 20px;
-  overflow-x: scroll;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer and Edge */  
-  &::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, and Opera */
-  }    
-}
+  }
 .imgGlassDune {
   background-color: transparent;
   width: 220px;
@@ -668,4 +662,45 @@ h4 {
   h4 {
     margin-bottom: 8px;
   }
+  #favourites--container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+#imgGlassDunes--Container {
+  background-color: #161616;
+  backdrop-filter: brightness() opacity(70%) blur(8px);
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: fit-content;
+  border-radius: 20px;
+  border: 1px solid #25252575;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 0px 3px 15px #0c0c0caf;
+  backdrop-filter: brightness() opacity(50%) blur(8px);
+  background-image: linear-gradient(
+    200deg,
+    rgba(8, 8, 8, 0) 0%,
+    #14141420 40%,
+    #1d1c1c20 95%
+  );
+  gap: 20px;
+  padding: 20px;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */  
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+    flex-wrap: wrap;
+    max-width: 380px;
+  }    
+}
 }
