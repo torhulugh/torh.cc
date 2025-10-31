@@ -1,3 +1,5 @@
+
+
 h1,
 h2,
 h3 {
@@ -8,6 +10,7 @@ h1 {
   display: flex;
   position: relative;
   width: 100%;
+  font-size: 2.5rem;
   margin: 0%;
   text-align: left;
 }
@@ -23,6 +26,36 @@ main{
     flex-direction: column;
 }
 #overView--intro-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 922px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+#overView--intro-container ul,li{
+    color: #b5b7b9;
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.01rem;
+  padding: 0;
+  margin: 0
+}
+#overView--intro-container li{
+    color: #b5b7b9;
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.01rem;
+  padding: 0;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+#overView--intro-container ol{
     display: flex;
     position: relative;
     flex-direction: column;

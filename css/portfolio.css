@@ -53,7 +53,10 @@ main {
   align-content: center;
   margin: 110px 15% 100px 15%;
 }
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
 /*----------- .4a.bio------------- */
 
 #bio-section {
@@ -170,6 +173,12 @@ main {
 #email-btn-icn,
 #linkedIn-btn-icn {
   width: 1.2rem;
+}
+#download-resume-btn:hover,
+#email-btn:hover,
+#linkedIn-btn:hover {
+  scale: 110%;
+  background-color: #161616;
 }
 #logoSlide {
   display: flex;
@@ -579,35 +588,7 @@ label {
 #userMessage {
   height: 150px;
 }
-/*============= .6. FOOTER ===================*/
 
-footer {
-  background-color: #111111;
-  display: flex;
-  position: relative;
-  width: 100%;
-  position: relative;
-  height: 100%;
-  display: flex;
-  margin: auto;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-.footer-icons {
-  width: 25px;
-  position: relative;
-}
-.footer-social-icons {
-  width: fit-content;
-  position: relative;
-  height: auto;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  gap: 50px;
-  margin: 100px 0px 200px 0px;
-}
 
 /*=========  .7. MEDIA QUERIES ================= */
 
@@ -1096,9 +1077,4 @@ input {
 }
 form {
   margin: 20px;
-}
-
-/* ---------------- .7b5. footer (phone) ---------------- */
-.footer-social-icons {
-  gap: 40px;
 }

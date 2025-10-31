@@ -1,39 +1,57 @@
+<!-- 
+======================= TABLE OFCONTENT =====================
 
- <!--
-<<<<<>>>>>>> TABLE OFCONTENT <<<<<<>>>>>
-     This is the table of content for the index.html file.>>
-              1.| desktop menu
-              2.|Tablet & Mobile menu 
-              3.| profile
-              4. | My works
-              5.| my works header 
-              6.| my works view more at buttom
-              7.| twin-flex-container 
-              8.| My works card 1
-              9.| My works card 2
-              10.| My works card 3
-              11.| My works card 4
-              12.| contact foam
-              13.| footer 
-     -->
-  <!DOCTYPE html>
+ >>>>>>>>>>>>>>>>>>> !!!NOTE!! >>>>>>>>>>>>>>>>>>>>>>                                                 
+      Using command/ctrl F to navigate to search ,   
+      you can add "." to a number to take you directly to   
+      the section, for example typing .6. in the search bar
+      take you directly to the footer section of this page.
+      Also typing .c. in the search bar return you to the 
+      table of content.
+   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ * ========================= .c.====================================
+ * 1. GENERAL
+ * 2. LAYOUT
+ * 3. MENU
+ * -- 3a. Greneral styles  menu
+ * -- 3b. mobile menu
+ * 4. MAIN
+ * -- 4a. Profile section
+ * -- 4b. My works section
+ * 5. CONTACT FOAM
+ * 6. FOOTER
+ * 7. MEDIA QUERIES
+ * -- 7a. Tablet
+ * -------- 7a1. menu @media Tablet
+ * -------- 7a2. profile section @media Tablet
+ * -------- 7a3. my works container @media Tablet
+ 
+ * -- 4b. Phone
+ * -------- 7b1. menu @media phone
+ * -------- 7b2. profile section @media phone
+ * -------- .7b3. my works section @media phone
+ * -------- .7b4. contact foam @media phone
+ * -------- .7b5. footer @media phone
+ ==================================================================  -->
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tor Hulugh Portfolio</title>
-    <link rel="stylesheet" href="/css/portfolio.css" />
-    <link rel="stylesheet" href="/css/menu.css" />
-    <link rel="stylesheet" href="/css/footer.css" />
-    <link rel="icon" href="/favicon.png" type="image/png"/>
+    <title>Tor Hulugh</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/css/myWorkPages.css" rel="stylesheet" />
+    <link href="/css/menu.css" rel="stylesheet" />
+    <link href="/css/footer.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-png">
     <script src="/javascript/menu.js"></script>
   </head>
   <body>
-    <!-------- .1.| desktop menu  -------------------------------------->
-          <header>
+      <header>
       <!-- site logo -->
            <div id="header-site-logo">
-            <a href="">
+            <a href="/index.html">
               <img id="header-site-logo-img" src="/img/site-logo-TH.png" 
               alt="site logo the words TorHulugh written in signature form with a crown on the T" />
             </a>
@@ -210,157 +228,90 @@
           </ul>
         </div>
       </nav>
-      <main id="portfolio-main">
-        <!-------- .3.| BIO ----------------------------->
-        <section id="bio-section">
-          <!-- bio for mobile screen size -->
-        <div id="bio-header-container-mobile"> 
-          <img id="bio-photo-mobile" src="/img/avater blackshirt mobile.png" alt="">
-        <H2 id="bio-authorName--mobile">Tor Hulugh</H2>
-        <p id="bio-job-title-mobile">Web Developer</p> 
+    <main>
+      <section  id="overView--intro-container">
+         <h1 id="workPageMain--header">Pawbond</h1>
+        <img id="workPageMain--header--img" src="/img/pawbonds-header.png" alt="">
+        <div id="overView--intro--header">
+        <h2 id="h2--dimmer">Overview</h2> 
+        <p id="workPage--intro--txt">
+           Pawbond is a pet adoption platform designed to help users easily find and adopt dogs based on their preferences. The platform provides an intuitive interface where users can browse available dogs and filter results by age, location, and breed. It simplifies the adoption process by connecting users directly to verified listings while offering a clean, user-friendly experience.</p>
         </div>
-        <!-- 🍇 -->
-         <!-- bio for desktop screen size -->
-        <div id="bio-container-desktop">
-          <img id="bio-photo-desktop" src="/img/profile-picture-blk.png" alt="profile picture">
-          <div id="bio" >
-            <p id="bio-txt" >Hello, I'm Tor Hulugh, a web developer with a background in design,
-              focused on creating engaging visual experiences, building functional digital solutions.
-            </p>
-            <!-- bio buttons -->
-            <div id="bio-buttons-container" >
-              <!-- download resume btn -->
-               <a class="bio-btn-link" href="TOR HULUGH-resume-web-dev.pdf" download>
-                <div id="download-resume-btn" >
-                    <img id="download-resume-btn-icn"src="/icn/download-icon-north-sunset.svg" alt="resume download button"> 
-                    <p >Download Resume</p> 
-                </div>
-                </a>
-               <!-- email btn -->
-                <a class="bio-btn-link" href="mailto:torhulugh@example.com">
-                <div id="email-btn" >
-                    <img id="email-btn-icn" src="/icn/email-icon-north-sunset.svg" alt=""> 
-                    <p class="bio-btn-txt"> send me an Email</p> 
-                </div>
-                </a>
-              <!-- linkedin btn -->
-               <a class="bio-btn-link" href="">
-                <div id="linkedIn-btn" >
-                    <img id="linkedIn-btn-icn" src="/icn/linkedin-icon-blupsky.svg" alt=""> 
-                    <p class="bio-btn-txt">Connect via LinkedIn</p>
-                </div>
-                </a>
-              
-            </div>
-            <!-- 🍇 -->
-          </div>
-      </div>
-  </section>
-    
-    <!--------------- .4.| My works ------------------------------>
-    <section id="myWorks-container">
-      <!------------ .5.| my works header ------------------------->
-      <div id="myWorks-header-container" >
-        <img id="myWorks-header-icn" src="/icn/my-works-icn.svg" alt="">
-        <h3 id="myWorks-header-txt">My works</h3>
-      </div>   
-      <div id="myWorks-Cards-container">  
-  <!--------------  card 1 ---------->
-        <div class="my-works-card">
-          <div class="card-content-container">
-            <img class="card-img" src="/featured-img/linkmaiden.png" alt="thumb nail image" />
-            <p class="card-header-txt">Linkmaiden</p>
-            <p class="card-description-txt">
-            an elegant and user-friendly link management 
-            platform for organizing, sharing, URLs with ease.
-            </p>
-            <div class="explore-button">
-              <div class="card-btn-edge-blur-effect">
-              <div class="border-effect"></div></div>
-            <p class="explore-txt"><a class="myWorkCards--link" href="/pages/linkmaiden-dev.html">Explore</a></p>
-            </div>
-          </div>
-        <div class="card-edge-blur-effect"></div>
-      </div>
-    <!-- 🍇 -->
-    <!------------ card 2 --------->
-    <div class="my-works-card">
-      <div class="card-content-container">
-        <img class="card-img" src="/featured-img/vmac.png" alt="thumb nail image" />
-        <h3 class="card-header-txt">Vmac Library</h3>
-        <p class="card-description-txt">
-          A modern improved approach for building and designing asset libraries 
-          for a more demanding audience
-        </p>
-        <div class="explore-button">
-          <div class="card-btn-edge-blur-effect">
-          <div class="border-effect"></div></div>
-          <p class="explore-txt"><a class="myWorkCards--link" href="/pages/vmac-dev.html">Explore</a></p>
-        </div>
-      </div>
-      <div class="card-edge-blur-effect"></div>
-    </div>
-    <!-- 🍇 -->
-    <!------------ card 3 --------->
-    <div class="my-works-card">
-      <div class="card-content-container">
-        <img class="card-img" src="/img/pawbonds-feature-img.png" alt="thumb nail image" />
-        <h3 class="card-header-txt">Pawbonds</h3>
-        <p class="card-description-txt">
-          Minimalist and user-friendly pet adoption platform with easy-to-use navigation
-          and search, for dogs.
-        </p>
-        <div class="explore-button">
-          <div class="card-btn-edge-blur-effect">
-          <div class="border-effect"></div></div>
-          <p class="explore-txt"><a class="myWorkCards--link" href="/pages/pawbonds-dev.html">Explore</a></p>
-        </div>
-      </div>
-      <div class="card-edge-blur-effect"></div>
-    </div>
-    <!-- 🍇 -->
+        <h2 id="h2--dimmer">Key Features</h2>
+        <ul>
+            <li>Dog Search & Filtering: Users can filter available dogs by age, breed, and location for a personalized adoption experience</li>
 
-  </div>
-  </section>
+            <li>Location-Based Discovery: Quickly find adoptable dogs near the user’s area through integrated</li>
 
-      </main>
-      
-      <!----------  .12.| contact foam-------------------------------------->
-<section id="contact-foam-container">
-    <form method="get" id="contact-form"  action="">
-      
-      <div id="contact-form-content-container">
-      <h2 id="contact-foam-header">Contact Form</h2>
-           
-      <label for="userName">Your Name</label>
-     <input id="userName" type="text" name="userName" >
-         
-       <label for="userEmail">Email</label >
-     <input id="userEmail" type="email" name="userName" >
+            <li>Responsive UI: Built with a modern, mobile-friendly design for accessibility across devices.</li>
 
-       <label for="userSubject">Subject</label >
-     <input id="userSubject" type="text" name="userSubject" >
+            <li>API Integration: Fetches real-time dog data and images using DogFinder API and Dog CEO API</li>
 
-       <label for="userMessage">Message</label >
-     <input id="userMessage" type="text" name="userMessage" placeholder="Write your Message here">
-      
-     <button type="submit" id="contact-form-submit-button">Submit</button>
-    </div> 
-      </form>
+            <li>Efficient Data Handling: Assets and metadata are fetched dynamically from a database to ensure smooth performance and scalability.</li>
+
+            <li>Favorites & Adoption Interest: Users can save favorite dogs or express interest in specific pets.</li>
+        </ul>
       </section>
-
-<!---------- .13.| footer  -------------------------------------->
- <footer class="buttom-footer"> 
-  <div id="footer--indicator--divider">
-    <div id="footer--indicator--divider--topline"></div>
-    <div id="footer--indicator--divider--buttomline"></div>
-  </div>
-  <div class="footer-social-icons">
-      <a href="https://www.instagram.com/torhulugh"><img class="footer-icons" src="/icn/instagram-icn.svg" alt=""></a>
-      <a href="https://www.linkedin.com/in/tor-hulugh-88aa87201/"><img class="footer-icons" src="/icn/linkedin-icn.svg" alt=""></a>
-      <a href="https://dribbble.com/torhulugh"><img class="footer-icons" src="/icn/dribbble-icn.svg" alt=""></a>
-      <a href="https://www.behance.net/torhulugh"><img class="footer-icons" src="/icn/behance-icn.svg" alt=""></a>
-      <a href="https://github.com/torhulugh"><img class="footer-icons" src="/icn/github-icn.svg" alt=""></a>
-  </div>
-</footer>
+        
+        <section id="summary--cards--container">
+        <!-- summary cad [technical stack]-->
+        <div class="workPage--summaryCard">
+            <div class="summayCards--header">
+                <img class="summaryCard--header--img" src="/icn/design -gola-icon.png" alt="" >
+                <h3 class="summaryCard--header--title">Technical Stack</h3>
+            </div>
+            <ul class="workPagesMain--list">
+            <li>HTML.</li>
+            <li>CSS.</li>
+            <li>JavaScript.</li>
+            <li>React.</li>
+            <li>APIs.</li>
+            </ul>
+        </div>
+        <!-- summary cad [design tools]-->
+        <div class="workPage--summaryCard">
+            <div class="summayCards--header">
+                <img class="summaryCard--header--img" src="/icn/user-golas-icon.png" alt="" >
+                <h3 class="summaryCard--header--title">Design Tools</h3>
+            </div>
+            <ul class="workPagesMain--list">
+            <li>Figma.</li>
+            <li>Adobe Illustrator.</li>
+            </ul>
+        </div>
+        <!-- summary cad [Goal] -->
+        <div class="workPage--summaryCard">
+            <div class="summayCards--header">
+                <img class="summaryCard--header--img" src="/icn/problemistatement-icon.png" alt="" >
+                <h3 class="summaryCard--header--title">Goal</h3>
+            </div>
+            <ul class="workPagesMain--list">
+                <li>A simple, fast, and reliable platform that connects dog lovers with adoptable pets</li>
+                <li>Efficient search and filter experience</li>
+                <li>Bridging the gap between shelters and potential pet owners</li>
+            </ul>
+        </div>
+        <!-- summary cad [solution]  -->
+        <div class="workPage--summaryCard">
+            <div class="summayCards--header">
+                <img class="summaryCard--header--img" src="/icn/solution-icon.png" alt="" >
+                <h3 class="summaryCard--header--title">github Repo</h3>
+            </div>
+            <ul class="workPagesMain--list">
+            <li><a href="https://github.com/torhulugh/vmac">Pawbonds</a></li>
+            
+            </ul>
+        </div>
+        </section>     
+    </main>
+    <footer>
+      <div class="footer-social-icons">
+        <img class="footer-icons" src="/icn/instagram-icn.svg" alt="instagram" />
+        <img class="footer-icons" src="/icn/linkedin-icn.svg" alt="linkedin" />
+        <img class="footer-icons" src="/icn/dribbble-icn.svg" alt="dribbble" />
+        <img class="footer-icons" src="/icn/behance-icn.svg" alt="behance" />
+        <img class="footer-icons" src="/icn/github-icn.svg" alt="github" />
+      </div>
+    </footer>
+  </body>
 </html>
