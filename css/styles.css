@@ -662,7 +662,7 @@ h4 {
   }
   .squircleStyle--header--icn {
     width: 16px;
-    height: autopx;
+    height: auto;
   }
   .squircleStyle--header--title {
     font-size: 0.8rem;
@@ -671,7 +671,16 @@ h4 {
     background-color: transparent;
     width: 400px;
   }
-  
+  #recentAcivities--container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 70px;
+  }
   .capsuleCard-foreground-grad {
     width: 388px;
     gap: 5px;
@@ -687,16 +696,21 @@ h4 {
     width: 116px;
   }
   .capsuleCard-txt {
-    min-width: 100px;
-    width: 250px;
+    width: 100%;
     height: auto;
     transform: translate(8px);
+    justify-content: flex-start;
+    text-align: left;
+    
   }
-  .capsuleCards p {
-    margin: 0;
-    width: 80%;
-
+  .capsuleCard-txt p {
+    width: 255px;
+    height: auto;
+    transform: translate(8px);
+    left: 0;
+    text-align: left;
   }
+ 
   h4 {
     margin-bottom: 8px;
   }
@@ -708,7 +722,7 @@ h4 {
   align-items: center;
   align-content: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #imgGlassDunes--Container {
   background-color: #161616;
@@ -745,20 +759,31 @@ h4 {
   display: flex;
   position: fixed;
   top: 0px;
+  width: 100dvw;
+  height: 70px;
+  background-image: radial-gradient(circle, #ffffff00, #ebeaea00);
+  backdrop-filter: blur(10px) opacity(95%) ;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 900;
+  
+}
+#mobile--navbar{
+  display: flex;
+  position: fixed;
+  top: 0px;
   width: 100%;
   height: 60px;
   align-items: center;
   justify-content: center;
-   background-image: radial-gradient(circle, #ffffff00, #ebeaea00);
-    /* box-shadow: inset 0 0 10px rgba(255, 254, 254, 0.082); */
-    backdrop-filter: blur(10px) opacity(95%) ;
-  align-content: center;
   padding: 0px;
-  z-index: 900;
+  margin-top: 7px;
   gap: 7%;
+
 }
 #mHeader--logo img{
-  width: 100px;
+  width: 80px;
   height: auto;
 }
 #mHeader--left--button, #mHeader--right--button{
@@ -769,21 +794,19 @@ h4 {
   align-content: center;
   justify-content: center;
     width: 100px;
-    height: 35px;
-    border: 0.5px solid #55555502;
-    border-radius: 10px;
+    height: 30px;
+    /* border: 0.9px solid #55555502; */
+    border-radius: 12px;
     background-color: #0f0f0f7e;
-    box-shadow: 0px 3px 10px #000000bb;
+    /* box-shadow: 0px 3px 10px #000000bb; */
     backdrop-filter: opacity(70%) blur(8px);
     background-image: linear-gradient(
-      50deg,
-      #1b1a1a7a,
-      #0f0f0f92,
-      #1b1a1a94,
-      #0f0f0f94,
-      #2726266b
+      350deg,
+      #454343a8 10%,
+      #4D4C4C20 40%,
+      #8d8d8d20 100%
     );
-    gap: 10px;
+    gap: 5%;
     padding: 5px 10px;
 }
 #mHeader--left--button img, #mHeader--right--button img{
@@ -792,18 +815,18 @@ h4 {
   position: relative;
   align-items: center;
   justify-content: center;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 #mHeader--left--button p, #mHeader--right--button p{
   color: #979292;
   display: flex;
   font-size: 0.8rem;
+  width: fit-content;
   position: relative;
   align-items: center;
   justify-content: center;
-    width: 100%;
-    height: fit-content;
+  height: fit-content;
     
 }
 }
