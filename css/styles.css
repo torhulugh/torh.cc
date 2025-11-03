@@ -674,7 +674,7 @@ h4 {
   #recentAcivities--container {
     display: flex;
     position: relative;
-    width: 100%;
+    width: 90%;
     height: auto;
     align-items: center;
     align-content: center;
