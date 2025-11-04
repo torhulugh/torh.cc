@@ -1,4 +1,6 @@
-
+#mobile--header {
+  display: none;
+}
 header {
   display: flex;
   position: fixed;
