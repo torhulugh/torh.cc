@@ -21,6 +21,9 @@ main {
 /*============= .3. MENU ===================*/
 /* --- .3a. Greneral styles  menu --- */
 /* \\\\\ .4. intro profile an MY WORKS category //// */
+#mobile--header {
+  display: none;
+}
 #intro--nd--myWorksCategories{
   background-color: #0f0f0f55;
   width: 85%;
@@ -98,7 +101,7 @@ em{
   width: 100%;
   height: auto;
   display: flex;
-  position: absolute;
+  position: relative;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -109,7 +112,7 @@ em{
   width: 90%;
   height: auto;
   display: flex;
-  position: relative;
+  position: absolute;
   border-radius: 100px;
   align-items: center;
   align-content: center;
@@ -631,10 +634,6 @@ h4 {
   #intro--profile--img--container {
     max-width: 50%;
     width: 290px;
-    height: auto;
-  }
-  #intro--profile--img {
-    width: 100%;
     height: auto;
   }
   #intro-txt {
