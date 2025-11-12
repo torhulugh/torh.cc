@@ -1,0 +1,144 @@
+/* ...existing code... */
+
+/* Contact Me Page Styles */
+#contact-section {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contact-container {
+  background-color: #0f0f0f55;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  gap: 40px;
+  padding: 50px;
+  border-radius: 30px;
+  border: 0.5px solid #5555550e;
+  backdrop-filter: brightness() opacity(50%) blur(8px);
+  background-image: linear-gradient(
+    200deg,
+    rgba(8, 8, 8, 0.185) 0%,
+    #22222220 40%,
+    #25252520 95%
+  );
+  box-shadow: 0px 3px 15px #0c0c0caf;
+}
+
+.contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info h3 {
+  color: #e2dfdf;
+  font-size: 1.8rem;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+.contact-info p {
+  color: #979292;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  letter-spacing: 0.05rem;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #979292;
+  font-size: 1rem;
+}
+
+.contact-method img {
+  width: 24px;
+  height: 24px;
+}
+
+.calendly-container {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.calendly-container h3 {
+  color: #e2dfdf;
+  font-size: 1.8rem;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+.calendly-inline-widget {
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #252525;
+}
+
+.calendly-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.calendly-button {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.05rem;
+}
+
+.calendly-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    width: 95%;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  
+  .calendly-inline-widget {
+    height: 500px;
+  }
+  
+  .contact-info h3,
+  .calendly-container h3 {
+    font-size: 1.4rem;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+  }
+}
+
+/* ...existing code... */

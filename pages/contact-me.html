@@ -7,6 +7,7 @@
     <title>Tor Hulugh</title>
     <link href="/css/styles.css" rel="stylesheet" />
     <link href="/css/menu.css" rel="stylesheet" />
+    <link href="/css/contact.css" rel="stylesheet" />
     <script src="/javascript/menu.js"></script>
   </head>
   <body>
@@ -191,9 +192,49 @@
         </div>
       </nav>
     <main>
-     
+           <section id="contact-section">
+        <div class="squircleStyle--header">
+          <img class="squircleStyle--header--icn" src="/icn/contact-icon.svg" alt="Contact icon">
+          <h2 class="squircleStyle--header--title">Contact Me</h2>
+        </div>
+        
+        <div class="contact-container">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>Ready to discuss your next project? Schedule a meeting with me or reach out directly.</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <img src="/icn/email-icon.svg" alt="Email">
+                <span>your-email@example.com</span>
+              </div>
+              <div class="contact-method">
+                <img src="/icn/phone-icon.svg" alt="Phone">
+                <span>+1 (555) 123-4567</span>
+              </div>
+            </div>
+          </div>
 
-<img src="/img/construct.png" alt="">
+          <!-- Calendly Scheduling Widget -->
+          <div class="calendly-container">
+            <h3>Schedule a Meeting</h3>
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" 
+                 data-url="https://calendly.com/torhulugh" 
+                 style="min-width:320px;height:630px;">
+            </div>
+            
+            <!-- Alternative: Calendly Button -->
+            <div class="calendly-button-container">
+              <button class="calendly-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username'});">
+                Schedule Meeting
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
 
     </main>

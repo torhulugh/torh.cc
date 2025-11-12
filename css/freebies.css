@@ -1,3 +1,37 @@
+#myWorks-header-container {
+  background-color: #222222;
+  display: flex;
+  position: absolute;
+  top: -35px;
+  width: 200px;
+  height: 35px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin: 0;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+}
+#myWorks-header-icn {
+  display: flex;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+#myWorks-header-txt {
+  display: flex;
+  position: relative;
+  letter-spacing: 0.1rem;
+  color: #979292;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
 #freebies--cards--container {
   display: flex;
   position: relative;
