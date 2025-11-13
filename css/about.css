@@ -1,0 +1,188 @@
+#about--into--container {
+    color: white;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+    height: fit-content;
+    padding: 50px;
+    gap: 20px;
+}
+#about--into--container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    background-color: #111111;
+    border-radius: 50px;
+    z-index: -1; /* Place behind content */
+    backdrop-filter: blur(10px);
+}
+#about--into--container h1 {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    
+}
+#about--into--container p {
+    color: #666666;
+    display: flex;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    
+}
+#about--into--container img {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 20%;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.about--accordian--entire {
+    color: white;
+    display: flex;
+    background-image: linear-gradient(-185deg, #1f202331 20%, #2020207a 70%, #19191b9a 90%);
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    margin: 0px;
+    padding: 20px;
+    
+}
+.accordian--header--line {
+    background-color: #555;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 30%;
+    justify-content: space-between;
+    height: 1px;
+    border-radius: 15px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.about--accordian--entire p {
+    color: #D7DADF;
+
+    display: flex;
+    position: relative;
+    width: fit-content;
+    opacity: 50%;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+    
+}
+.about--accordian--entire h3 {
+    color: #ffffff;
+    display: flex;
+    font-size: 1rem;
+    position: relative;
+    width: fit-content;
+    opacity: 50%;
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+.about--accordian--entire h2 {
+    color: #D7DADF;
+    display: flex;
+    position: relative;
+    width: fit-content;
+    justify-items: flex-end;
+    opacity: 50%;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.about--accordian--header {
+    color: white;
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid #444444;
+    gap: 20px;
+    
+}
+.about--accordian--icon {
+    background-image: linear-gradient(-30deg, #454343 0%, #4d4c4c2a 40%, #252525 100%);
+    display: flex;
+    position: relative;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.about--accordian--icon::before {
+    content: "";
+    background-image: linear-gradient(-30deg, #E9EAEE 0%, #F3F3F3 40%, #F3F3F3 100%);
+    display: flex;
+    position: absolute;
+    bottom: 18px;
+    right: 10px;
+    border-radius: 30px;
+    width: 15px;
+    height: 3px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.about--accordian--icon::after {
+    content: "";
+    background-image: linear-gradient(-30deg, #E9EAEE 0%, #F3F3F3 40%, #F3F3F3 100%);
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 18px;
+    border-radius: 30px;
+    width: 3px;
+    height: 15px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    gap: 50px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+#about--accordian {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+    gap: 20px;
+    padding: 0px;}
