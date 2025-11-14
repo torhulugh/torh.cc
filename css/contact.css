@@ -14,16 +14,20 @@
   margin-top: 250px;
 }
 
-#social--media--icons--container {
+#social--media--conection{
   display: flex;
   position: absolute;
-  background-color: #1F2023;
-  width: 30%;
-  height: 250px;
+  background-color: #1e1f25;
+  width: 70%;
+  max-width: 70%;
+  flex-wrap: wrap;
+  height: 300px;
   left: 0px;
-  flex-direction: row;
-  gap: 40px;
-  padding: 50px;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  padding: 20px;
   border-radius: 30px;
   border: 0.5px solid #5555550e;
   backdrop-filter: brightness() opacity(50%) blur(8px);
@@ -32,15 +36,47 @@
     rgba(8, 8, 8, 0.185) 0%,
     #22222220 40%,
     #25252520 95%
-  );
-  box-shadow: 0px 3px 15px #0c0c0caf;
+  )
+}
+#social--media--icons--container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  width: 45%;
+  max-width: 90%;
+  flex-wrap: wrap;
+  height: 220px;
+  left: 15px;
+  gap: 50px;
+}
+#social--media--icons--container img{
+  display: flex;
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+#social--media--conection p{
+  display: flex;
+  position: relative;
+  color: #d1d0d0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.06rem;
+  font-weight: 50px;
+  width: 100%;
+  height: 20px;
+  margin: 0px;
+  padding: 0%;
+   padding-left: 40px;
 }
 #calendly-container {
   display: flex;
   position: absolute;
   background-color: #070707;
   width: 50%;
-  height: 350px;
+  height: 400px;
   display: flex;
   right: 0px;
   
