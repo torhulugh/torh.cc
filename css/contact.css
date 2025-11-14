@@ -4,22 +4,46 @@
 #contact-section {
   display: flex;
   position: relative;
-  width: 100%;
+  width: 60%;
   max-width: 1280px;
+  border: 1px dashed #252525;
   height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 250px;
 }
 
-.contact-container {
-  background-color: #0f0f0f55;
-  width: 90%;
-  max-width: 1200px;
+#social--media--icons--container {
   display: flex;
-  position: relative;
+  position: absolute;
+  background-color: #1F2023;
+  width: 30%;
+  height: 250px;
+  left: 0px;
   flex-direction: row;
+  gap: 40px;
+  padding: 50px;
+  border-radius: 30px;
+  border: 0.5px solid #5555550e;
+  backdrop-filter: brightness() opacity(50%) blur(8px);
+  background-image: linear-gradient(
+    200deg,
+    rgba(8, 8, 8, 0.185) 0%,
+    #22222220 40%,
+    #25252520 95%
+  );
+  box-shadow: 0px 3px 15px #0c0c0caf;
+}
+#calendly-container {
+  display: flex;
+  position: absolute;
+  background-color: #070707;
+  width: 50%;
+  height: 350px;
+  display: flex;
+  right: 0px;
+  
   gap: 40px;
   padding: 50px;
   border-radius: 30px;
@@ -139,6 +163,9 @@
   .contact-info p {
     font-size: 1rem;
   }
+}
+main {
+  margin-top: 150px;
 }
 
 /* ...existing code... */
