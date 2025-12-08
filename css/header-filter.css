@@ -1,0 +1,126 @@
+#content--filter {
+  background-color: #161616;
+  display: flex;
+  border-radius: 15px;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  width: 95%;
+  backdrop-filter: brightness() opacity(50%) blur(8px);
+  background-image: linear-gradient(
+    200deg,
+    rgba(8, 8, 8, 0) 0%,
+    #14141420 40%,
+    #1d1c1c20 95%
+  );
+  top: 108px;
+  height: 50px;
+  padding: 5px;
+  z-index: 900;
+  gap: 20px;
+ 
+}
+
+#filter--options--container{
+  display: flex;
+  position: relative;
+  width: fit-content;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+   overflow-x: scroll;
+   overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  gap: 20px;
+  padding-left: 0px;
+}
+#filter--options--container::-webkit-scrollbar{
+  display: none
+}
+.filter--capsule--card {
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+.filter--capsule--card:hover {
+  background-color: #1f1f1f;
+  scale: 105%;
+  z-index: 200;
+  transition: all 0.5s ease-in-out;
+  .capsuleCard-img {
+    opacity: 100%;
+    cursor: pointer;
+  }
+}
+.filter--capsuleCard-foreground-grad {
+  background-image: linear-gradient(
+    176deg,
+    #313131 0%,
+    #2e2c2c20 28%,
+    #25242465 75%,
+    #171717 95%
+  );
+  height: 52px;
+  width: 52px;
+  display: flex;
+  position: absolute;
+  border-radius: 10px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 0;
+  z-index: 3;
+}
+.filter--capsuleCard-background {
+  margin: 0.05rem;
+  height: 48px;
+  width: 51px;
+  position: absolute;
+  border-radius: 10px;
+  padding: 2px;
+  z-index: 2;
+  border: 1px solid #252525;
+}
+.filter--capsuleCard-backdrop-grad {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background: linear-gradient( bottom right, #45434380, #4d4c4c10, #3c3a3a40);
+  border-radius: 20px;
+  z-index: 1;
+}
+.filter--capsule--img--background {
+  background-color: #0d0c0d;
+  width: 48px;
+  height: 43px;
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  z-index: 4;
+}
+.filter--capsuleCard-img {
+  width: 20px;
+  height: 20px;
+  opacity: 50%;
+  display: flex;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.filter--capuslecard--link{
+  text-decoration: none;
+}
