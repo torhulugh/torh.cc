@@ -1,0 +1,295 @@
+#myworks--full--filter--container{
+    display: flex;
+    border: 0.5px solid #55555505;
+    background-color: #0f0f0f59;
+    position: relative;
+    width: 83.9%;
+    margin-top: 0px;
+    padding: 50px;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    z-index: 9999;
+    box-shadow: 0px 3px 10px #0000006a;
+    border-radius: 20px;
+    backdrop-filter: brightness() opacity(50%) blur(80px);
+    background-image: linear-gradient(
+    50deg,
+    #1b1a1a7a,
+    #0f0f0f92,
+    #1b1a1a94,
+    #0f0f0f94,
+    #2726266b
+  );
+}
+.close--icon {
+  position: absolute;
+  width: 32px; /* Container size */
+  height: 32px;
+  right: 20px;
+  top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.close--icon img {
+  width: 32px; /* Container size */
+  height: 32px;
+  right: 20px;
+  top: 20px;
+}
+
+/* Create the first bar */
+.close--icon::before,
+.close--icon::after {
+  content: ' ';
+  position: absolute;
+  left: 50%; /* Center horizontally */
+  top: 25%; /* Align to top */
+  height: 50%; /* Full height of container */
+  width: 2px; /* Thickness of the bars */
+  background-color: #fffdfd;
+  border-radius: 10px;
+}
+
+/* Rotate the first bar 45 degrees */
+.close--icon::before {
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* Rotate the second bar -45 degrees */
+.close--icon::after {
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.close--icon:hover {
+  opacity: 0.7;
+  scale: 105%;
+  .close--icon::before{
+  background-color: #ff0000;
+  border-radius: 10px;
+}
+}
+
+#filter--by--category--containe{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    
+}
+#filter--by--category--header{
+    display: flex;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+
+    
+}
+#filter--by--category--header img{
+    display: flex;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    
+}
+#filter--by--category--header p{
+    color: aliceblue;
+    display: flex;
+    font-size: 1.2rem;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    
+}
+
+
+
+#filter--by--category--option{
+  display: flex;
+  position: relative;
+  width: fit-content;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1319px;
+  gap: 15px 15px;
+}
+
+/* filter capsule cards */
+.myWorks--filter--capsule--card {
+  background-color: transparent;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+.myWorks--filter--capsule--card.date {
+  background-color: transparent;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+.myWorks--filter--capsule--card:hover {
+  background-color: #1f1f1f;
+  scale: 105%;
+  z-index: 200;
+  transition: all 0.5s ease-in-out;
+  .capsuleCard-img {
+    opacity: 100%;
+    cursor: pointer;
+  }
+}
+.myWorks--filter--capsuleCard-foreground-grad {
+  background-image: linear-gradient(
+    176deg,
+    #313131 0%,
+    #2e2c2c20 28%,
+    #25242465 75%,
+    #171717 95%
+  );
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  border-radius: 10px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 0;
+  z-index: 3;
+}
+.myWorks--filter--capsuleCard-outline {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+  z-index: 2;
+  border: 1px solid #252525;
+}
+.myWorks--filter--capsuleCard-backdrop-grad {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient( bottom right, #45434380, #4d4c4c10, #3c3a3a40);
+  border-radius: 20px;
+  z-index: 1;
+}
+.myWorks--filter--capsule--img--background {
+  background-color: #000000;
+  width: 38px;
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  position: relative;
+  align-content: end;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  z-index: 4;
+}
+.myWorks--filter--capsuleCard-img {
+  width: 20px;
+  height: 20px;
+  opacity: 50%;
+  display: flex;
+  position: relative;
+  align-content: end;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+.myWorks--filter--capsuleCard-txt {
+  min-width: 200px;
+  width: 140px;
+  height: 80%;
+  flex-direction: column;
+  margin: 0;
+
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.myWorks--filter--capuslecard--link p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.rem;
+  letter-spacing: 0.1rem;
+  color: #e2dfdf;
+  margin: 0;
+  margin-right: 10px;
+}
+.myWorks--filter--capuslecard--link{
+  text-decoration: none;
+}
+@media screen and (max-width: 1065px) {
+  
+ 
+}
+/* <<<<<<<>>>>>>>> 7a Tablet  <<<<<<<>>>>>>>> */
+@media screen and (max-width: 768px) {
+ 
+}
+/* <<<<<<<>>>>>>>> the inbetween mobile and tablet <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 615px) {
+
+}
+
+  @media screen and (max-width: 480px) {
+    #myworks--full--filter--container{
+    display: flex;
+    border: 0.5px solid #55555505;
+    background-color: #0f0f0fd7;
+    position: relative;
+    width: 95%;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0%;
+    gap: 50px;
+}
+.myWorks--filter--capsule--card {
+  background-color: transparent;
+  width: 185px;
+  height: 40px;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+}
+.myWorks--filter--capuslecard--link p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  color: #e2dfdf;
+  margin: 0;
+  margin-right: 10px;
+}
+  }

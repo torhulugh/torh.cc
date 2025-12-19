@@ -80,8 +80,7 @@
 #desktopMenu-background-color {
   width: 100%;
   height: 100%;
-  border: 0.5px solid #55555505;
-  background-color: #0f0f0f55;
+  
   display: flex;
   position: relative;
   align-content: center;
@@ -479,6 +478,16 @@
   }
   #mobile-menu {
     display: flex;
+    border-bottom: 3.5px solid #d67cff;
+    background-color: #0d0c0d8a;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+  margin: 0;
+  z-index: 900;
   }
   #mobileMenu-icon-tray1 {
     gap: 4%;

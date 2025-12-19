@@ -1,0 +1,81 @@
+#z--mock--cards--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+.z--mock--Card {    
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px #000000;
+    gap: 20px;
+}
+
+.z--mock--card--img--background {
+    background-color: #18181a;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 200px;
+    height: 150px;
+    border-radius: 20-px;
+}
+
+.z--mock--card--img {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+.z--mock--card--content--container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.z--mock--card--Content--l1{
+    background-image: linear-gradient(to right, #101011, #2d2d2e);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: flex-start;
+    left: 0px;
+    align-items: center;
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    align-content: center;
+}
+.z--mock--card--Content--l2 {
+    background-image: linear-gradient(to right, #0c0c0c, #3d3d46);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 150px;
+    height: 20px;
+    border-radius: 10px;
+}
