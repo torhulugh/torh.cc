@@ -150,6 +150,13 @@ aside header img{
     gap: 40px;
     margin-bottom: 60px;
 }
+#workPageMain--header--img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #50503e6b;
+  /* #353a3c; */
+}
 /* h1 */
 #project--header{
     display: flex;
@@ -198,7 +205,7 @@ aside header img{
     display: flex;
     position: relative;
     align-items: center;
-    color: #aeb9f7;
+    color: #6c7391;
     font-weight: 100;
     font-size: 2.5rem;
     width: 100%;
@@ -244,6 +251,34 @@ aside header img{
     padding: 0px 0px 0px 12px;
     margin: 0px;
 }
+.iconed--header--nd--txt--block ul{
+  color: #d3d3d4;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin: 0px;
+    padding: 0px 0px 0px 10px;
+}
+.iconed--header--nd--txt--block li{
+  color: #d3d3d4;
+    display: flex;
+    position: relative;
+    width: 100%;
+    line-height: 2rem;
+    letter-spacing: 0.06rem;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+}
+.iconed--header--nd--txt--block li::before{
+  content: "»";
+  color: #ffffff;
+   display: flex;
+   padding: 0px 10px 0px 0px;
+}
 /* .............................................................. */
 #mobile--external--links{
     display: none;
@@ -258,44 +293,32 @@ aside header img{
     align-content: center;
     justify-content: center;
 }
-#work--page--intro-container ul{
+.preview--img--container {
   display: flex;
   position: relative;
-  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 950px;
   width: 100%;
-  padding: 0;
-  margin: 0;
-  gap: 20px;
-}
-#work--page--intro-container li{
-  line-height: 1.8rem;
-  letter-spacing: 0.01rem;
-  padding: 0px 0px 10px 0px;
-  width: 95%;
-  margin-left: 3%;
-  margin-bottom: 0px;
-  border-bottom: 1px solid #353a3c;
-}
-
-#workPageMain--header--img {
-  width: 100%;
-  padding: 10px;
-  border-radius: 30px;
-  border: 1px solid #50503e6b;
-  /* #353a3c; */
-}
-#workPage--intro--txt {
-  display: flex;
-  position: relative;
-  align-items: center;
+  height: fit-content;
   justify-content: center;
   align-content: center;
-  width: 100%;
-  line-height: 1.8rem;
-  letter-spacing: 0.01rem;
-  padding: 0;
-  margin: 0%;
+  gap: 20px;
 }
+.preview--img--container img {
+  background-color: #353a3c;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  max-width: 950px;
+  width: 260px;
+  height: 260px;
+  border-radius: 10px;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+
+
 
 /* -------> summary cards <..........................................*/
 #summary--cards--container {
@@ -462,18 +485,8 @@ aside header img{
 }
 /* <<<<<<<<>>>>>>>> .7b. Mobile <<<<<<<<>>>>>>>> */
 @media screen and (max-width: 480px) {
-  h1 {
-    color: #889499;
-    font-size: 1.4rem;
-    width: 100%;
-  }
-  #work--page--intro-container{
-    width: 95%;
-    margin: 0%;
-    padding: 0%;
-}
   #workPageMain--header--img {
-    width: 98%;
+    width: 90%;
     height: fit-content;
   }
   .finalDesignPreview--imgs--container {
@@ -513,21 +526,12 @@ aside header img{
   
 }
 .workPage--summaryCard {
-  /* background-color: #1A1A1A; */
   display: flex;
   position: relative;
   flex-direction: column;
   width: 90%;
   height: fit-content;
   padding: 10px;
-  border-bottom: 1px solid #353a3c;
-  /* display: flex;
-  position: relative;
-  flex-direction: column;
-  width: fit-content;
-  height: fit-content;
-  padding: 15px;
-  border: 1px solid #353a3c; */
 }
 #work--page--intro-container ul{
   width: 95%;
@@ -549,7 +553,7 @@ aside{
     align-content: center;
     width: 100%;
     max-width: 922px;
-    gap: 40px;
+    gap: 0px;
     margin-bottom: 60px;
 }
 main{
@@ -577,9 +581,18 @@ main{
     top: 50px;
     height: fit-content;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.219);
-    gap: 20px;
+    gap: 10px;
     z-index: 10;
-    border-bottom: 1px solid #d67cff;
+    border-bottom: 1px solid #030303;
+}
+#project--header::before{
+    content: '';
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 0.8px;
+    bottom: 0px;
+    background-image: linear-gradient(to right, #D1D0D020 23%, #ffffff4f,#B3B3B320 77%);
 }
 #project--header img{
     display: flex;
@@ -599,4 +612,75 @@ main{
     width: 100%;
     margin-top: 20px;
   }
+  #project--header h1{
+  font-size: 1.4rem;
+  color: #889499;
+  
+}
+.h2--header--block{
+    width: 90%;
+}
+.h2--header--block h2{
+    font-size: 1.8rem;
+    width: fit-content;
+    margin:  40px 0px 15px 0px;
+}
+.iconed--header--nd--txt--block{
+    width: 90%;
+}
+
+.iconed--header{
+    width: 90%;
+    padding: 20px 0px 0px 0px;
+}
+.iconed--header h3{
+  font-size: 1.2rem;
+  
+}
+
+
+
+/* .............................................................. */
+
+.preview--img--container {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  max-width: 950px;
+  width: 90%;
+  height: fit-content;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+.preview--img--container img {
+  background-color: #353a3c;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  max-width: 950px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+/* .................................. */
+#summary--cards--container {
+  background-color: #1A1A1A;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 922px;
+  position: relative;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 0px;
+  padding: 10px;
+  width: 90%;
+  gap: 10px;
+  
+}
+
 }
