@@ -1,0 +1,191 @@
+.cradled--bubble--btn {
+  display: flex;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  background-image: linear-gradient(
+    270deg,
+    #484646 0%,
+    #2b2a2a 3%,
+    #000000 23%,
+    #000000 94%,
+    #444242 100%
+  );
+  width: 200px;
+  height: 45px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-decoration: none;
+  z-index: 1;
+  transition: transform 0.25s cubic-bezier(.22, .61, .36, 1),
+              box-shadow 0.25s cubic-bezier(.22, .61, .36, 1);
+}
+.cradled--bubble--btn::after {
+  content: "";
+  position: absolute;
+  color: #a7a9b1;
+  display: flex;
+  position: absolute;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 100px;
+  /* border: 0.001rem solid #676a7264; */
+  background-color: #000000;
+  width: 97%;
+  height: 90%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+}
+.cradled--bubble--btn:hover {
+  color: rgb(183, 191, 197);
+  box-shadow:
+    0px 0px 10px #000000,
+    0px 0px 20px #00000064;
+    .cradledbubble--bloat--effect::after {
+      border: 1rem solid #6c697970;
+      filter: blur(0.4rem);
+      transform: scale(1.04);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .cradledBubble--txt--nd--icon--container {
+    transform: translateY(-2px);
+    color: rgb(183, 191, 197);
+    opacity: 100%;
+  }
+}
+
+
+.cradledBubble--txt--nd--icon--container:active {
+    transform: translateY(-2px);
+    color: rgb(183, 191, 197);
+    opacity: 100%;
+    animation: quickBounce 0.6s ease-in-out;
+    .cradled--bubble--btn--shadow{
+    border: 0.001rem solid #e7edffbd;
+  }
+  .cradledbubble--bloat--effect:active{
+  animation: quickBounce 0.6s ease-in-out;
+  border: 0.001rem solid #676a7291;
+  transform: scaleY(0.98);
+  
+  
+}
+  }
+.cradledBubble--txt--nd--icon--container {
+  display: flex;
+  width: 93%;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 4;
+  opacity: 70%;
+  transition: transform 0.6s cubic-bezier(.22, .61, .36, 1),
+              color 0.25s cubic-bezier(.22, .61, .36, 1);
+
+}
+.cradledBubble--txt--nd--icon--container p {
+  color: #a7a9b1;
+  display: flex;
+  font-size: 0.8rem;
+  width: fit-content;
+  height: fit-content;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.cradledBubble--txt--nd--icon--container img {
+  color: #a7a9b1;
+  display: flex;
+  font-size: 1rem;
+  width: 20px;
+  height: fit-content;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* shadow .......................................................*/
+
+.cradled--bubble--btn--shadow {
+  position: absolute;
+  display: flex;
+  border-radius: 100px;
+  border: 0.001rem solid #676a7264;
+  width: 97%;
+  height: 90%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 3;
+}
+.cradledbubble--bloat--effect {
+  position: absolute;
+  display: flex;
+  border-radius: 100px;
+  background-color: black;
+  border: 0.001rem solid #676a7228;
+  width: 97%;
+  height: 90%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 3;
+}
+.cradledbubble--bloat--effect::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  border-radius: 100px;
+  border: 1rem solid #6c69794d;
+  filter: blur(0.4rem);
+  width: 95%;
+  height: 90%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.cradled--bubble--btn--shadow:before {
+  content: "";
+  position: absolute;
+  /* border: 0.2rem solid #16161864; */
+  border-radius: 40px;
+  width: 100%;
+  height: 88%;
+  margin: 0px;
+  padding: 0px;
+  /* filter: blur(0.3rem); */
+  z-index: 3;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* animation .................................................... */
+@keyframes quickBounce {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.92);
+  }
+  70% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
