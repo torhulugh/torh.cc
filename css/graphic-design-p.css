@@ -1,0 +1,421 @@
+:root {
+  --background-color: hsla(0, 0%, 9.68%, 100%);
+  --mild-font-color: #C7CAD1;
+  --mid-font-color: #eeeeee;
+  --dim-font-color: #979292;
+    --bright-font-color: #c8c3df;
+    --header-gradient: linear-gradient(
+    18deg,
+     #101010 0%,
+    #0f0f0f70 25%,
+    #1b1a1a60 50%,
+    #0f0f0f66 78%,
+    #0f0f0f10 100%
+  );
+    --evrest-sunset: linear-gradient(
+    270deg,
+    #FBF0BA 0%,
+    #AB84FF 100%
+  );
+  --segmentation-border: 0.1px solid #2E3138;
+  --segmentation-border-radius: 10px;
+}
+#portfolio---header---banner {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: var(--background-color);
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 200px;
+  border-radius: 20px;
+  margin-top: 50px; 
+}
+#portfolio---header---banner h1 {
+  display: flex;
+  color: var(--bright-font-color);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1rem;
+  font-size: 4rem;
+  font-weight: 900;
+  width: fit-content;
+  height: fit-content;
+  margin: 0%;
+}
+#portfolio---header---banner h2 {
+  display: flex;
+  color: var(--bright-font-color);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 50;
+  width: fit-content;
+  height: fit-content;
+  margin: 0%;
+}
+/* bio intro section :  container holding bio intro text and profile photo ............................................................ */
+#portfolio---intro-bio {
+  display: flex;
+  background-color: var(--background-color);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  border-radius: 20px;
+  height: auto;
+  padding: 50px 0px;
+  margin-top: 20px;
+  gap: 50px;
+}
+/* profile photo section */
+#bio---photo---desktop---container {
+  display: flex;
+  position: relative;
+  margin-left: 20px;
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#bio---photo---desktop---container img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#bio---photo---desktop---txt{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2px;
+  width: 95%; 
+  padding: 6px 0px;
+  height: fit-content;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+}
+#bio---photo---desktop---txt::before{
+  content: "";
+  display: flex;
+  background-image: linear-gradient(140deg, #f6f4f4dc 0%, #0f0f0fec 15%, #1b1a1a63 50%, #0f0f0fec 84%, #d7d2d2c4 100%);
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#bio---photo---desktop---txt h2, p{
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  margin: 0%;
+  padding: 0%;
+  width: fit-content;
+  height: fit-content;
+  align-content: center;
+  justify-content: center;
+  align-items: center
+}
+/* container holding bio intro text and buttons */
+#bio---intro---container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.2rem;
+  height: auto;
+  padding: 20px;
+}
+/* download resume, LinkedIn, and email buttons section */
+#bio---btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 20px; 
+  gap: 40px;
+}
+
+#technical--info--nd--experience {
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 95%; 
+  height: auto;
+  padding: 10px;
+  margin-top: 50px; 
+  gap: 30px;
+}
+#technical--info--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: auto;
+  gap: 30px;
+  background-color: var(--background-color);
+}
+.technical--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: auto;
+  padding: 6px;
+  border: var(--segmentation-border);
+  border-radius: var(--segmentation-border-radius);
+}
+.technical--info--header {
+  display: flex;
+  position: relative;
+  color: #ffffff;
+  background-image: var(--header-gradient);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  border-radius: 5px;
+}
+.technical--info--header::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  color: #ffffff;
+  background-color: #00000020;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.technical--info h3 {
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  background: var(--evrest-sunset);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.technical-info--entry--container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin: 5px 0px 0px 0px;
+  padding: 0%;
+  gap: 5px;
+}
+.technical-info--entry--container.img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin: 5px 0px 0px 0px;
+  padding: 0%;
+  gap: 10px 20px;
+}
+.technical-info--entry--container img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40px;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin: 5px 0px 0px 0px;
+  padding: 0%;
+  gap: 20px;
+}
+.technical-info--entry {
+  display: flex;
+  position: relative;
+  background-color: #292A2E;
+  color: #ffffff;
+  font-size: 0.76rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  width: 156.2px;
+  height: 40px;
+  border-radius: 5px;
+}
+#experience--header {
+  display: flex;
+  position: relative;
+  color: #ffffff;
+  background-image: var(--header-gradient);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  border-radius: 5px;
+}
+#experience {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #00000020;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+.experience-entry {
+  content: "";
+  display: flex;
+  position: relative;
+  color: #ffffff;
+  border: var(--segmentation-border);
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.experience--entry-span {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  border-radius: 5px;
+}
+.experience--logo--nd--company {
+  display: flex;
+  position: relative;
+  color: var(--mid-font-color);
+  background-color: #00000020;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  gap: 10px;
+}
+.experience--logo--nd--company img {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  
+}
+.experience--date--nd--role {
+  display: flex;
+  position: relative;
+  color: var(--dim-font-color);
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+}
+.work--show-case--container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: #00000020;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+.work--show-cased--header {
+  display: flex;
+  position: relative;
+  color: #ffffff;
+  background-image: var(--header-gradient);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  border-radius: 5px;
+}
+.work--show-case--gallery {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  gap: 10px;
+}
+/*=========  .MEDIA QUERIES ================= */
+/* <<<<<<<<>>>>>>>>  desktop2 <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 1358px) {
+}
+/* <<<<<<<<>>>>>>>>  desktop 3 <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 1112px) {
+}
+/* <<<<<<<<>>>>>>>>  desktop mini <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 909px) {
+}
+/* <<<<<<<<>>>>>>>> .7b. Tablet <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 768px) {
+  
+}
+/* <<<<<<<>>>>>>>> the inbetween mobile and tablet <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 644px) {
+}
+/* <<<<<<<<>>>>>>>> .7b. Mobile <<<<<<<<>>>>>>>> */
+@media screen and (max-width: 480px) {
+  
+}
