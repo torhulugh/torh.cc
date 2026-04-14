@@ -1,5 +1,5 @@
 :root {
-  --background-color: hsla(0, 0%, 9.68%, 100%);
+  --smoky: hsla(0, 0%, 11%, 100%);
   --mild-font-color: #C7CAD1;
   --mid-font-color: #eeeeee;
   --dim-font-color: #979292;
@@ -18,13 +18,14 @@
     #AB84FF 100%
   );
   --segmentation-border: 0.1px solid #2E3138;
+  --guid-border: 0.1px solid hsla(210, 0%, 14%, 100%);
   --segmentation-border-radius: 10px;
 }
 #portfolio---header---banner {
   display: flex;
   position: relative;
   flex-direction: column;
-  background-color: var(--background-color);
+  background-color: var(--smoky);
   justify-content: center;
   align-items: center;
   width: 95%;
@@ -62,7 +63,7 @@
 /* bio intro section :  container holding bio intro text and profile photo ............................................................ */
 #portfolio---intro-bio {
   display: flex;
-  background-color: var(--background-color);
+  background-color: var(--smoky);
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -181,7 +182,7 @@
   width: 40%;
   height: auto;
   gap: 30px;
-  background-color: var(--background-color);
+  background-color: var(--smoky);
 }
 .technical--info {
   display: flex;
@@ -194,7 +195,7 @@
   border: var(--segmentation-border);
   border-radius: var(--segmentation-border-radius);
 }
-.technical--info--header {
+.black--header {
   display: flex;
   position: relative;
   color: #ffffff;
@@ -206,7 +207,7 @@
   height: fit-content;
   border-radius: 5px;
 }
-.technical--info--header::after {
+.black--header::after {
   content: "";
   display: flex;
   position: absolute;
@@ -219,7 +220,7 @@
   height: 100%;
   border-radius: 5px;
 }
-.technical--info h3 {
+.black--header h3 {
   display: flex;
   color: #ffffff;
   flex-direction: column;
@@ -282,31 +283,22 @@
   height: 40px;
   border-radius: 5px;
 }
-#experience--header {
-  display: flex;
-  position: relative;
-  color: #ffffff;
-  background-image: var(--header-gradient);
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: fit-content;
-  border-radius: 5px;
-}
+
 #experience {
   display: flex;
   position: relative;
   flex-direction: column;
-  background-color: #00000020;
+  background-color: var(--smoky);
   color: #ffffff;
   justify-content: center;
+  border: var(--guid-border);
   align-items: center;
   width: 60%;
   height: 100%;
   padding: 10px;
   border-radius: 5px;
 }
+
 .experience-entry {
   content: "";
   display: flex;
@@ -334,7 +326,7 @@
   display: flex;
   position: relative;
   color: var(--mid-font-color);
-  background-color: #00000020;
+  background-color: var(--smoky);
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -367,14 +359,18 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  background-color: #00000020;
+  background-color: var(--smoky);
   color: #ffffff;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 10px;
   border-radius: 5px;
+  border: var(--guid-border);
+}
+.work--show-case--container:hover {
+  border: 1px solid #8c02af;
 }
 .work--show-cased--header {
   display: flex;
@@ -390,14 +386,38 @@
 }
 .work--show-case--gallery {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   height: auto;
   padding: 10px;
   gap: 10px;
 }
+.ghx-p--img {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.ghx-p--img.sqr {
+  width: 300px;
+  height: 300px;
+}
+.ghx-p--img.rec {
+  width: 400px;
+  height: 300px;
+}
+.ghx-p--img.rec-y {
+  width: 210px;
+  height: 300px;
+}
+
+
+
+
+
 /*=========  .MEDIA QUERIES ================= */
 /* <<<<<<<<>>>>>>>>  desktop2 <<<<<<<<>>>>>>>> */
 @media screen and (max-width: 1358px) {
