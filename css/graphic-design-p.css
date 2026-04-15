@@ -413,7 +413,20 @@
   width: 210px;
   height: 300px;
 }
-
+.ghx-p--img.rec-y1 {
+  width: 294px;
+  height: 395px;
+}
+.ghx-p--img.rec-y2 {
+  width: 330.54px;
+  height: 551.16px;
+}
+.ghx-p--span--50percent {
+  width: 50%;
+}
+.ghx-p--img.50percent {
+  width: 50%;
+}
 
 
 
