@@ -1,0 +1,211 @@
+:root {
+  --north-sunset: linear-gradient(20deg, #7863e6 0%, #e29eb2 100%);
+  --green-sea: linear-gradient(20deg, #35c656 0%, #32c1ed 100%);
+  --purple-sky: linear-gradient(20deg, #cbeaff 0%, #ad8af8 44%, #e03dff 100%);
+  --secondary-color: #fff;
+  --accent-color: #ff5733;
+  --background-color: #222;
+  --text-color: #fff;
+}
+
+#layout---header1 {
+  display: none;
+  justify-content: space-between;
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  align-items: center;
+  background-color: #222;
+}
+#layout---header2 {
+  display: flex;
+  justify-content: space-between;
+  width: 72.33%;
+  height: 60px;
+  margin: auto;
+  align-items: center;
+  background-color: #222;
+}
+#main--layout {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: fit-content;
+  height: 72.33%;
+  margin: auto;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0px 0px 0px 0px !important;
+}
+#full---page {
+  background-color: #222;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 72vw;
+  height: 580px;
+  transform: translate(0px, -70px);
+}
+#two---halfs {
+  background-color: #222;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 72.33%;
+  height: 80vh;
+}
+/* #full---page{
+    background-color: #222;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 72.33%;
+    height: 80vh;
+    transform: translate(0px, -70px);
+} */
+
+.prism---plate {
+  display: flex;
+  position: relative;
+  background: #1d1d1e;
+  border-radius: 10px;
+  width: 100%;
+  height: 500px;
+  overflow: hidden !important;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.prism---plate:hover {
+  animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-name: floatTwo;
+}
+.prism---plate:hover::before {
+        animation: floatOne 12s infinite ease-in-out;
+ }
+.prism---plate:hover::after {
+        animation: floatTwo 15s infinite ease-in-out;
+ }
+.prism---plate::before {
+  background-image: var(--north-sunset);
+  content: "";
+  border-radius: 300px;
+  display: flex;
+  position: absolute;
+  top: 100px;
+  left: -100px;
+  filter: blur(100px) brightness(50%);
+  width: 30%;
+  height: 60%;
+  rotate: 300deg;
+  
+} 
+
+.prism---plate::after {
+  background-image: var(--purple-sky);
+  content: "";
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+
+  right: -10px;
+  bottom: 100px;
+  filter: blur(100px) brightness(50%);
+  width: 30%;
+  height: 30%;
+  rotate: 300deg;
+}
+.prism---plate---thrid---color {
+  display: flex;
+  position: relative;
+  filter: blur(100px) brightness(50%);
+
+  width: 40%;
+  height: 20%;
+  background-image: var(--green-sea);
+  border-radius: 10px;
+  rotate: 330deg;
+}
+.prism---plate---thrid---color:hover {
+  animation: floatThree 14s infinite ease-in-out;
+}
+@keyframes floatOne{
+        0%{
+            transform:
+                translate(0px,0px)
+                scale(1)
+                rotate(0deg);
+            border-radius: 42% 58% 63% 37% / 38% 41% 59% 62%;
+        }
+
+        50%{
+            transform:
+                translate(40px,-30px)
+                scale(1.08)
+                rotate(8deg);
+            border-radius: 61% 39% 47% 53% / 52% 58% 42% 48%;
+        }
+
+        100%{
+            transform:
+                translate(-20px,40px)
+                scale(0.95)
+                rotate(-8deg);
+            border-radius: 50% 50% 38% 62% / 63% 36% 64% 37%;
+        }
+    }
+
+ @keyframes floatTwo{
+        0%{
+            transform:
+                translate(0px,0px)
+                scale(1)
+                rotate(0deg);
+            border-radius: 58% 42% 34% 66% / 48% 35% 65% 52%;
+        }
+
+        50%{
+            transform:
+                translate(-50px,20px)
+                scale(1.05)
+                rotate(-10deg);
+            border-radius: 35% 65% 59% 41% / 61% 50% 50% 39%;
+        }
+
+        100%{
+            transform:
+                translate(20px,-40px)
+                scale(0.96)
+                rotate(10deg);
+            border-radius: 67% 33% 47% 53% / 42% 62% 38% 58%;
+        }
+    }
+
+    @keyframes floatThree{
+        0%{
+            transform:
+                translate(0px,0px)
+                scale(1)
+                rotate(0deg);
+            border-radius: 39% 61% 55% 45% / 44% 38% 62% 56%;
+        }
+
+        50%{
+            transform:
+                translate(30px,35px)
+                scale(1.12)
+                rotate(6deg);
+            border-radius: 63% 37% 40% 60% / 54% 67% 33% 46%;
+        }
+
+        100%{
+            transform:
+                translate(-25px,-25px)
+                scale(0.92)
+                rotate(-6deg);
+            border-radius: 49% 51% 67% 33% / 31% 53% 47% 69%;
+        }
+    }

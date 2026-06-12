@@ -485,6 +485,84 @@ h4 {
   z-index: 4;
 }
 
+/* ---> user notification message <--- */
+/* .user--notification---msg {
+  display: fixed;
+  background-color: #171717;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 20px;
+  z-index: ;
+}
+.user--msg--container {
+  display: flex;
+  background-color: #000000;
+  position: relative;
+  width: fit-content;
+  height: 400px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+}
+.user--msg--txt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #e2dfdf;
+} */
+#canvas {
+  display: flex;
+  /* background: black; */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 20%;
+  /* z-index: 1000; */
+}
+.network {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+}
+
+/* Dots */
+.dot {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 6px white;
+}
+
+/* Lines */
+.line {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--length);
+  height: 1px;
+  background: rgb(255, 255, 255);
+  transform-origin: left center;
+  transform: rotate(var(--angle));
+}
+.dot {
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
 
 /* \\\\\\\\\\ .7. MEDIA QUERIES //////*/
 
