@@ -1,0 +1,54 @@
+
+#pt-designer{
+    width: 100%;
+}
+#designer---portfolio--container{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: top: 120px;;
+    justify-items: flex-start;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    gap: 10px;
+}
+#about---designer{
+    display: flex;
+    position: fixed;
+    left: 20px;
+    top: 120px;
+    width: 20vw;
+    height: 100vh;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, #00000050 0%, #090b0c50 48%, #0d0d1150
+    100%);
+    box-shadow: 0px 1px 10px 4px #00000049, -0.5px 1px 0.5px 0px #fafafa11;
+    border-radius: 20px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+#other-designer-info{
+    display: flex;
+    position: relative;
+    width: 76%;
+    transform: translateX(30%);
+    height: 100vh;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, #00000050 0%, #090b0c50 48%, #0d0d1150
+    100%);
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px 0px #00000038, -0.5px 1px 0.5px 0px #fafafa11,0.6px -0.4px 0.8px 0px #fafafa09;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
