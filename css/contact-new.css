@@ -1,0 +1,165 @@
+/* ...existing code... */
+
+/* Contact Me Page Styles */
+#contact-section {
+  display: flex;
+  background-color: #111;
+  position: relative;
+  width: fit-content;
+  /* max-width: 1280px; */
+  height: 500px;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0px;
+  border-radius: 20px;
+  padding: 40px 40px 30px 40px;
+  gap: 20px;
+}
+#contact-section::after {
+  content: "";
+  /* display: flex; */
+  background-image: url("/img/hill-side.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: translateY(76%);
+  /* z-index: -1; */
+  width: 95%;
+  height: 100%;
+
+}
+
+#contact--social-media--links--container{
+  display: flex;
+  position: relative;
+  background-color: #1e1f25;
+  border-radius: 10px;
+  width: 250px;
+  /* background-color: #1635e2;
+  flex-wrap: wrap; */
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 10px;
+  padding: 0px 20px 20px 20px;
+}
+#contact--social-media--links--container::before {
+  content: "";
+  background-image: url("/gif/purp.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  /* z-index: -1; */
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+  mix-blend-mode: multiply;
+
+}
+#contact--social-media--links--icons--container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 200px;
+  flex-wrap: wrap;
+  height: fit-content;
+  gap: 50px;
+  
+}
+#contact--social-media--links--icons--container img{
+  display: flex;
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+
+#contact--social-media--links--container p{
+  display: flex;
+  position: relative;
+  color: #d1d0d0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.06rem;
+  font-weight: 50px;
+  width: fit-content;
+  height: 20px;
+  margin: 0px 0px 30px 0px;
+  padding: 0%;
+}
+#calendly-container {
+  display: flex;
+  position: relative;
+  background-color: transparent;
+  width: 900px;
+  height: 515px;
+  display: flex;
+  right: 0px;
+  gap: 40px;
+  padding: 0px;
+  border-radius: 30px;
+}
+
+
+
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  #contact-section {
+  display: flex;
+  background-color: #111;
+  flex-direction: column;
+  position: relative;
+  width: 80%;
+  /* max-width: 1280px; */
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0px;
+  border-radius: 20px;
+  padding: 20px;
+  
+  gap: 20px;
+}
+#calendly-container {
+  display: flex;
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  right: 0px;
+  gap: 40px;
+  padding: 0px;
+  border-radius: 30px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+#calendly-container::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+#contact--social-media--links--icons--container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  /* margin: 0 auto; */
+  max-width: 500px;
+  flex-wrap: wrap;
+  height: fit-content;
+  gap: 50px;
+  
+}
+}
+
+/* ...existing code... */
